@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+        integrity="sha512-doJrC/ocU8VGVRx3O9981+2aYUn3fuWVWvqLi1U+tA2MWVzsw+NVKq1PrENF03M+TYBP92PnYUlXFH1ZW0FpLw=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <title>Web-Portal</title>
+</head>
+
+<body style="background-color: #F2F3F7;">
+    <!-- FAQs modal -->
+    <div class="modal fade" id="FAQs" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center" style="display: block; border:none">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h6 class="m-b-20 p-b-5 f-w-600">
+                        Frequently Asked Questions (FAQ)
+                    </h6>
+                </div>
+                <div class="modal-body scrollable" id="style-8">
+                    <div class="accordion-box ">
+                        <div id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="card  services m-b-20 service_card_q mt-4">
+                                <div class="card-block accordion-block">
+                                    <div class="accordion-panel">
+                                        <div class="accordion-heading" role="tab" id="headingOne">
+                                            <h3 class="card-title accordion-title faq_title">
+                                                <a class="accordion-msg" style="border: none; padding: 20px;"
+                                                    data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                                                    aria-expanded="true" aria-controls="collapseOne">
+                                                    What if I do not
+                                                    find answer to my
+                                                    question here?
+                                                </a>
+                                            </h3>
+                                        </div>
+                                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
+                                            aria-labelledby="headingOne">
+                                            <div class="accordion-content accordion-desc pl-4">
+                                                <p>
+                                                    Please consult Print
+                                                    or Audio/Video User
+                                                    Guide available
+                                                    under the login
+                                                    Dialog at Help at
+                                                    URL:
+                                                </p><a
+                                                    href="https://iris.fbr.gov.pk/infosys/public/txplogin.xhtml">https://iris.fbr.gov.pk/infosys/public/txplogin.xhtml</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card  services m-b-20 service_card_q mt-4">
+                                <div class="card-block accordion-block">
+                                    <div class="accordion-panel">
+                                        <div class="accordion-heading" role="tab" id="headingTwo">
+                                            <h3 class="card-title accordion-title faq_title">
+                                                <a class="accordion-msg" style="border: none; padding: 20px;"
+                                                    data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"
+                                                    aria-expanded="false" aria-controls="collapseTwo">
+                                                    What is Iris?
+                                                </a>
+                                            </h3>
+                                        </div>
+                                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
+                                            aria-labelledby="headingTwo">
+                                            <div class="accordion-content accordion-desc pl-4">
+                                                <p>
+                                                    Iris is an
+                                                    integrated,
+                                                    end-to-end, highly
+                                                    configurable and
+                                                    customizable ERP,
+                                                    covering all
+                                                    business processes
+                                                    of Income Tax and
+                                                    Sales Tax.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card  services m-b-20 service_card_q mt-4">
+                                <div class="card-block accordion-block">
+                                    <div class="accordion-panel">
+                                        <div class="accordion-heading" role="tab" id="headingThree">
+                                            <h3 class="card-title accordion-title faq_title">
+                                                <a class="accordion-msg" style="border: none; padding: 20px;"
+                                                    data-toggle="collapse" data-parent="#accordion"
+                                                    href="#collapseThree" aria-expanded="false"
+                                                    aria-controls="collapseTreee">
+                                                    What does Iris stand
+                                                    for?
+                                                </a>
+                                            </h3>
+                                        </div>
+                                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
+                                            aria-labelledby="headingThree">
+                                            <div class="accordion-content accordion-desc pl-4">
+                                                <p>
+                                                    Iris is a word not
+                                                    an acronym. It is
+                                                    name of a flower
+                                                    which is a symbol of
+                                                    wisdom.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card  services m-b-20 service_card_q mt-4">
+                                <div class="card-block accordion-block">
+                                    <div class="accordion-panel">
+                                        <div class="accordion-heading" role="tab" id="headingFour">
+                                            <h3 class="card-title accordion-title faq_title">
+                                                <a class="accordion-msg" style="border: none; padding: 20px;"
+                                                    data-toggle="collapse" data-parent="#accordion" href="#collapseFour"
+                                                    aria-expanded="false" aria-controls="collapseTreee">
+                                                    How can I access
+                                                    Iris?
+                                                </a>
+                                            </h3>
+                                        </div>
+                                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel"
+                                            aria-labelledby="headingFour">
+                                            <div class="accordion-content accordion-desc pl-4">
+                                                <p>
+                                                    You can access Iris
+                                                    at the following
+                                                    URL:
+                                                </p>
+                                                <a
+                                                    href="https://iris.fbr.gov.pk/infosys/public/txplogin.xhtml">https://iris.fbr.gov.pk/infosys/public/txplogin.xhtml</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card  services m-b-20 service_card_q mt-4">
+                                <div class="card-block accordion-block">
+                                    <div class="accordion-panel">
+                                        <div class="accordion-heading" role="tab" id="headingfive">
+                                            <h3 class="card-title accordion-title faq_title">
+                                                <a class="accordion-msg" style="border: none; padding: 20px;"
+                                                    data-toggle="collapse" data-parent="#accordion" href="#collapsefive"
+                                                    aria-expanded="false" aria-controls="collapsefive">
+                                                    What is Iris?
+                                                </a>
+                                            </h3>
+                                        </div>
+                                        <div id="collapsefive" class="panel-collapse collapse" role="tabpanel"
+                                            aria-labelledby="headingfive">
+                                            <div class="accordion-content accordion-desc pl-4">
+                                                <p>
+                                                    Iris is an
+                                                    integrated,
+                                                    end-to-end, highly
+                                                    configurable and
+                                                    customizable ERP,
+                                                    covering all
+                                                    business processes
+                                                    of Income Tax and
+                                                    Sales Tax.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card  services m-b-20 service_card_q mt-4">
+                                <div class="card-block accordion-block">
+                                    <div class="accordion-panel">
+                                        <div class="accordion-heading" role="tab" id="headingseven">
+                                            <h3 class="card-title accordion-title faq_title">
+                                                <a class="accordion-msg" style="border: none; padding: 20px;"
+                                                    data-toggle="collapse" data-parent="#accordion"
+                                                    href="#collapseseven" aria-expanded="false"
+                                                    aria-controls="collapseseven">
+                                                    What does Iris stand
+                                                    for?
+                                                </a>
+                                            </h3>
+                                        </div>
+                                        <div id="collapseseven" class="panel-collapse collapse" role="tabpanel"
+                                            aria-labelledby="headingseven">
+                                            <div class="accordion-content accordion-desc pl-4">
+                                                <p>
+                                                    Iris is a word not
+                                                    an acronym. It is
+                                                    name of a flower
+                                                    which is a symbol of
+                                                    wisdom.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card  services m-b-20 service_card_q mt-4">
+                                <div class="card-block accordion-block">
+                                    <div class="accordion-panel">
+                                        <div class="accordion-heading" role="tab" id="headingsix">
+                                            <h3 class="card-title accordion-title faq_title">
+                                                <a class="accordion-msg" style="border: none; padding: 20px;"
+                                                    data-toggle="collapse" data-parent="#accordion" href="#collapsesix"
+                                                    aria-expanded="false" aria-controls="collapsesix">
+                                                    How can I access
+                                                    Iris?
+                                                </a>
+                                            </h3>
+                                        </div>
+                                        <div id="collapsesix" class="panel-collapse collapse" role="tabpanel"
+                                            aria-labelledby="headingsix">
+                                            <div class="accordion-content accordion-desc pl-4">
+                                                <p>
+                                                    You can access Iris
+                                                    at the following
+                                                    URL:
+                                                </p>
+                                                <a
+                                                    href="https://iris.fbr.gov.pk/infosys/public/txplogin.xhtml">https://iris.fbr.gov.pk/infosys/public/txplogin.xhtml</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Required Documents model -->
+    <div class="modal fade" id="requireddocument" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center" style="display: block; border:none">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h6 class="m-b-20 p-b-5 f-w-600">
+                        Required Documents
+                    </h6>
+                </div>
+                <div class="modal-body">
+                    <div class="card list-view-media">
+                        <div class="card-block">
+                            <div class="media">
+                                <div class="new-task col-md-12">
+                                    <div class="to-do-list">
+                                        <div class="checkbox-fade fade-in-primary">
+                                            <label>
+
+                                                <span class="cr">
+                                                    <i class=" fa fa-check-circle"></i>
+                                                </span>
+                                                <span class="mt-5">Required Document 1</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="to-do-list mt-5">
+                                        <div class="checkbox-fade fade-in-primary">
+                                            <label>
+
+                                                <span class="cr">
+                                                    <i class=" fa fa-check-circle"></i>
+                                                </span>
+                                                <span>Required Document 2</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="to-do-list mt-5">
+                                        <div class="checkbox-fade fade-in-primary">
+                                            <label>
+
+                                                <span class="cr">
+                                                    <i class=" fa fa-check-circle"></i>
+                                                </span>
+                                                <span>Required Document 3</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- GuideMe model -->
+    <div class="modal fade" id="GuideMe" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center" style="display: block; border:none">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h6 class="m-b-20 p-b-5 f-w-600">
+                        Guide Me
+                    </h6>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-view">
+                        <li>
+                            <div class="card list-view-media">
+                                <div class="card-block p-3">
+                                    <div class="media">
+                                        <i class="fa fa-check-circle"></i>
+                                        <div class="media-body">
+                                            <div class=" ">
+                                                <h6 class="d-inline-block">
+                                                    Step 1</h6>
+                                            </div>
+                                            <p> Lorem ipsum is a
+                                                dummy content
+                                                sit
+                                                dollar. You can copy
+                                                and paste
+                                                this
+                                                dummy content from
+                                                anywhere and
+                                                to
+                                                anywhere. Its all
+                                                free and must
+                                                be a
+                                                good to folllow in
+                                                prectice</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card list-view-media">
+                                <div class="card-block  p-3">
+                                    <div class="media">
+                                        <i class="fa fa-check-circle"></i>
+                                        <div class="media-body">
+                                            <div class=" ">
+                                                <h6 class="d-inline-block">
+                                                    Step 2</h6>
+                                            </div>
+                                            <p> Lorem ipsum is a
+                                                dummy content
+                                                sit
+                                                dollar. You can copy
+                                                and paste
+                                                this
+                                                dummy content from
+                                                anywhere and
+                                                to
+                                                anywhere. Its all
+                                                free and must
+                                                be a
+                                                good to folllow in
+                                                prectice</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card list-view-media">
+                                <div class="card-block  p-3">
+                                    <div class="media">
+                                        <i class="fa fa-check-circle"></i>
+                                        <div class="media-body">
+                                            <div class=" ">
+                                                <h6 class="d-inline-block">
+                                                    Step 3</h6>
+                                            </div>
+                                            <p> Lorem ipsum is a
+                                                dummy content
+                                                sit
+                                                dollar. You can copy
+                                                and paste
+                                                this
+                                                dummy content from
+                                                anywhere and
+                                                to
+                                                anywhere. Its all
+                                                free and must
+                                                be a
+                                                good to folllow in
+                                                prectice</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Query model model -->
+    <div class="modal fade" id="query" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center" style="display: block; border:none; padding-bottom: 0px;">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h6 class="f-w-600">
+                        Section Query
+                    </h6>
+                </div>
+                <div class="modal-body">
+                    <div class="j-wrapper j-wrapper-640" style="padding: 0px 15px;">
+                        <form>
+                            <div class="form-group">
+
+                                <input type="text" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Subject">
+                            </div>
+
+                            <div class="form-group">
+
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                    placeholder="Detailed Text Query"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <input type="file" class="form-control" id="customFile" />
+                            </div>
+                            <hr>
+                            <div class="d-flex justify-content-end form_buttons">
+                                <button class="btn">Send</button>
+                                <button class="btn ml-2">Reset</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- map model -->
+
+    <div class="modal fade" id="locatoinmapp" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center" style="display: block; border:none">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h6 class="m-b-20 p-b-5 f-w-600">
+                        Location
+                    </h6>
+                </div>
+                <div class="modal-body">
+                    <div class="card-block text-center">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3062.589769382232!2d71.5323005508607!3d33.9981905022338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5ac4315821f7397f!2sSMEDA-Regional%20Office-KP!5e0!3m2!1sen!2s!4v1619595106204!5m2!1sen!2s"
+                            width="700" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Head -->
+    <div class="container-fluid header_top" style="background-color: #415464;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-8">
+                    <div class="row ">
+                        <div class="header_top_ul">
+                            <ul class="mt-1">
+                                <li><a href="https://smeda.org/" class="border_right" target="_blank"
+                                        rel="noopener noreferrer">SMEDA KP</a></li>
+                                <li><a href="http://www.sccip.com.pk/" class="border_right" target="_blank"
+                                        rel="noopener noreferrer">SCCIP</a></li>
+                                <li>
+                                    <div class="dropdown show">
+                                        <a class=" dropdown-toggle other" href="#" role="button" id="dropdownMenuLink"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                            style="color: white;text-decoration: none; border: none;">
+                                            Important Links
+                                        </a>
+
+                                        <div class="dropdown-menu sub_header_drop" aria-labelledby="dropdownMenuLink"
+                                            id="other">
+                                            <a class="dropdown-item" target="_blank" rel="noopener noreferrer"
+                                                href="https://smeda.org/">KP-BOIT</a>
+                                            <a class="dropdown-item" target="_blank" rel="noopener noreferrer"
+                                                href="http://kpboit.kp.gov.pk/">KP-Industries</a>
+                                            <a class="dropdown-item" target="_blank" rel="noopener noreferrer"
+                                                href="http://kp.gov.pk/">KP-Gov</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-4 header_second">
+                    <div class="row d-flex justify-content-end">
+                        <p class="mt-2 ml-5">Hello@KPIFC.com</p>
+                        <p class="mt-2 ml-4">Hotline +92-91-512342</p>
+                        <a href="guideme.html" class="mt-1 ml-4"><b class="blinking" id="needhelp">Need Help</b></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- menu -->
+    <div class="container-fluid header_main" id="main_header" style="background-color: white;">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="index.html"><img src="./images//government-of-pak PNG.png"
+                        alt="brand logo" style="margin-top: -10px;"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link nav_elem1" href="index.html">Home <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav_elem1" href="opportunities.html">opportunities</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav_elem1" href="guideme.html"
+                                style="border-bottom: 3px solid #4db885;">Services For SME's</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav_elem1" href="#">Analytics</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav_elem1" href="about.html">about-kp</a>
+                        </li>
+
+                        <div>
+                            <li class="nav-item ml-3 mt-2" style="text-transform: uppercase;font-size: 13px">
+                                <div class="dropdown show">
+                                    <a class=" dropdown-toggle other nav_elem1" href="#" role="button"
+                                        id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        Other
+                                    </a>
+
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="other">
+                                        <a class="dropdown-item" href="submenu_about.html">About us</a>
+                                        <a class="dropdown-item" href="blog.html">blogs</a>
+                                        <a class="dropdown-item" href="#">Rules & Regulations</a>
+                                        <a class="dropdown-item" href="#">Attached departments</a>
+                                        <a class="dropdown-item" href="#">access to dashboard</a>
+                                        <a class="dropdown-item" href="#">feedback</a>
+                                        <a class="dropdown-item" href="#">notification</a>
+                                        <a class="dropdown-item" href="#">public holidays colendar</a>
+                                        <a class="dropdown-item" href="#">disclaimer</a>
+                                        <a class="dropdown-item" href="#">terms & conditions</a>
+                                        <a class="dropdown-item" href="#">privacy</a>
+                                    </div>
+                                </div>
+                            </li>
+                    </ul>
+                    <ul class="row loginul mt-3">
+                        <li><a class="login-register" href="https://smeda.10data.ai/login.html"
+                                style="border-right: 1px solid grey; color: grey;">Login</a></li>
+                        <li><a class="login-register" style="color: grey;"
+                                href="https://smeda.10data.ai/login.html">Register</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+    </div>
+    <!-- About -->
+    <div class="container-fluid" style="margin-top: 150px;">
+        <div class="container">
+            <!-- Introduction -->
+            <div class="col-md-12">
+                <div class="form-group has-search">
+                    <span class="fa fa-search form-control-feedback"></span>
+                    <input type="text" class="form-control" placeholder="Search" id="searchservice"
+                        onkeyup="searchFilter()">
+                    <ul class="list-group" id="search_wrapper">
+
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-5">
+                <div class="container-fluid">
+                    <div class="col-md-12 investor_dashboard ">
+                        <div class="col-md-12 size">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-10 dashtext">
+                                            <h4>Departments</h4>
+                                        </div>
+                                        <div class="col-md-2 ">
+                                            <div class="row myicon">
+                                                <div class="card-header-right">
+                                                    <select name="select" id="dept" class="form-control"
+                                                        style="font-size:14px;" onchange="contextchange()">
+                                                        <option value="opt1">Select Department</option>
+                                                        <option id="fbr" value="FBR">FBR</option>
+                                                        <option id="sngpl" value="SNGPL">SNGPL</option>
+                                                        <option id="tdap" value="TDAP">TDAP</option>
+                                                        <option id="customs" value="Customs">Customs</option>
+                                                        <option id="smeda" value="SMEDA">SMEDA</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row elems">
+                                    <i class="fa fa-location-arrow"></i>
+                                    <p id="location">Department Location</p>
+                                </div>
+                                <hr>
+                                <div class="row elems">
+                                    <i class="fa fa-clock"></i>
+                                    <p id="time">Department hours</p>
+                                </div>
+                                <hr>
+                                <div class="row elems">
+                                    <i class="fa fa-phone-alt"></i>
+                                    <p id="num">Phone Number</p>
+                                </div>
+                                <hr>
+                                <div class="row elems">
+                                    <i class="fa fa-envelope"></i>
+                                    <p id="mail">Eamil Address</p>
+                                </div>
+                                <hr>
+                                <div class="row elems">
+                                    <i class="fa fa-map-marker-alt"></i>
+                                    <p id="address" data-toggle="modal" data-target="#locatoinmapp"
+                                        style="cursor: pointer;">Physical Address</p>
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+
+                    </div><!-- /.container-fluid -->
+                    <div class="col-md-12 investor_dashboard_service mt-4" id="service_section" style="display: none;">
+                        <div class="col-md-12">
+                            <div class="row pt-3">
+                                <div class="col-md-10 dashtext">
+                                    <h4>Services</h4>
+                                </div>
+                                <div class="col-md-2 ">
+                                    <div class="row myicon">
+                                        <div class="card-header-right">
+                                            <select name="select" id="service" class="form-control"
+                                                style="font-size:14px;">
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div id="service_items">
+                            <div class="row elems">
+                                <i class="fa fa-envelope"></i>
+                                <p data-toggle="modal" data-target="#FAQs">FAQ's</p>
+                            </div>
+                            <hr>
+                            <div class="row elems">
+                                <i class="fa fa-file-pdf"></i>
+                                <p data-toggle="modal" data-target="#requireddocument">Required Documents</p>
+                            </div>
+                            <hr>
+                            <div class="row elems">
+                                <i class="fa fa-sign"></i>
+                                <p data-toggle="modal" data-target="#GuideMe">Guide Me</p>
+                            </div>
+                            <hr>
+                            <div class="row elems">
+                                <i class="fa fa-book"></i>
+                                <p data-toggle="modal" data-target="#query">Section Query</p>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-5">
+        <div class="container-fluid footer">
+            <div class="p-5">
+                <div class="row items">
+                    <div class="col-md-2 ml-5">
+                        <p>important links</p>
+                        <ul>
+                            <li><a href="https://smeda.org/">SMEDA</a></li>
+                            <li><a href="http://www.sccip.com.pk/">SCCI</a></li>
+                            <li><a href="http://kpboit.kp.gov.pk/">KP_BOIT</a></li>
+                            <li><a href="https://www.bok.com.pk/">BOK</a></li>
+                            <li><a href="https://www.commerce.gov.pk/">Ministry Of Commerce</a></li>
+                            <li><a href="https://www.commerce.gov.pk/">State Bank Of Pakistan</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <p>All Kp Chamber links</p>
+                        <ul>
+                            <li><a href="http://www.sccip.com.pk/">Sarhad Chamber Of Commerce & Industry</a></li>
+                            <li><a href="http://www.haripurchamber.org.pk/">Haripur Chamber Of Commerce & Industry</a>
+                            </li>
+                            <li><a href="http://www.abbotabadcci.org.pk/">Abbottabad Chamber Of Commerce &
+                                    Industries</a></li>
+                            <li><a href="http://www.swatcci.org.pk/">Swat Chamber Of Commerce & Industries</a></li>
+                            <li><a href="http://www.wccip.org.pk/">Women Chamber Of Commerce & Industries</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-2">
+                        <p>External Site Links</p>
+                        <ul>
+                            <li><a href="http://www.sccip.com.pk/">Sarhad Chamber Of Commerce & Industry</a></li>
+                            <li><a href="http://www.haripurchamber.org.pk/">Haripur Chamber Of Commerce & Industry</a>
+                            </li>
+                            <li><a href="http://www.abbotabadcci.org.pk/">Abbottabad Chamber Of Commerce &
+                                    Industries</a></li>
+                            <li><a href="http://www.swatcci.org.pk/">Swat Chamber Of Commerce & Industries</a></li>
+                            <li><a href="http://www.wccip.org.pk/">Women Chamber Of Commerce & Industries</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <p>Contact Us</p>
+                        <span>INVEST Pk
+                            Helpline (PK) 92-91-9225413 <br>
+                            contact@smeda.com
+                            Sarhad Chamber Of Commerce Chamber House G.T.Road,Peshawar
+                            www.smeda.org</span>
+                    </div>
+                    <div class="col-md-2">
+                        <p>Follow Us</p>
+                        <div class="row">
+                            <a href=""><i class="fab fa-facebook"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                            <a href=""> <i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    </div>
+    <script src="./js/webportal.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    <script type="text/javascript" src="../assets/pages/google-maps/gmaps.js"></script>
+    <script>
+        function contextchange() {
+            let deptElem = document.getElementById('dept').value;
+            let serviceElem = document.getElementById('service');
+            let locationElem = document.getElementById('location');
+            let timeElem = document.getElementById('time');
+            let phoneNum = document.getElementById('num');
+            let mailElem = document.getElementById('mail');
+            let addressElem = document.getElementById('address');
+            if (deptElem == 'FBR') {
+                locationElem.innerText = 'Peshawar';
+                timeElem.innerText = '09:00am to 05:00pm';
+                phoneNum.innerText = '0301-8847551';
+                mailElem.innerText = ' emailsupport@fbr.gov.pk';
+                addressElem.innerText = 'University Rd, University Town, Peshawar, Khyber Pakhtunkhwa';
+                serviceElem.innerHTML = "<option>Select Service</option>"
+                serviceElem.innerHTML += "<option value='NTN'>NTN</option>" +
+                    "<option value='Saletax'>Saletax</option>" +
+                    "<option value='Tax return'>Tax return</option>" +
+                    "<option value='online verification'>online verification</option>" +
+                    "<option value='ATL(income Tax)'>ATL(income Tax)</option>";
+                $('#service_section').css('display', 'block')
+
+
+            }
+            if (deptElem == 'SNGPL') {
+                locationElem.innerText = 'Peshawar';
+                timeElem.innerText = '09:00am to 05:00pm';
+                phoneNum.innerText = '0336-4008090';
+                mailElem.innerText = 'info@sngpl.com.pk';
+                addressElem.innerText =
+                    'Plot 33, Sector B-II, Hayatabad Town، Phase 5 Hayatabad, Peshawar, Khyber Pakhtunkhwa 25000';
+                serviceElem.innerHTML = "<option>Select Service</option>"
+                serviceElem.innerHTML += "<option value='TransGas'>Transfer of gas connection</option>" +
+                    "<option value='AppConnect'>Application for domestic connection</option>" +
+                    "<option value='RSMS'>Register sms alert</option>" +
+                    "<option value='CompReg'>Complaint registration</option>" +
+                    "<option value='CompHis'>Compliant history</option>";
+                $('#service_section').css('display', 'block')
+
+            }
+            if (deptElem === 'TDAP') {
+                locationElem.innerText = 'Peshawar';
+                timeElem.innerText = '09:00am to 05:00pm';
+                phoneNum.innerText = '0300-5825267';
+                mailElem.innerText = ' tdap@tdap.gov.pk';
+                addressElem.innerText =
+                    'Plot No. 24, Phase 5 Hayatabad, Peshawar، Phase 5 Hayatabad, Peshawar, Khyber Pakhtunkhwa';
+                serviceElem.innerHTML = "<option>Select Service</option>"
+                serviceElem.innerHTML += "<option value='BPakistan'>How to do business in Pakistan</option>" +
+                    "<option value='SSGuide'>Step by step guide for new exporter</option>" +
+                    "<option value='ManualFacility'>Manual for export facilitation</option>" +
+                    "<option value='EasyGuid'>An easy guide for exporters</option>" +
+                    "<option value='Guid'>Guide to avail export finance</option>";
+                $('#service_section').css('display', 'block')
+
+            }
+            if (deptElem === 'Customs') {
+                locationElem.innerText = 'Peshawar';
+                timeElem.innerText = '09:00am to 05:00pm';
+                phoneNum.innerText = '0322-4337676';
+                mailElem.innerText = '  support.weboc@pral.com.pk';
+                addressElem.innerText = 'University Rd, University Town, Peshawar, Khyber Pakhtunkhwa';
+                serviceElem.innerHTML = "<option>Select Service</option>"
+                serviceElem.innerHTML += "<option value='custmB'>Customs Bascis</option>" +
+                    "<option value='regst'>Register for customs</option>" +
+                    "<option value='import'>Import/Exports</option>" +
+                    "<option value='travel'>Travel Guide</option>" +
+                    "<option value='vehicals'>Vehicals</option>";
+                $('#service_section').css('display', 'block')
+
+            }
+            if (deptElem === 'SMEDA') {
+                locationElem.innerText = 'Peshawar';
+                timeElem.innerText = '09:00am to 05:00pm';
+                phoneNum.innerText = '0333-9117278';
+                mailElem.innerText = ' helpdesk.KhyberPakhtunkhwa@smeda.org.pk';
+                addressElem.innerText =
+                    'Khyber Pakhtoonkhwa, State Life Building, Saddar Rd, Peshawar Cantonment, Peshawar, Khyber Pakhtunkhwa 25000';
+                serviceElem.innerHTML = "<option>Select Service</option>"
+                serviceElem.innerHTML += "<option value='online'>Online training</option>" +
+                    "<option value='eadvice'>Expert advice</option>" +
+                    "<option value='vhelp'>Virtual helpdesk</option>" +
+                    "<option value='shelp'>Sme business helpline</option>";
+                $('#service_section').css('display', 'block')
+
+            }
+
+        }
+
+        $(document).ready(function () {
+
+            $('#loginid').click(function () {
+                $('.register').hide();
+                $('.login').show();
+            });
+            $('#registerid').click(() => {
+                $('.login').hide();
+                $('.register').show();
+            })
+
+            $('#needhelp').mouseover(() => {
+                $('#needhelp').removeClass('blinking');
+                $('#needhelp').addClass('blinking_h');
+            })
+            $('#needhelp').mouseout(() => {
+                $('#needhelp').addClass('blinking');
+            })
+        });
+
+        let arr = ['NTN',
+            'Saletax',
+            'Tax return',
+            'online verification',
+            'ATL(income Tax)',
+            'Customs',
+            'e-Payment',
+            'Knowledge Base',
+            'Computerized Payment Receipt - CPR',
+            'Payment of Taxes through Alternate Delivery Channels (ADC), ATM, Online Banking',
+            'Iris-adx application',
+            'Doing business reform',
+            'Aeoi portal',
+            'Npos central registry',
+            'Integrity management Cell',
+            'Customs-weboc',
+            'DNFBP resgistration',
+            'Export efilling',
+            'Import e filling',
+            'Consignor igm', /* FBR */
+            'Transfer of gas connection',
+            'Application for domestic connection',
+            'Register sms alert',
+            'Complaint registration',
+            'Compliant history',
+            'Update cnic/phone',
+            'Bill calculator', /* SNGPL */
+            'How to do business in pakistan',
+            'Step by step guide for new exporter',
+            'Manual for export facilitation',
+            'An easy guide for exporters',
+            'Guide to avail export finance',
+            'National Exporters training program', /* TDAP */
+            'Customs Bascis',
+            'Register for customs',
+            'Import/Exports',
+            'Travel guide',
+            'Vehicals',
+            'Customs tariff',
+            'Pay customs duty',
+            'Mobile device regularization',
+            'Export facilitation scheme', /* Customs */
+            'Online training',
+            'Expert advice',
+            'Virtual helpdesk',
+            'Sme business helpline', /* SMEDA */
+            'Stepwise procedure for online company incorporation',
+            'New user registration flyer',
+            'ADC payment guide',
+            'Online payment guide',
+            'Online fund transfer',
+            'helpline', /* SECP */
+            'Special economic zones management',
+            'Branch liaison/office',
+            'Work visa',
+            'Petroleum companies clearance',
+            'Airport entrypass',
+            'Housing and construction portal', /* BOI */
+            'online ticket', /* RAILWAYS */ ,
+            'Online Complaints Cell', /* MO Communication*/
+            'Complaint Cell', /* MO Science & Technology*/
+            'e Registration having NTN',
+            'Check status of registration application',
+            'Compliants/Feedback', /* KPRA*/
+            'Contact Us', /*KP_BOIT*/
+            'online plot form', /* KPEZDMC*/
+            'e-bidding system', /* PDA */ ,
+            'Property Tax Info',
+            'Online Vehicle information',
+            'Vehicle Registration Tax Calculator', /* Excise */
+            'Online Apply for New Connection',
+            'SMS Billing', /* Pesco */
+            'Digital Banking',
+            'Online Transactions', /*BOK*/
+            'E-Booking', /* Tourism*/
+            'IT-Park',
+            'KPITB Campus Ambassador Program',
+            'Company Registration', /* KPITB*/
+            'E-Building Plan Approval',
+            'E-Bidding NOCs',
+            'E-Auctions',
+            'E-RTI (Right To Information Commission)',
+            'Registration of Birth, Death, Marraige and Divorce', /* Local Govenment / Towns*/
+            'Online Lab Reports',
+            'Online Pension System',
+            'Rest House Reservation System',
+            'Webmail Services', /* WAPDA */
+            'E-Licencing',
+            'E-Recruitment',
+            'E-Complaints',
+            'E-RTI (Right To Information)', /* Law */
+            'E-Registration of Contrators / Firms',
+            'E-Bidding / Managment Information System',
+            'E-Tender',
+            'List of Enlisted Contractors', /*private school regulator*/
+            'List of Blacklisted Contractors',
+            'Online Duplicate Bills',
+            'Online Water Connections', /* WSSP */
+            'E-Registration of Contrators / Firms',
+            'E-Bidding / Managment Information System',
+            'E-Tender',
+            'List of Enlisted Contractors',
+            'List of Blacklisted Contractors' /* c&w */
+        ];
+
+        function searchFilter() {
+            let searchElem = document.getElementById('searchservice');
+            let searchList = document.getElementById('search_wrapper');
+            /* fbr */
+            if (searchElem.value == 'fbr' || searchElem.value == 'FBR') {
+                searchList.innerHTML = " ";
+                searchList.style.height = '220px';
+                let i = 0;
+                for (i = 0; i < 20; i++) {
+                    searchList.innerHTML += `<li class="list-group-item" id='a${i}'>${arr[i]}</li>`;                   
+                }
+               
+              /*   
+                */
+            }
+            if (searchElem.value == "") {
+                searchList.innerHTML = " ";
+                searchList.style.height = "0px";
+                searchList.style.border = "none";
+
+            }
+            if (searchElem.value == 'sngpl' || searchElem.value == 'SNGPL') {
+                searchList.innerHTML = " ";
+                searchList.style.height = '220px';
+                for (i = 20; i < 27; i++) {
+                    searchList.innerHTML += `<li class="list-group-item">${arr[i]}</li>`;
+
+                }
+            }
+            if (searchElem.value == "") {
+                searchList.innerHTML = " ";
+                searchList.style.height = "0px";
+                searchList.style.border = "none";
+
+            }
+            if (searchElem.value == 'tdap' || searchElem.value == 'TDAP') {
+                searchList.innerHTML = " ";
+                searchList.style.height = '220px';
+                for (i = 27; i < 33; i++) {
+                    searchList.innerHTML += `<li class="list-group-item">${arr[i]}</li>`;
+
+                }
+            }
+            if (searchElem.value == "") {
+                searchList.innerHTML = " ";
+                searchList.style.height = "0px";
+                searchList.style.border = "none";
+
+            }
+            if (searchElem.value == 'customs' || searchElem.value == 'CUSTOMS') {
+                searchList.innerHTML = " ";
+                searchList.style.height = '220px';
+                for (i = 33; i < 42; i++) {
+                    searchList.innerHTML += `<li class="list-group-item">${arr[i]}</li>`;
+
+                }
+            }
+            if (searchElem.value == "") {
+                searchList.innerHTML = " ";
+                searchList.style.height = "0px";
+                searchList.style.border = "none";
+
+            }
+            document.getElementsByClassName('list-group-item').click = ()=>{
+                serviceElem.value = document.getElementsByClassName('list-group-item').innerHTML;
+            }
+        }
+        /* SNGPL */
+    </script>
+
+</body>
+
+</html>

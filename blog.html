@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+        integrity="sha512-doJrC/ocU8VGVRx3O9981+2aYUn3fuWVWvqLi1U+tA2MWVzsw+NVKq1PrENF03M+TYBP92PnYUlXFH1ZW0FpLw=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <title>Web-Portal</title>
+</head>
+
+<body>
+    <!-- Head -->
+    <div class="container-fluid header_top" style="background-color: #415464;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-8">
+                    <div class="row ">
+                        <div class="header_top_ul">
+                            <ul class="mt-1">
+                                <li><a href="https://smeda.org/" class="border_right" target="_blank"
+                                        rel="noopener noreferrer">SMEDA KP</a></li>
+                                <li><a href="http://www.sccip.com.pk/" class="border_right" target="_blank"
+                                        rel="noopener noreferrer">SCCIP</a></li>
+                                <li>
+                                    <div class="dropdown show">
+                                        <a class=" dropdown-toggle other" href="#" role="button" id="dropdownMenuLink"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                            style="color: white;text-decoration: none; border: none;">
+                                            Important Links
+                                        </a>
+
+                                        <div class="dropdown-menu sub_header_drop" aria-labelledby="dropdownMenuLink"
+                                            id="other">
+                                            <a class="dropdown-item" target="_blank" rel="noopener noreferrer"
+                                                href="https://smeda.org/">KP-BOIT</a>
+                                            <a class="dropdown-item" target="_blank" rel="noopener noreferrer"
+                                                href="http://kpboit.kp.gov.pk/">KP-Industries</a>
+                                            <a class="dropdown-item" target="_blank" rel="noopener noreferrer"
+                                                href="http://kp.gov.pk/">KP-Gov</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-4 header_second">
+                    <div class="row d-flex justify-content-end">
+                        <p class="mt-2 ml-5">Hello@KPIFC.com</p>
+                        <p class="mt-2 ml-4">Hotline +92-91-512342</p>
+                        <a href="guideme.html" class="mt-1 ml-4"><b class="blinking" id="needhelp">Need Help</b></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- menu -->
+    <div class="container-fluid header_main" id="main_header" style="background-color: white;">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="index.html"><img src="./images//government-of-pak PNG.png"
+                        alt="brand logo" style="margin-top: -10px;"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link nav_elem1" href="index.html"
+                              >Home <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav_elem1" href="opportunities.html">opportunities</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav_elem1" href="guideme.html">Services For SME's</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav_elem1" href="#">Analytics</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav_elem1" href="about.html"   style="border-bottom: 3px solid #ffffff;">about-kp</a>
+                        </li>
+                  
+                        <div>
+                            <li class="nav-item ml-3 mt-2" style="text-transform: uppercase;font-size: 13px">
+                                <div class="dropdown show">
+                                    <a class=" dropdown-toggle other nav_elem1" href="#" role="button"
+                                        id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false" style="color: white;text-decoration: none; border: none;">
+                                        Other
+                                    </a>
+
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="other">
+                                        <a class="dropdown-item" href="submenu_about.html">About us</a>
+                                        <a class="dropdown-item" href="blog.html">blogs</a>
+                                        <a class="dropdown-item" href="#">Rules & Regulations</a>
+                                        <a class="dropdown-item" href="#">Attached departments</a>
+                                        <a class="dropdown-item" href="#">access to dashboard</a>
+                                        <a class="dropdown-item" href="#">feedback</a>
+                                        <a class="dropdown-item" href="#">notification</a>
+                                        <a class="dropdown-item" href="#">public holidays colendar</a>
+                                        <a class="dropdown-item" href="#">disclaimer</a>
+                                        <a class="dropdown-item" href="#">terms & conditions</a>
+                                        <a class="dropdown-item" href="#">privacy</a>
+                                    </div>
+                                </div>
+                            </li>
+                    </ul>
+                    <ul class="row loginul mt-3">
+                        <li><a class="login-register" href="https://smeda.10data.ai/login.html"
+                                style="border-right: 1px solid grey; color: grey;">Login</a></li>
+                        <li><a class="login-register" style="color: grey;" href="https://smeda.10data.ai/login.html">Register</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+    </div>
+    <!-- blog -->
+    <div class="container-fluid" style="margin-top: 150px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <img src="./images/dummy.jpg" width="100%" alt="">
+                    <h2 class="mt-3">Smeda Web-portal blog posts</h2>
+                    <p class="mt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis non ipsum nihil ab
+                        eius. Ex, molestiae corporis? Voluptas corrupti natus expedita. Placeat tenetur officia,
+                        accusantium enim impedit quaerat dolorum blanditiis.</p><br> <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro corporis incidunt reiciendis
+                        ducimus impedit, illum libero, odit id eos, velit non. Nisi placeat fugit suscipit aut quisquam
+                        repudiandae quia neque.</p>
+                    <h2 class="mt-3">Details</h2>
+                    <p class="mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis non ipsum nihil ab
+                        eius. Ex, molestiae corporis? Voluptas corrupti natus expedita. Placeat tenetur officia,
+                        accusantium enim impedit quaerat dolorum blanditiis.</p><br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro corporis incidunt reiciendis
+                        ducimus impedit, illum libero, odit id eos, velit non. Nisi placeat fugit suscipit aut quisquam
+                        repudiandae quia neque.</p><br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro corporis incidunt reiciendis
+                        ducimus impedit, illum libero, odit id eos, velit non. Nisi placeat fugit suscipit aut quisquam
+                        repudiandae quia neque.</p>
+                        <div class="row mt-5">
+                            <div class="block_sec mt-2"></div>
+                            <div class="ml-1 mt-1">
+                                <h4>Recent Posts</h4>
+                            </div>
+                            <div class="side_line mt-3 ml-2"></div>
+                        </div>
+                    <div class="row mt-5">
+                        
+                        <div class="col-md-5">
+                            <div class="card_back_img"></div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card_content">
+                                <p><a href="">Latest News About Departments</a></p>
+                            </div>
+                            <div class="card_text_cont">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet reiciendis officia, et,
+                                    quos nemo quas ipsam mollitia quibusdam illo repellat numquam corporis quidem ex
+                                    quod deleniti adipisci sunt voluptatem qui quod deleniti adipisci sunt voluptatem qui quibusdam illo repellat numquam corporis quidem ex
+                                    quod deleniti adipisci sunt voluptatem.</p>
+                                  
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="card_back_img"></div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card_content">
+                                <p><a href="">Latest News About Departments</a></p>
+                            </div>
+                            <div class="card_text_cont">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet reiciendis officia, et,
+                                    quos nemo quas ipsam mollitia quibusdam illo repellat numquam corporis quidem ex
+                                    quod deleniti adipisci sunt voluptatem qui quod deleniti adipisci sunt voluptatem qui quibusdam illo repellat numquam corporis quidem ex
+                                    quod deleniti adipisci sunt voluptatem.</p>
+                                  
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="card_back_img"></div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card_content">
+                                <p><a href="">Latest News About Departments</a></p>
+                            </div>
+                            <div class="card_text_cont">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet reiciendis officia, et,
+                                    quos nemo quas ipsam mollitia quibusdam illo repellat numquam corporis quidem ex
+                                    quod deleniti adipisci sunt voluptatem qui quod deleniti adipisci sunt voluptatem qui quibusdam illo repellat numquam corporis quidem ex
+                                    quod deleniti adipisci sunt voluptatem.</p>
+                                  
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="card_back_img"></div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card_content">
+                                <p><a href="">Latest News About Departments</a></p>
+                            </div>
+                            <div class="card_text_cont">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet reiciendis officia, et,
+                                    quos nemo quas ipsam mollitia quibusdam illo repellat numquam corporis quidem ex
+                                    quod deleniti adipisci sunt voluptatem qui quod deleniti adipisci sunt voluptatem qui quibusdam illo repellat numquam corporis quidem ex
+                                    quod deleniti adipisci sunt voluptatem.</p>
+                                  
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="card_back_img"></div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card_content">
+                                <p><a href="">Latest News About Departments</a></p>
+                            </div>
+                            <div class="card_text_cont">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet reiciendis officia, et,
+                                    quos nemo quas ipsam mollitia quibusdam illo repellat numquam corporis quidem ex
+                                    quod deleniti adipisci sunt voluptatem qui quod deleniti adipisci sunt voluptatem qui quibusdam illo repellat numquam corporis quidem ex
+                                    quod deleniti adipisci sunt voluptatem.</p>
+                                  
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="card_back_img"></div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card_content">
+                                <p><a href="">Latest News About Departments</a></p>
+                            </div>
+                            <div class="card_text_cont">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet reiciendis officia, et,
+                                    quos nemo quas ipsam mollitia quibusdam illo repellat numquam corporis quidem ex
+                                    quod deleniti adipisci sunt voluptatem qui quod deleniti adipisci sunt voluptatem qui quibusdam illo repellat numquam corporis quidem ex
+                                    quod deleniti adipisci sunt voluptatem.</p>
+                                  
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="block_sec mt-2"></div>
+                        <div class="ml-1 mt-1">
+                            <h4>Popular</h4>
+                        </div>
+                        <div class="side_line mt-3 ml-2"></div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-5">
+                            <div class="back_img_side"></div>
+                        </div>
+                        <div class="col-md-7 side_content">
+                            <p><a href="">Smeda web-portal content Lorem ipsum dolor sit amet, consectetur </a></p>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-5">
+                            <div class="back_img_side"></div>
+                        </div>
+                        <div class="col-md-7 side_content">
+                            <p><a href="">Smeda web-portal content Lorem ipsum dolor sit amet, consectetur </a></p>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-5">
+                            <div class="back_img_side"></div>
+                        </div>
+                        <div class="col-md-7 side_content">
+                            <p><a href="">Smeda web-portal content Lorem ipsum dolor sit amet, consectetur </a></p>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-5">
+                            <div class="back_img_side"></div>
+                        </div>
+                        <div class="col-md-7 side_content">
+                            <p><a href="">Smeda web-portal content Lorem ipsum dolor sit amet, consectetur </a></p>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-5">
+                            <div class="back_img_side"></div>
+                        </div>
+                        <div class="col-md-7 side_content">
+                            <p><a href="">Smeda web-portal content Lorem ipsum dolor sit amet, consectetur </a></p>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="block_sec mt-2"></div>
+                        <div class="ml-1 mt-1">
+                            <h4>Reviews</h4>
+                        </div>
+                        <div class="side_line mt-3 ml-2"></div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-5">
+                            <div class="back_img_side"></div>
+                        </div>
+                        <div class="col-md-7 side_content">
+                            <p><a href="">Smeda web-portal content Lorem ipsum dolor sit amet, consectetur </a></p>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-5">
+                            <div class="back_img_side"></div>
+                        </div>
+                        <div class="col-md-7 side_content">
+                            <p><a href="">Smeda web-portal content Lorem ipsum dolor sit amet, consectetur </a></p>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-5">
+                            <div class="back_img_side"></div>
+                        </div>
+                        <div class="col-md-7 side_content">
+                            <p><a href="">Smeda web-portal content Lorem ipsum dolor sit amet, consectetur </a></p>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-5">
+                            <div class="back_img_side"></div>
+                        </div>
+                        <div class="col-md-7 side_content">
+                            <p><a href="">Smeda web-portal content Lorem ipsum dolor sit amet, consectetur </a></p>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-5">
+                            <div class="back_img_side"></div>
+                        </div>
+                        <div class="col-md-7 side_content">
+                            <p><a href="">Smeda web-portal content Lorem ipsum dolor sit amet, consectetur </a></p>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="block_sec mt-2"></div>
+                        <div class="ml-1 mt-1">
+                            <h4>New</h4>
+                        </div>
+                        <div class="side_line mt-3 ml-2"></div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-5">
+                            <div class="back_img_side"></div>
+                        </div>
+                        <div class="col-md-7 side_content">
+                            <p><a href="">Smeda web-portal content Lorem ipsum dolor sit amet, consectetur </a></p>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-5">
+                            <div class="back_img_side"></div>
+                        </div>
+                        <div class="col-md-7 side_content">
+                            <p><a href="">Smeda web-portal content Lorem ipsum dolor sit amet, consectetur </a></p>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-5">
+                            <div class="back_img_side"></div>
+                        </div>
+                        <div class="col-md-7 side_content">
+                            <p><a href="">Smeda web-portal content Lorem ipsum dolor sit amet, consectetur </a></p>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-5">
+                            <div class="back_img_side"></div>
+                        </div>
+                        <div class="col-md-7 side_content">
+                            <p><a href="">Smeda web-portal content Lorem ipsum dolor sit amet, consectetur </a></p>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-5">
+                            <div class="back_img_side"></div>
+                        </div>
+                        <div class="col-md-7 side_content">
+                            <p><a href="">Smeda web-portal content Lorem ipsum dolor sit amet, consectetur </a></p>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-5">
+        <div class="container-fluid footer">
+            <div class="p-5">
+                <div class="row items">
+                    <div class="col-md-2 ml-5">
+                        <p>important links</p>
+                        <ul>
+                            <li><a href="https://smeda.org/">SMEDA</a></li>
+                            <li><a href="http://www.sccip.com.pk/">SCCI</a></li>
+                            <li><a href="http://kpboit.kp.gov.pk/">KP_BOIT</a></li>
+                            <li><a href="https://www.bok.com.pk/">BOK</a></li>
+                            <li><a href="https://www.commerce.gov.pk/">Ministry Of Commerce</a></li>
+                            <li><a href="https://www.commerce.gov.pk/">State Bank Of Pakistan</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <p>All Kp Chamber links</p>
+                        <ul>
+                            <li><a href="http://www.sccip.com.pk/">Sarhad Chamber Of Commerce & Industry</a></li>
+                            <li><a href="http://www.haripurchamber.org.pk/">Haripur Chamber Of Commerce & Industry</a>
+                            </li>
+                            <li><a href="http://www.abbotabadcci.org.pk/">Abbottabad Chamber Of Commerce &
+                                    Industries</a></li>
+                            <li><a href="http://www.swatcci.org.pk/">Swat Chamber Of Commerce & Industries</a></li>
+                            <li><a href="http://www.wccip.org.pk/">Women Chamber Of Commerce & Industries</a></li>
+                        </ul>
+                    </div>
+               
+                    <div class="col-md-2">
+                        <p>External Site Links</p>
+                        <ul>
+                            <li><a href="http://www.sccip.com.pk/">Sarhad Chamber Of Commerce & Industry</a></li>
+                            <li><a href="http://www.haripurchamber.org.pk/">Haripur Chamber Of Commerce & Industry</a>
+                            </li>
+                            <li><a href="http://www.abbotabadcci.org.pk/">Abbottabad Chamber Of Commerce &
+                                    Industries</a></li>
+                            <li><a href="http://www.swatcci.org.pk/">Swat Chamber Of Commerce & Industries</a></li>
+                            <li><a href="http://www.wccip.org.pk/">Women Chamber Of Commerce & Industries</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <p>Contact Us</p>
+                        <span>INVEST Pk
+                            Helpline (PK) 92-91-9225413 <br>
+                            contact@smeda.com
+                            Sarhad Chamber Of Commerce Chamber House G.T.Road,Peshawar
+                            www.smeda.org</span>
+                    </div>
+                    <div class="col-md-2">
+                        <p>Follow Us</p>
+                        <div class="row">
+                            <a href=""><i class="fab fa-facebook"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                            <a href=""> <i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    </div>
+    <script src="./js/webportal.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('#loginid').click(function () {
+                $('.register').hide();
+                $('.login').show();
+            });
+            $('#registerid').click(() => {
+                $('.login').hide();
+                $('.register').show();
+            })
+
+            $('#needhelp').mouseover(() => {
+                $('#needhelp').removeClass('blinking');
+                $('#needhelp').addClass('blinking_h');
+            })
+            $('#needhelp').mouseout(() => {
+                $('#needhelp').addClass('blinking');
+            })
+        });
+    </script>
+</body>
+
+</html>

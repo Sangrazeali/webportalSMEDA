@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+        integrity="sha512-doJrC/ocU8VGVRx3O9981+2aYUn3fuWVWvqLi1U+tA2MWVzsw+NVKq1PrENF03M+TYBP92PnYUlXFH1ZW0FpLw=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <title>Web-Portal</title>
+</head>
+
+<body style="background-color: #F2F3F7;">
+    <!-- map model -->
+    <div class="modal fade" id="locatoinmap" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center" style="display: block; border:none">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h6 class="m-b-20 p-b-5 f-w-600">
+                        Location
+                    </h6>
+                </div>
+                <div class="modal-body">
+                    <div class="card-block text-center">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3062.589769382232!2d71.5323005508607!3d33.9981905022338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5ac4315821f7397f!2sSMEDA-Regional%20Office-KP!5e0!3m2!1sen!2s!4v1619595106204!5m2!1sen!2s"
+                            width="700" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Query Modal -->
+    <div class="modal fade" id="queryModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Section Query</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                   <form action="">
+                    <div class="form-group">
+                        <input type="Text" class="form-control" id="subject"  placeholder="Subject">
+                      </div>
+                      <div class="form-group">
+                        <textarea type="Text" class="form-control" id="query text"  placeholder="Detail Query Text"></textarea>
+                      </div>
+                   </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary">Reset</button>
+                    <button type="button" class="btn btn-outline-secondary">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="./images//bulb.jpg" width="100%" height="617" alt="">
+                    </div>
+                    <div class="col-md-6 p-4" style="height: 680;">
+                        <div class="col-md-12 focalperson">
+                            <form>
+                                <div class="row pl-3 login_signup">
+                                    <div class="col-md-10">
+                                        <div class="row">
+                                            <p id="loginid">Login |</p>
+                                            <p class="ml-1" id="registerid"> Register</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="register">
+                                        <label for="">Username</label>
+                                        <div class="input-group mb-3 input-group-sm">
+
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-user"></i></span>
+                                            </div>
+                                            <input type="text" class="form-control">
+                                        </div>
+
+                                        <label for="">Password</label>
+                                        <div class="input-group mb-3 input-group-sm">
+
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-key"></i></span>
+                                            </div>
+                                            <input type="password" class="form-control">
+                                        </div>
+                                        <label for="">Name</label>
+                                        <div class="input-group mb-3 input-group-sm">
+
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-user"></i></span>
+                                            </div>
+                                            <input type="text" class="form-control">
+                                        </div>
+
+                                        <label for="">Desgination</label>
+                                        <div class="input-group mb-3 input-group-sm">
+
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-briefcase"></i></span>
+                                            </div>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <label for="">Email Address</label>
+                                        <div class="input-group mb-3 input-group-sm">
+
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                                            </div>
+                                            <input type="email" class="form-control">
+                                        </div>
+                                        <label for="">Phone</label>
+                                        <div class="input-group mb-3 input-group-sm">
+
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-phone"></i></span>
+                                            </div>
+                                            <input type="number" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="login" style="display: none;">
+                                        <label for="">Username</label>
+                                        <div class="input-group mb-3 input-group-sm">
+
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-user"></i></span>
+                                            </div>
+                                            <input type="text" class="form-control">
+                                        </div>
+
+                                        <label for="">Password</label>
+                                        <div class="input-group mb-3 input-group-sm">
+
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-key"></i></span>
+                                            </div>
+                                            <input type="password" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group mybutton"><button class="btn btn-block" type="button"
+                                        id="register_btn">Register</button></div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Head -->
+    <div class="container-fluid header_top" style="background-color: #415464;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-8">
+                    <div class="row ">
+                        <div class="header_top_ul">
+                            <ul class="mt-1">
+                                <li><a href="https://smeda.org/" class="border_right" target="_blank"
+                                        rel="noopener noreferrer">SMEDA KP</a></li>
+                                <li><a href="http://www.sccip.com.pk/" class="border_right" target="_blank"
+                                        rel="noopener noreferrer">SCCIP</a></li>
+                                <li>
+                                    <div class="dropdown show">
+                                        <a class=" dropdown-toggle other" href="#" role="button" id="dropdownMenuLink"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                            style="color: white;text-decoration: none; border: none;">
+                                            Important Links
+                                        </a>
+
+                                        <div class="dropdown-menu sub_header_drop" aria-labelledby="dropdownMenuLink"
+                                            id="other">
+                                            <a class="dropdown-item" target="_blank" rel="noopener noreferrer"
+                                                href="https://smeda.org/">KP-BOIT</a>
+                                            <a class="dropdown-item" target="_blank" rel="noopener noreferrer"
+                                                href="http://kpboit.kp.gov.pk/">KP-Industries</a>
+                                            <a class="dropdown-item" target="_blank" rel="noopener noreferrer"
+                                                href="http://kp.gov.pk/">KP-Gov</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-4 header_second">
+                    <div class="row d-flex justify-content-end">
+                        <p class="mt-2 ml-5">Hello@KPIFC.com</p>
+                        <p class="mt-2 ml-4">Hotline +92-91-512342</p>
+                        <a href="guideme.html" class="mt-1 ml-4"><b class="blinking" id="needhelp">Need Help</b></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- menu -->
+    <div class="container-fluid header_main" id="main_header" style="background-color: white;">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="index.html"><img src="./images//government-of-pak PNG.png"
+                        alt="brand logo" style="margin-top: -10px;"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link nav_elem1" href="index.html"
+                              >Home <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav_elem1" href="opportunities.html">opportunities</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav_elem1" href="guideme.html">Services For SME's</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav_elem1" href="#">Analytics</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav_elem1" href="about.html"   style="border-bottom: 3px solid #ffffff;">about-kp</a>
+                        </li>
+                    
+                        <div>
+                            <li class="nav-item ml-3 mt-2" style="text-transform: uppercase;font-size: 13px">
+                                <div class="dropdown show">
+                                    <a class=" dropdown-toggle other nav_elem1" href="#" role="button"
+                                        id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false" style="color: white;text-decoration: none; border: none;">
+                                        Other
+                                    </a>
+
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="other">
+                                        <a class="dropdown-item" href="submenu_about.html">About us</a>
+                                        <a class="dropdown-item" href="blog.html">blogs</a>
+                                        <a class="dropdown-item" href="#">Rules & Regulations</a>
+                                        <a class="dropdown-item" href="#">Attached departments</a>
+                                        <a class="dropdown-item" href="#">access to dashboard</a>
+                                        <a class="dropdown-item" href="#">feedback</a>
+                                        <a class="dropdown-item" href="#">notification</a>
+                                        <a class="dropdown-item" href="#">public holidays colendar</a>
+                                        <a class="dropdown-item" href="#">disclaimer</a>
+                                        <a class="dropdown-item" href="#">terms & conditions</a>
+                                        <a class="dropdown-item" href="#">privacy</a>
+                                    </div>
+                                </div>
+                            </li>
+                    </ul>
+                    <ul class="row loginul mt-3">
+                        <li><a class="login-register" href="https://smeda.10data.ai/login.html"
+                                style="border-right: 1px solid grey; color: grey;">Login</a></li>
+                        <li><a class="login-register" style="color: grey;" href="https://smeda.10data.ai/login.html">Register</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+    </div>
+
+    <!-- searchbar/dropdown menu -->
+
+    <div class="container-fluid p-5" style="margin-top: 120px;">
+        <div class="details_card col-md-12 col-sm-12 p-5">
+            <div class="row views_card">
+                <div class="col-md-10">
+                    <p class="text-secondary">project ID:17618</p>
+                </div>
+                <div class="col-md-2">
+                    <div class="row">
+                        <div class="left_view col-md-5">
+                            <i class="fa fa-eye"></i>
+                        </div>
+                        <div class="right_view col-md-7">
+                            <p>2747</p>
+                            <p class="views">Views</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-9 detail_heading">
+                    <h3>Smeda Web-Portal Project</h3>
+                    <p>Latest Update on: <span>09-April-2021</span></p>
+                </div>
+                <div class="col-md-3">
+                    <div class="row verify">
+                        <i class="fa fa-check-circle"></i>
+                        <p>Verified by</p>
+                        <img src="./images/smeda.jpg" width="20px" height="20px" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-3 card_items">
+                    <h4>Department</h4>
+                    <b class="text-bold">FBR</b>
+                </div>
+                <div class="col-md-3 card_items">
+                    <p>Sector</p>
+                    <p>Ports</p>
+                </div>
+                <div class="col-md-3 card_items">
+                    <h4>Location</h4>
+                    <p>Mardan</p>
+                </div>
+                <div class="col-md-3 card_items">
+                    <p>Project Start Date</p>
+                    <p> 2-july-2021</p>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-3 card_items">
+                    <p>Project Completion Date</p>
+                    <p> 2-july-2021</p>
+                </div>
+                <div class="col-md-3 card_items">
+                    <p>Sector</p>
+                    <p>Ports</p>
+                </div>
+                <div class="col-md-3 card_items">
+                    <h4>Project Status</h4>
+                    <p>DPR/Feasibility Study in Progress</p>
+                </div>
+                <div class="col-md-3 card_items">
+                    <p>Line Ministry</p>
+                    <p> - </p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-10">
+                    <div class="row">
+                        <p>Total Project Cost:</p>
+                        <h5>RS 10 M</h5>
+                    </div>
+                </div>
+                <div class="col-md-2 buttonsrow newbtn">
+                    <button type="button" class="btn btn-outline-warning ml-auto" data-toggle="modal"
+                        data-target=".bd-example-modal-xl">Interested</button>
+                </div>
+            </div>
+            <hr>
+            <div class="col-md-12 col-sm-12 mt-5 project_detail">
+                <h3>Project Detail:</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint, blanditiis. Accusantium iusto illo,
+                    ipsum ipsa hic, sit facilis nobis magni repellendus excepturi velit provident tempore nihil deserunt
+                    eligendi delectus itaque!</p>
+            </div>
+        </div>
+        <div class="col-md-12 opportunity_detail_card p-3 mt-5">
+            <div class="col-md-12"><b>Opportunity Detail</b></div>
+            <div class="container">
+                <p style="text-transform:uppercase;letter-spacing:0.1cm;" class="mt-5">step to avail the opportunity</p>
+                <hr>
+                <div class="row">
+                    <div class="col-md-1"><i class="fa fa-arrow-right text-success"></i></div>
+                    <div class="col-md-11">
+                        <p>Step 1</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eligend perf</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1"><i class="fa fa-arrow-right text-success"></i></div>
+                    <div class="col-md-11">
+                        <p>Step 2</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eligend perf</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 required_doc_card mt-5">
+            <div class="container p-2">
+                <p style="text-transform:uppercase;letter-spacing:0.1cm;">required documents</p>
+                <hr>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Document</th>
+                            <th>Detail</th>
+                            <th>Downloads</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>NTN</td>
+                            <td>Lorem ipsum dolor sit amet consectetur adipisicing accusamus laborum repellat, deleniti
+                                por</td>
+                            <td><button class="btn btn-outline-secondary"><i class="fa fa-arrow-down"></i> Click To
+                                    Download</button></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Tax Return</td>
+                            <td>Lorem ipsum dolor sit amet consectetur adipisicing accusamus laborum repellat, deleniti
+                                por</td>
+                            <td><button class="btn btn-outline-secondary"><i class="fa fa-arrow-down"></i> Click To
+                                    Download</button></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Sale Tax</td>
+                            <td>Lorem ipsum dolor sit amet consectetur adipisicing accusamus laborum repellat, deleniti
+                                por</td>
+                            <td><button class="btn btn-outline-secondary"><i class="fa fa-arrow-down"></i> Click To
+                                    Download</button></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Online Verification</td>
+                            <td>Lorem ipsum dolor sit amet consectetur adipisicing accusamus laborum repellat, deleniti
+                                por</td>
+                            <td><button class="btn btn-outline-secondary"><i class="fa fa-arrow-down"></i> Click To
+                                    Download</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+        <div class="col-md-12 investor_dashboard mt-5" style="border: none !important;">
+            <div class="col-md-12 size">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p style="text-transform:uppercase;letter-spacing:0.1cm;">contact person</p>
+                    </div>
+                    <hr>
+                    <div class="row elems">
+                        <i class="fa fa-location-arrow"></i>
+                        <p id="location">Department Address</p>
+                    </div>
+                    <hr>
+                    <div class="row elems">
+                        <i class="fa fa-clock"></i>
+                        <p id="time">Department hours</p>
+                    </div>
+                    <hr>
+                    <div class="row elems">
+                        <i class="fa fa-phone-alt"></i>
+                        <p id="num">Phone Number</p>
+                    </div>
+                    <hr>
+                    <div class="row elems">
+                        <i class="fa fa-envelope"></i>
+                        <p id="mail">Eamil Address</p>
+                    </div>
+                    <hr>
+                    <div class="row elems">
+                        <i class="fa fa-map-marker-alt"></i>
+                        <p id="address" data-toggle="modal" data-target="#locatoinmap" style="cursor: pointer;">
+                            Pin Point Location</p>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <div class="row mt-3 foot_card_contact p-2">
+                <p style="text-transform:uppercase;letter-spacing:0.1cm;font-size: 14px;" class="ml-5 mt-1">Need more
+                    help </p>
+
+                <button class="btn btn-outline-success ml-auto" data-target="#queryModal"  data-toggle="modal"><i class="fa fa-file"></i> Submit Query</button>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <footer class="mt-5">
+        <div class="container-fluid footer">
+            <div class="p-5">
+                <div class="row items">
+                    <div class="col-md-2 ml-5">
+                        <p>important links</p>
+                        <ul>
+                            <li><a href="https://smeda.org/">SMEDA</a></li>
+                            <li><a href="http://www.sccip.com.pk/">SCCI</a></li>
+                            <li><a href="http://kpboit.kp.gov.pk/">KP_BOIT</a></li>
+                            <li><a href="https://www.bok.com.pk/">BOK</a></li>
+                            <li><a href="https://www.commerce.gov.pk/">Ministry Of Commerce</a></li>
+                            <li><a href="https://www.commerce.gov.pk/">State Bank Of Pakistan</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <p>All Kp Chamber links</p>
+                        <ul>
+                            <li><a href="http://www.sccip.com.pk/">Sarhad Chamber Of Commerce & Industry</a></li>
+                            <li><a href="http://www.haripurchamber.org.pk/">Haripur Chamber Of Commerce & Industry</a>
+                            </li>
+                            <li><a href="http://www.abbotabadcci.org.pk/">Abbottabad Chamber Of Commerce &
+                                    Industries</a></li>
+                            <li><a href="http://www.swatcci.org.pk/">Swat Chamber Of Commerce & Industries</a></li>
+                            <li><a href="http://www.wccip.org.pk/">Women Chamber Of Commerce & Industries</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-2">
+                        <p>External Site Links</p>
+                        <ul>
+                            <li><a href="http://www.sccip.com.pk/">Sarhad Chamber Of Commerce & Industry</a></li>
+                            <li><a href="http://www.haripurchamber.org.pk/">Haripur Chamber Of Commerce & Industry</a>
+                            </li>
+                            <li><a href="http://www.abbotabadcci.org.pk/">Abbottabad Chamber Of Commerce &
+                                    Industries</a></li>
+                            <li><a href="http://www.swatcci.org.pk/">Swat Chamber Of Commerce & Industries</a></li>
+                            <li><a href="http://www.wccip.org.pk/">Women Chamber Of Commerce & Industries</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <p>Contact Us</p>
+                        <span>INVEST Pk
+                            Helpline (PK) 92-91-9225413 <br>
+                            contact@smeda.com
+                            Sarhad Chamber Of Commerce Chamber House G.T.Road,Peshawar
+                            www.smeda.org</span>
+                    </div>
+                    <div class="col-md-2">
+                        <p>Follow Us</p>
+                        <div class="row">
+                            <a href=""><i class="fab fa-facebook"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                            <a href=""> <i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    </div>
+    <script src="./js/webportal.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('#loginid').click(function () {
+                $('.register').hide();
+                $('.login').show();
+            });
+            $('#registerid').click(() => {
+                $('.login').hide();
+                $('.register').show();
+            })
+
+            $('#needhelp').mouseover(() => {
+                $('#needhelp').removeClass('blinking');
+                $('#needhelp').addClass('blinking_h');
+            })
+            $('#needhelp').mouseout(() => {
+                $('#needhelp').addClass('blinking');
+            })
+        });
+    </script>
+</body>
+
+</html>
