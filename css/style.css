@@ -1382,3 +1382,13 @@ color: #404040 !important;
 .blinking_h{
     font-size: 15px;
 }
+.date_item{
+    background-color: white;
+    height: 37px;
+    border: 1px solid #dfdfdf;
+    padding: 0px 5px;
+}
+.date_item p{
+    margin-top: 5px;
+    margin-left: 30px;
+}

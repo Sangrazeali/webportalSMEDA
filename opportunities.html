@@ -275,9 +275,9 @@
     <!-- searchbar/dropdown menu -->
 
     <div class="container-fluid p-3 dpt_opportunity">
-        <div class="container">
+        <div class="">
             <div class="d-flex justify-content-center">
-                <div class="dept col-md-4">
+                <div class="dept col-md-5">
                     <div class="row">
                         <div class="col-md-5 filterby mt-2">
                             <div> <i class="fa fa-filter"></i> <span>Filter By</span></div>
@@ -285,31 +285,38 @@
                         <div class="col-md-7">
                             <div class="dropdown dept">
 
-                                <button type="button" class="dropdown-toggle" data-toggle="dropdown">
+                            <button type="button" class="dropdown-toggle" data-toggle="dropdown"style="width:90%">
                                     Department
                                 </button>
                                 <div class="dropdown-menu animated fadeIn" style="transition:0.5s;width: 100%;">
-                                    <a class="dropdown-item" href="#">Link 1</a>
-                                    <a class="dropdown-item" href="#">Link 2</a>
-                                    <a class="dropdown-item" href="#">Link 3</a>
+                                    <a class="dropdown-item" href="#">FBR</a>
+                                    <a class="dropdown-item" href="#">SNGPL</a>
+                                    <a class="dropdown-item" href="#">Customs</a>
+                                    <a class="dropdown-item" href="#">WAPDA</a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                 </div>
-                <div class="dept col-md-4">
+                <div class="dept col-md-7">
                     <div class="row">
-                        <div class="col-md-7">
-                            <div class="dropdown dept">
-                                <button type="button">
-                                    Sub-Sector
-                                </button>
+                        <div class="col-md-4">
+                           <div class="date_item">
+                              <p style="color: grey;"><span id="from">Date From</span> - <span id="to">Date To</span> </p>
                                 
                             </div>
                         </div>
-                        <div class="col-md-5">
-                            <button class="btn"><i class="fa fa-sliders-h"></i> <small>Date From - To</small></button>
+                        <div class="col-md-4">
+                            <div class="for-control">
+                                <input type="date" name='entry_date' class="form-control" id="datefrom" onchange="dateFtn()">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="for-control">
+                                <input type="date" name='entry_date' class="form-control" id="dateto" onchange="dateFtn()">
+
+                            </div>
                         </div>
                     </div>
 
@@ -945,6 +952,14 @@
                 $('#needhelp').addClass('blinking');
             })
         });
+
+        function dateFtn(){
+            let dateFrom = document.getElementById('datefrom');
+            let dateTo = document.getElementById('dateto');
+
+            document.getElementById('from').innerHTML = dateFrom.value;
+            document.getElementById('to').innerHTML = dateTo.value;
+        }
 
     </script>
 </body>

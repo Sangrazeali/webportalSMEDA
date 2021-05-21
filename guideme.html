@@ -536,8 +536,8 @@
     <div class="container-fluid header_main" id="main_header" style="background-color: white;">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="index.html"><img src="./images//KPIFC.png"
-                        alt="brand logo" style="margin-top: -10px;"></a>
+                <a class="navbar-brand" href="index.html"><img src="./images//KPIFC.png" alt="brand logo"
+                        style="margin-top: -10px;"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -999,20 +999,21 @@
             'List of Blacklisted Contractors' /* c&w */
         ];
 
+        let searchElem = document.getElementById('searchservice');
+        let searchList = document.getElementById('search_wrapper');
+
+
         function searchFilter() {
-            let searchElem = document.getElementById('searchservice');
-            let searchList = document.getElementById('search_wrapper');
+
             /* fbr */
             if (searchElem.value == 'fbr' || searchElem.value == 'FBR') {
                 searchList.innerHTML = " ";
                 searchList.style.height = '220px';
-                let i = 0;
+                searchList.style.display = 'block';
                 for (i = 0; i < 20; i++) {
-                    searchList.innerHTML += `<li class="list-group-item" id='a${i}'>${arr[i]}</li>`;                   
+                    searchList.innerHTML +=
+                        `<li class="list-group-item" id='a${i}' onclick="getText(this)">${arr[i]}</li>`;
                 }
-               
-              /*   
-                */
             }
             if (searchElem.value == "") {
                 searchList.innerHTML = " ";
@@ -1021,10 +1022,11 @@
 
             }
             if (searchElem.value == 'sngpl' || searchElem.value == 'SNGPL') {
+                searchList.style.display = 'block';
                 searchList.innerHTML = " ";
                 searchList.style.height = '220px';
                 for (i = 20; i < 27; i++) {
-                    searchList.innerHTML += `<li class="list-group-item">${arr[i]}</li>`;
+                    searchList.innerHTML += `<li class="list-group-item" id='a${i}' onclick="getText(this)">${arr[i]}</li>`;
 
                 }
             }
@@ -1036,9 +1038,10 @@
             }
             if (searchElem.value == 'tdap' || searchElem.value == 'TDAP') {
                 searchList.innerHTML = " ";
+                searchList.style.display = 'block';
                 searchList.style.height = '220px';
                 for (i = 27; i < 33; i++) {
-                    searchList.innerHTML += `<li class="list-group-item">${arr[i]}</li>`;
+                    searchList.innerHTML += `<li class="list-group-item" id='a${i}' onclick="getText(this)">${arr[i]}</li>`;
 
                 }
             }
@@ -1049,10 +1052,11 @@
 
             }
             if (searchElem.value == 'customs' || searchElem.value == 'CUSTOMS') {
+                searchList.style.display = 'block';
                 searchList.innerHTML = " ";
                 searchList.style.height = '220px';
                 for (i = 33; i < 42; i++) {
-                    searchList.innerHTML += `<li class="list-group-item">${arr[i]}</li>`;
+                    searchList.innerHTML += `<li class="list-group-item" id='a${i}' onclick="getText(this)">${arr[i]}</li>`;
 
                 }
             }
@@ -1062,11 +1066,329 @@
                 searchList.style.border = "none";
 
             }
-            document.getElementsByClassName('list-group-item').click = ()=>{
-                serviceElem.value = document.getElementsByClassName('list-group-item').innerHTML;
+            if (searchElem.value == 'smeda' || searchElem.value == 'SMEDA') {
+                searchList.style.display = 'block';
+                searchList.innerHTML = " ";
+                searchList.style.height = '220px';
+                for (i = 42; i < 46; i++) {
+                    searchList.innerHTML += `<li class="list-group-item" id='a${i}' onclick="getText(this)">${arr[i]}</li>`;
+
+                }
             }
+            if (searchElem.value == "") {
+                searchList.innerHTML = " ";
+                searchList.style.height = "0px";
+                searchList.style.border = "none";
+
+            }
+            if (searchElem.value == 'secp' || searchElem.value == 'SECP') {
+                searchList.style.display = 'block';
+                searchList.innerHTML = " ";
+                searchList.style.height = '220px';
+                for (i = 46; i < 52; i++) {
+                    searchList.innerHTML += `<li class="list-group-item" id='a${i}' onclick="getText(this)">${arr[i]}</li>`;
+
+                }
+            }
+            if (searchElem.value == "") {
+                searchList.innerHTML = " ";
+                searchList.style.height = "0px";
+                searchList.style.border = "none";
+
+            }
+            if (searchElem.value == 'boi' || searchElem.value == 'BOI') {
+                searchList.style.display = 'block';
+                searchList.innerHTML = " ";
+                searchList.style.height = '220px';
+                for (i = 52; i < 53; i++) {
+                    searchList.innerHTML += `<li class="list-group-item" id='a${i}' onclick="getText(this)">${arr[i]}</li>`;
+
+                }
+            }
+            if (searchElem.value == "") {
+                searchList.innerHTML = " ";
+                searchList.style.height = "0px";
+                searchList.style.border = "none";
+
+            }
+            if (searchElem.value == 'railways' || searchElem.value == 'Railways') {
+                searchList.style.display = 'block';
+                searchList.innerHTML = " ";
+                searchList.style.height = '220px';
+                for (i = 53; i < 54; i++) {
+                    searchList.innerHTML += `<li class="list-group-item" id='a${i}' onclick="getText(this)">${arr[i]}</li>`;
+
+                }
+            }
+            if (searchElem.value == "") {
+                searchList.innerHTML = " ";
+                searchList.style.height = "0px";
+                searchList.style.border = "none";
+
+            }
+            if (searchElem.value == 'mo communication' || searchElem.value == 'MO Communication') {
+                searchList.style.display = 'block';
+                searchList.innerHTML = " ";
+                searchList.style.height = '220px';
+                for (i = 54; i < 55; i++) {
+                    searchList.innerHTML += `<li class="list-group-item" id='a${i}' onclick="getText(this)">${arr[i]}</li>`;
+
+                }
+            }
+            if (searchElem.value == "") {
+                searchList.innerHTML = " ";
+                searchList.style.height = "0px";
+                searchList.style.border = "none";
+
+            }
+            if (searchElem.value == 'moscience & technology' || searchElem.value == ' MO Science & Technology') {
+                searchList.style.display = 'block';
+                searchList.innerHTML = " ";
+                searchList.style.height = '220px';
+                for (i = 55; i < 56; i++) {
+                    searchList.innerHTML += `<li class="list-group-item" id='a${i}' onclick="getText(this)">${arr[i]}</li>`;
+
+                }
+            }
+            if (searchElem.value == "") {
+                searchList.innerHTML = " ";
+                searchList.style.height = "0px";
+                searchList.style.border = "none";
+
+            }
+            if (searchElem.value == 'kpra' || searchElem.value == 'KPRA') {
+                searchList.style.display = 'block';
+                searchList.innerHTML = " ";
+                searchList.style.height = '220px';
+                for (i = 56; i < 59; i++) {
+                    searchList.innerHTML += `<li class="list-group-item" id='a${i}' onclick="getText(this)">${arr[i]}</li>`;
+
+                }
+            }
+            if (searchElem.value == "") {
+                searchList.innerHTML = " ";
+                searchList.style.height = "0px";
+                searchList.style.border = "none";
+
+            }
+            if (searchElem.value == 'kpboit' || searchElem.value == 'KP_BOIT' || searchElem.value == 'boit') {
+                searchList.style.display = 'block';
+                searchList.innerHTML = " ";
+                searchList.style.height = '220px';
+                for (i = 59; i < 60; i++) {
+                    searchList.innerHTML += `<li class="list-group-item" id='a${i}' onclick="getText(this)">${arr[i]}</li>`;
+
+                }
+            }
+            if (searchElem.value == "") {
+                searchList.innerHTML = " ";
+                searchList.style.height = "0px";
+                searchList.style.border = "none";
+
+            }
+            if (searchElem.value == 'kpezdmc' || searchElem.value == 'KPEZDMC') {
+                searchList.style.display = 'block';
+                searchList.innerHTML = " ";
+                searchList.style.height = '220px';
+                for (i = 60; i < 61; i++) {
+                    searchList.innerHTML += `<li class="list-group-item" id='a${i}' onclick="getText(this)">${arr[i]}</li>`;
+
+                }
+            }
+            if (searchElem.value == "") {
+                searchList.innerHTML = " ";
+                searchList.style.height = "0px";
+                searchList.style.border = "none";
+
+            }
+            if (searchElem.value == 'pda' || searchElem.value == 'PDA') {
+                searchList.style.display = 'block';
+                searchList.innerHTML = " ";
+                searchList.style.height = '220px';
+                for (i = 61; i < 62; i++) {
+                    searchList.innerHTML += `<li class="list-group-item" id='a${i}' onclick="getText(this)">${arr[i]}</li>`;
+
+                }
+            }
+            if (searchElem.value == "") {
+                searchList.innerHTML = " ";
+                searchList.style.height = "0px";
+                searchList.style.border = "none";
+
+            }
+            if (searchElem.value == 'excise' || searchElem.value == 'Excise') {
+                searchList.style.display = 'block';
+                searchList.innerHTML = " ";
+                searchList.style.height = '220px';
+                for (i = 62; i < 65; i++) {
+                    searchList.innerHTML += `<li class="list-group-item" id='a${i}' onclick="getText(this)">${arr[i]}</li>`;
+
+                }
+            }
+            if (searchElem.value == "") {
+                searchList.innerHTML = " ";
+                searchList.style.height = "0px";
+                searchList.style.border = "none";
+
+            }
+            if (searchElem.value == 'pesco' || searchElem.value == 'PESCO') {
+                searchList.style.display = 'block';
+                searchList.innerHTML = " ";
+                searchList.style.height = '220px';
+                for (i = 65; i < 67; i++) {
+                    searchList.innerHTML += `<li class="list-group-item" id='a${i}' onclick="getText(this)">${arr[i]}</li>`;
+
+                }
+            }
+            if (searchElem.value == "") {
+                searchList.innerHTML = " ";
+                searchList.style.height = "0px";
+                searchList.style.border = "none";
+
+            }
+            if (searchElem.value == 'bok' || searchElem.value == 'BOK') {
+                searchList.style.display = 'block';
+                searchList.innerHTML = " ";
+                searchList.style.height = '220px';
+                for (i = 67; i < 69; i++) {
+                    searchList.innerHTML += `<li class="list-group-item" id='a${i}' onclick="getText(this)">${arr[i]}</li>`;
+
+                }
+            }
+            if (searchElem.value == "") {
+                searchList.innerHTML = " ";
+                searchList.style.height = "0px";
+                searchList.style.border = "none";
+
+            }
+            if (searchElem.value == 'tourism' || searchElem.value == 'Tourism') {
+                searchList.style.display = 'block';
+                searchList.innerHTML = " ";
+                searchList.style.height = '220px';
+                for (i = 69; i < 70; i++) {
+                    searchList.innerHTML += `<li class="list-group-item" id='a${i}' onclick="getText(this)">${arr[i]}</li>`;
+
+                }
+            }
+            if (searchElem.value == "") {
+                searchList.innerHTML = " ";
+                searchList.style.height = "0px";
+                searchList.style.border = "none";
+
+            }
+            if (searchElem.value == 'kpitb' || searchElem.value == 'KPITB') {
+                searchList.style.display = 'block';
+                searchList.innerHTML = " ";
+                searchList.style.height = '220px';
+                for (i = 70; i < 73; i++) {
+                    searchList.innerHTML += `<li class="list-group-item" id='a${i}' onclick="getText(this)">${arr[i]}</li>`;
+
+                }
+            }
+            if (searchElem.value == "") {
+                searchList.innerHTML = " ";
+                searchList.style.height = "0px";
+                searchList.style.border = "none";
+
+            }
+            if (searchElem.value == 'local govenment' || searchElem.value == 'local towns' || searchElem.value == 'Local Governments/Towns') {
+                searchList.style.display = 'block';
+                searchList.innerHTML = " ";
+                searchList.style.height = '220px';
+                for (i = 73; i < 78; i++) {
+                    searchList.innerHTML += `<li class="list-group-item" id='a${i}' onclick="getText(this)">${arr[i]}</li>`;
+
+                }
+            }
+            if (searchElem.value == "") {
+                searchList.innerHTML = " ";
+                searchList.style.height = "0px";
+                searchList.style.border = "none";
+
+            }
+            if (searchElem.value == 'wapda' || searchElem.value == 'WAPDA'){
+                searchList.style.display = 'block';
+                searchList.innerHTML = " ";
+                searchList.style.height = '220px';
+                for (i = 78; i < 82; i++) {
+                    searchList.innerHTML += `<li class="list-group-item" id='a${i}' onclick="getText(this)">${arr[i]}</li>`;
+
+                }
+            }
+            if (searchElem.value == "") {
+                searchList.innerHTML = " ";
+                searchList.style.height = "0px";
+                searchList.style.border = "none";
+
+            }
+            if (searchElem.value == 'law' || searchElem.value == 'Law'){
+                searchList.style.display = 'block';
+                searchList.innerHTML = " ";
+                searchList.style.height = '220px';
+                for (i = 82; i < 86; i++) {
+                    searchList.innerHTML += `<li class="list-group-item" id='a${i}' onclick="getText(this)">${arr[i]}</li>`;
+
+                }
+            }
+            if (searchElem.value == "") {
+                searchList.innerHTML = " ";
+                searchList.style.height = "0px";
+                searchList.style.border = "none";
+
+            }
+            if (searchElem.value == 'private school regulator' || searchElem.value == 'Private School Regulator'){
+                searchList.style.display = 'block';
+                searchList.innerHTML = " ";
+                searchList.style.height = '220px';
+                for (i = 86; i < 90; i++) {
+                    searchList.innerHTML += `<li class="list-group-item" id='a${i}' onclick="getText(this)">${arr[i]}</li>`;
+
+                }
+            }
+            if (searchElem.value == "") {
+                searchList.innerHTML = " ";
+                searchList.style.height = "0px";
+                searchList.style.border = "none";
+
+            }
+            if (searchElem.value == 'wssp' || searchElem.value == 'WSSP'){
+                searchList.style.display = 'block';
+                searchList.innerHTML = " ";
+                searchList.style.height = '220px';
+                for (i = 90; i < 93; i++) {
+                    searchList.innerHTML += `<li class="list-group-item" id='a${i}' onclick="getText(this)">${arr[i]}</li>`;
+
+                }
+            }
+            if (searchElem.value == "") {
+                searchList.innerHTML = " ";
+                searchList.style.height = "0px";
+                searchList.style.border = "none";
+
+            }
+            if (searchElem.value == ' c&w' || searchElem.value == 'C & W' || searchElem.value =='cw'){
+                searchList.style.display = 'block';
+                searchList.innerHTML = " ";
+                searchList.style.height = '220px';
+                for (i = 93; i < 98; i++) {
+                    searchList.innerHTML += `<li class="list-group-item" id='a${i}' onclick="getText(this)">${arr[i]}</li>`;
+
+                }
+            }
+            if (searchElem.value == "") {
+                searchList.innerHTML = " ";
+                searchList.style.height = "0px";
+                searchList.style.border = "none";
+
+            }
+
         }
-        /* SNGPL */
+
+        function getText(elem) {
+            searchElem.value = elem.innerHTML;
+            searchList.style.display = 'none';
+        }
+        /* KPEZDMC */
     </script>
 
 </body>
