@@ -1507,6 +1507,10 @@ button:active {
 
 .service_card ul li a {
     color: rgb(32, 32, 32);
+    text-decoration: underline;
+}
+.service_card ul li a:hover{
+    text-decoration: none;
 }
 .service_card_detail {
     background-color: white;
