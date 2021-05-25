@@ -1463,7 +1463,6 @@ button:active {
 }
 
 .imp_service {
-    background-color: white;
     text-align: center;
     padding-top: 15px;
 }
@@ -1477,12 +1476,11 @@ button:active {
 }
 
 .imp_service a p {
-    color: rgb(63, 63, 63);
+    color: #23527c;
 }
 
 .imp_service:hover {
     transition: 0.3s;
-    box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
     font-weight: bold;
 }
 
@@ -1495,16 +1493,19 @@ button:active {
     height: 70px;
 }
 
-.service_card {
-    background-color: white;
-    border-right: 10px solid #F2F3F7;
-    
-}
+
 
 .service_card p {
     font-weight: bold;
+    margin-left: 10px;
+}
+.service_card p a{
+    text-decoration: underline;
 }
 
+.service_card p a:hover{
+    text-decoration: none;
+}
 .service_card ul li a {
     color: rgb(32, 32, 32);
     text-decoration: underline;
@@ -1527,4 +1528,10 @@ button:active {
 }
 .faqs{
     background-color: white;
+}
+.sub_service{
+    width: 100%;
+    border: 1px solid #d8d2d2;
+    height: 100%;
+    padding: 15px;
 }
