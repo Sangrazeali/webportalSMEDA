@@ -30,7 +30,31 @@
 </head>
 
 <body>
-
+    <!-- map modal -->
+    <div class="modal fade" id="locatoinmap" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center" style="display: block; border:none">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h6 class="m-b-20 p-b-5 f-w-600">
+                        Location
+                    </h6>
+                </div>
+                <div class="modal-body">
+                    <div class="card-block text-center">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3062.589769382232!2d71.5323005508607!3d33.9981905022338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5ac4315821f7397f!2sSMEDA-Regional%20Office-KP!5e0!3m2!1sen!2s!4v1619595106204!5m2!1sen!2s"
+                            width="700" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Modal -->
 
     <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel"
@@ -47,7 +71,7 @@
                                 <div class="row pl-3 login_signup">
                                     <div class="col-md-10">
                                         <div class="row">
-                                            <p id="loginid" >Login |</p>
+                                            <p id="loginid">Login |</p>
                                             <p class="ml-1" id="registerid"> Register</p>
                                         </div>
                                     </div>
@@ -192,61 +216,84 @@
     <div class="container-fluid header_main" id="main_header">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="index.html"><img src="./images//KPIFC.png"
-                        alt="brand logo" style="margin-top: -10px;"></a>
+                <a class="navbar-brand" href="index.html"><img src="./images//KPIFC.png" alt="brand logo"
+                        style="margin-top: -10px;"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
+                    <ul class="navbar-nav mr-auto ">
                         <li class="nav-item active">
-                            <a class="nav-link nav_elem" href="#" style="border-bottom: 3px solid #4db885;">Home <span
+                            <a class="nav-link nav_elem" href="index.html"
+                                style="border-bottom: 3px solid #4db885;">Home <span
                                     class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link nav_elem" href="opportunities.html">opportunities</a>
                         </li>
+                        <li class="nav-item ml-3 mt-2" style="text-transform: uppercase;font-size: 13px">
+                            <div class="dropdown show">
+                                <a class=" dropdown-toggle other" href="#" role="button" id="dropdownMenuLink"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                    style="color: white;text-decoration: none; border: none;">
+                                    Investment Sectors
+                                </a>
+
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="other">
+                                    <a class="dropdown-item" href="investmentsectors.html">Tourism</a>
+                                    <a class="dropdown-item" href="investmentsectors.html">Mines & Minerals</a>
+                                    <a class="dropdown-item" href="investmentsectors.html">Energy & Power</a>
+                                    <a class="dropdown-item" href="investmentsectors.html">Oil & Gas</a>
+                                    <a class="dropdown-item" href="investmentsectors.html">Industrial Sector</a>
+                                    <a class="dropdown-item" href="investmentsectors.html">Transport</a>
+                                    <a class="dropdown-item" href="investmentsectors.html">Agriculture & Livestock</a>
+                                    <a class="dropdown-item" href="investmentsectors.html">Housing</a>
+
+                                </div>
+                            </div>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link nav_elem" href="guideme.html">Services For SME's</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav_elem" href="#">Analytics</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link nav_elem" href="about.html">about-kp</a>
                         </li>
-                 
-                        <div>
-                            <li class="nav-item ml-3 mt-2" style="text-transform: uppercase;font-size: 13px">
-                                <div class="dropdown show">
-                                    <a class=" dropdown-toggle other" href="#" role="button" id="dropdownMenuLink"
-                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                                        style="color: white;text-decoration: none; border: none;">
-                                        Other
-                                    </a>
+                        <li class="nav-item ml-3 mt-2" style="text-transform: uppercase;font-size: 13px">
+                            <div class="dropdown show">
+                                <a class=" dropdown-toggle other" href="#" role="button" id="dropdownMenuLink"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                    style="color: white;text-decoration: none; border: none;">
+                                    Other
+                                </a>
 
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="other">
-                                        <a class="dropdown-item" href="submenu_about.html">About us</a>
-                                        <a class="dropdown-item" href="blog.html">blogs</a>
-                                        <a class="dropdown-item" href="#">Rules & Regulations</a>
-                                        <a class="dropdown-item" href="#">Attached departments</a>
-                                        <a class="dropdown-item" href="#">access to dashboard</a>
-                                        <a class="dropdown-item" href="#">feedback</a>
-                                        <a class="dropdown-item" href="#">notification</a>
-                                        <a class="dropdown-item" href="#">public holidays colendar</a>
-                                        <a class="dropdown-item" href="#">disclaimer</a>
-                                        <a class="dropdown-item" href="#">terms & conditions</a>
-                                        <a class="dropdown-item" href="#">privacy</a>
-                                    </div>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="other">
+                                    <a class="dropdown-item" href="submenu_about.html">About us</a>
+                                    <a class="dropdown-item" href="blog.html">blogs</a>
+                                    <a class="dropdown-item" href="#">Rules & Regulations</a>
+                                    <a class="dropdown-item" href="#">Attached departments</a>
+                                    <a class="dropdown-item" href="#">access to dashboard</a>
+                                    <a class="dropdown-item" href="#">feedback</a>
+                                    <a class="dropdown-item" href="#">notification</a>
+                                    <a class="dropdown-item" href="#">public holidays colendar</a>
+                                    <a class="dropdown-item" href="#">disclaimer</a>
+                                    <a class="dropdown-item" href="#">terms & conditions</a>
+                                    <a class="dropdown-item" href="#">privacy</a>
                                 </div>
-                            </li>
+                            </div>
+                        </li>
+
+
                     </ul>
-                    <ul class="row loginul mt-3">
-                        <li><a class="login-register" href="https://smeda.10data.ai/login.html"
+                    <ul class="row loginul mt-2 nav_btn_port">
+                        <li class="mt-1"><a class="login-register" href="https://smeda.10data.ai/login.html"
                                 style="border-right: 1px solid rgb(253, 248, 248);">Login</a></li>
-                        <li><a class="login-register" href="https://smeda.10data.ai/login.html">Register</a></li>
+                        <li class="mt-1"><a class="login-register"
+                                href="https://smeda.10data.ai/login.html">Register</a></li>
+                        <button class="btn btn-outline-success ml-3 mt-1 sendquery" id="sendquery"
+                            onclick="redirect()">Send Query</button>
+
                     </ul>
                 </div>
             </nav>
@@ -256,41 +303,114 @@
 
     <!-- carousel -->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
+        <ol class="carousel-indicators" id="indicates">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <div class="carousel-elems" style=" background:url('./images/Slider2.jpg')">
+                <div class="carousel-elems"
+                    style=" background:url('./images/Slider2.jpg');background-repeat: no-repeat;background-size: cover;">
                     <div class=" d-flex justify-content-center align-items-center">
                     </div>
-                    <h1 class="animated fadeInLeft" style="animation-delay: 1s;">Corporate social responsilbility
+                    <h1 class="animated fadeInLeft" style="animation-delay: 1s;">Automation and Digitization
                     </h1>
-                    <p class="animated bounceInRight" style="animation-delay: 1.2s;">Its the start of new era</p>
-                    <p class="animated bounceInRight lastp" style="animation-delay: 1.4s; top: 340 !important;">let's
-                        begin</p>
+                    <p class="animated bounceInRight" style="animation-delay: 1.2s;">Facilitating investors by automating <br> processes to get things DONE online.</p>
+
                 </div>
+
             </div>
             <div class="carousel-item">
                 <div class="carousel-elems" style=" background:url('./images/malamjaba.jpg')">
                     <div class=" d-flex justify-content-center align-items-center">
                     </div>
-                    <h1 class="animated zoomInRight" style="animation-delay: 1s;">STRESSED ASSETS</h1>
-                    <p class="animated bounceInRight" style="animation-delay: 1.2s;">Its the start of new era</p>
-                    <p class="animated bounceInRight lastp" style="animation-delay: 1.4s; top: 340 !important;">let's
-                        begin</p>
+                    <h1 class="animated zoomInRight" style="animation-delay: 1s;">Investing in beautiful Kp</h1>
+                    <p class="animated bounceInRight" style="animation-delay: 1.2s;">World Bank is gearing up to uplift
+                        <br>Pakistan’s economy through investment in Tourism</p>
+
                 </div>
+
             </div>
             <div class="carousel-item">
                 <div class="carousel-elems" style=" background:url('./images/Slider6.jpg')">
                     <div class=" d-flex justify-content-center align-items-center">
                     </div>
-                    <h1 class="animated fadeIn" style="animation-delay: 1s;">STRESSED ASSETS</h1>
-                    <p class="animated bounceInRight lastp" style="animation-delay: 1.4s; top: 340 !important;">let's
-                        begin</p>
-                    <p class="animated fadeInRight" style="animation-delay: 1.2s;">Its the start of new era</p>
+                    <h1 class="animated fadeIn" style="animation-delay: 1s;">High-rise buildings, Housing Societies</h1>
+                    <p class="animated fadeInRight" style="animation-delay: 1.2s;">It’s easy to get into CONSTRUCTION
+                        Business</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-elems" style=" background:url('./images/Sliderlast.jpg')">
+                    <div class=" d-flex justify-content-center align-items-center">
+                    </div>
+                    <h1 class="animated fadeIn" style="animation-delay: 1s;">DAIRY is something EVERYDAY</h1>
+                    <p class="animated fadeInRight" style="animation-delay: 1.2s;">Closed shed dairy farms has huge scope in KP</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-elems" style=" background:url('./images/Sliderlast.jpg')">
+                    <div class=" d-flex justify-content-center align-items-center">
+                    </div>
+                    <h1 class="animated fadeIn" style="animation-delay: 1s;">DAIRY is something EVERYDAY</h1>
+                    <p class="animated fadeInRight" style="animation-delay: 1.2s;">Closed shed dairy farms has huge scope in KP</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-elems" style=" background:url('./images/minerals.jpg')">
+                    <div class=" d-flex justify-content-center align-items-center">
+                    </div>
+                    <h1 class="animated fadeIn" style="animation-delay: 1s;">KP is rich in minerals</h1>
+                    <p class="animated fadeInRight" style="animation-delay: 1.2s;">Government loves to guide you <br> for good investment opportunity.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-elems" style=" background:url('./images/electricity.jpg')">
+                    <div class=" d-flex justify-content-center align-items-center">
+                    </div>
+                    <h1 class="animated fadeIn" style="animation-delay: 1s;">COST EFFECTIVE Electricity</h1>
+                    <p class="animated fadeInRight" style="animation-delay: 1.2s;">KP is bestowed with enormous hydro power potential</p>
+                </div>
+            </div>
+            <div class="row main_slide_news" style="position: absolute;top: 430px;margin-left: 1px;">
+                <div class="col-md-2">
+                    <h4 class="text-center mt-4" style="color: white;">New</h4>
+                </div>
+                <div class="col-md-10 marqueeborder">
+                    <marquee width="100%" direction="left" height="100%">
+                        <div class="row">
+                            <a href="opportunities.html">
+                                <div class="col-md-3 newsText">
+                                    <p>Opportunities</p>
+                                    <p>Development of Oil Jetty</p>
+                                </div>
+                            </a>
+                            <a href="opportunities.html">
+                                <div class="col-md-3 newsText">
+                                    <p>Opportunities</p>
+                                    <p>Development of Oil Jetty</p>
+                                </div>
+                            </a>
+                            <a href="opportunities.html">
+                                <div class="col-md-3 newsText">
+                                    <p>Opportunities</p>
+                                    <p>Development of Oil Jetty </p>
+                                </div>
+                            </a>
+                            <a href="opportunities.html">
+                                <div class="col-md-3 newsText">
+                                    <p>Opportunities</p>
+                                    <p>Development of Oil Jetty</p>
+                                </div>
+                            </a>
+                        </div>
+
+                    </marquee>
                 </div>
             </div>
         </div>
@@ -302,46 +422,10 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
+
     </div>
     <!-- marquee -->
-    <div class="contianer-fluid news">
-        <div class="row main_slide_news">
-            <div class="col-md-2">
-                <h4 class="text-center mt-4" style="color: white;">New</h4>
-            </div>
-            <div class="col-md-10 marqueeborder">
-                <marquee width="100%" direction="left" height="100%">
-                    <div class="row">
-                        <a href="opportunities.html">
-                            <div class="col-md-3 newsText">
-                                <p>Opportunities</p>
-                                <p>Development of Oil Jetty</p>
-                            </div>
-                        </a>
-                        <a href="opportunities.html">
-                            <div class="col-md-3 newsText">
-                                <p>Opportunities</p>
-                                <p>Development of Oil Jetty</p>
-                            </div>
-                        </a>
-                        <a href="opportunities.html">
-                            <div class="col-md-3 newsText">
-                                <p>Opportunities</p>
-                                <p>Development of Oil Jetty </p>
-                            </div>
-                        </a>
-                        <a href="opportunities.html">
-                            <div class="col-md-3 newsText">
-                                <p>Opportunities</p>
-                                <p>Development of Oil Jetty</p>
-                            </div>
-                        </a>
-                    </div>
 
-                </marquee>
-            </div>
-        </div>
-    </div>
     <!-- About portal mission -->
     <div class="container-fluid portal" style="padding: 80px;">
         <div class="row">
@@ -370,7 +454,7 @@
                 </p>
             </div>
             <div class="col-md-6 col-sm-6 portal-back-img p-5">
-                <div class="row">
+                <!--      <div class="row">
                     <div class="col-md-6 col-sm-6">
                         <p>7621 <br> <span>Investment Opportunity</span></p>
                     </div>
@@ -383,7 +467,7 @@
                     <div class="col-md-6 mt-5 col-sm-6">
                         <p>34 <br> <span>Investors Enrolled</span></p>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
 
@@ -399,160 +483,185 @@
                 <div class="right_1"></div>
             </div>
         </div>
-
-        <div class="row mt-5">
-            <div class="col-sm-3 aa animated" style="animation-delay: 1s;">
-                <div class="card aa_first" style="width: 18rem;">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="ribbon col-md-6">
-                                <span class="ribbon2">M</span>
-                            </div>
-                            <div class="col-md-6 marker"><i class="fa fa-map-marker-alt" data-toggle="modal"
-                                    data-target="#locatoinmap">
-
-                                </i>
-                            </div>
-                        </div>
-                        <a href="">project ID:2934</a>
-                        <h5 class="card-title mt-2">Development of Oil Jetty No. 10 under PPP mode</h5>
-                        <h6 class="card-subtitle mb-2 text-muted mt-3"><span>USD</span> <span
-                                class="ml-2">16.31</span><span class="ml-2" style="font-weight: 100;">mn</span></h6>
-
-                        <ul class="mt-4 li-items row">
-                            <li class="first_li ml-3">Department</li>
-                            <li>| FBR</li>
-                        </ul>
-                        <ul class=" li-items row" style="margin-top: -18px;">
-                            <li class="first_li ml-3">Sector</li>
-                            <li>| Ports</li>
-                        </ul>
-                        <ul class=" li-items row" style="margin-top: -18px;">
-                            <li class="first_li ml-3">Location</li>
-                            <li>| Peshawar</li>
-                        </ul>
-                        <div class="row buttonsrow pl-4 pt-3">
-                            <button type="button" class="btn btn-outline-warning mt-5"
-                                onclick=" detail()">Detail</button>
-                            <button type="button" class="btn btn-outline-warning mt-5" data-toggle="modal"
-                                data-target=".bd-example-modal-xl">Interested</button>
-                        </div>
+        <div class="row mt-5 pl-1">
+            <div class="col-md-3 opportunity_logo">
+                <a href="#">
+                    <div class="col-md-12 opportunity_logo1">
+                        <img src="./images/energy.png" style="color: yellow;" alt="">
+                        <p class="ml-3 mt-3">Power</p>
                     </div>
-                </div>
+                </a>
             </div>
-            <div class="col-sm-3  aa animated" style="animation-delay: 1.5s;">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="ribbon col-md-6">
-                                <span class="ribbon2">M</span>
-                            </div>
-                            <div class="col-md-6 marker"><i class="fa fa-map-marker-alt" data-toggle="modal"
-                                    data-target="#locatoinmap"></i></div>
-                        </div>
-                        <a href="">project ID:2934</a>
-                        <h5 class="card-title mt-2">Development of Oil Jetty No. 10 under PPP mode</h5>
-                        <h6 class="card-subtitle mb-2 text-muted mt-3"><span>USD</span> <span
-                                class="ml-2">16.31</span><span class="ml-2" style="font-weight: 100;">mn</span></h6>
-
-                        <ul class="mt-4 li-items row">
-                            <li class="first_li ml-3">Department</li>
-                            <li>| FBR</li>
-                        </ul>
-                        <ul class=" li-items row" style="margin-top: -18px;">
-                            <li class="first_li ml-3">Sector</li>
-                            <li>| Ports</li>
-                        </ul>
-                        <ul class=" li-items row" style="margin-top: -18px;">
-                            <li class="first_li ml-3">Location</li>
-                            <li>| Peshawar</li>
-                        </ul>
-                        <div class="row buttonsrow pl-4 pt-3">
-                            <button type="button" class="btn btn-outline-warning mt-5"
-                                onclick=" detail()">Detail</button>
-                            <button type="button" class="btn btn-outline-warning mt-5" data-toggle="modal"
-                                data-target=".bd-example-modal-xl">Interested</button>
-                        </div>
+            <div class="col-md-3 opportunity_logo">
+                <a href="#">
+                    <div class="col-md-12 opportunity_logo1">
+                        <img src="./images/travel.png" alt="">
+                        <p class="ml-2 mt-3">Tourism</p>
                     </div>
-                </div>
+                </a>
             </div>
-            <div class="col-sm-3  aa animated" style="animation-delay: 2s;">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="ribbon col-md-6">
-                                <span class="ribbon2">M</span>
-                            </div>
-                            <div class="col-md-6 marker"><i class="fa fa-map-marker-alt" data-toggle="modal"
-                                    data-target="#locatoinmap"></i></div>
-                        </div>
-                        <a href="">project ID:2934</a>
-                        <h5 class="card-title mt-2">Development of Oil Jetty No. 10 under PPP mode</h5>
-                        <h6 class="card-subtitle mb-2 text-muted mt-3"><span>USD</span> <span
-                                class="ml-2">16.31</span><span class="ml-2" style="font-weight: 100;">mn</span></h6>
-
-                        <ul class="mt-4 li-items row">
-                            <li class="first_li ml-3">Department</li>
-                            <li>| FBR</li>
-                        </ul>
-                        <ul class=" li-items row" style="margin-top: -18px;">
-                            <li class="first_li ml-3">Sector</li>
-                            <li>| Ports</li>
-                        </ul>
-                        <ul class=" li-items row" style="margin-top: -18px;">
-                            <li class="first_li ml-3">Location</li>
-                            <li>| Peshawar</li>
-                        </ul>
-                        <div class="row buttonsrow pl-4 pt-3">
-                            <button type="button" class="btn btn-outline-warning mt-5">
-
-                                Detail</button>
-                            <button type="button" class="btn btn-outline-warning mt-5" data-toggle="modal"
-                                data-target=".bd-example-modal-xl">Interested</button>
-                        </div>
+            <div class="col-md-3 opportunity_logo">
+                <a href="#">
+                    <div class="col-md-12 opportunity_logo1">
+                        <img src="./images/mining.png" alt="">
+                        <p class="mt-3">Mines & Minerals</p>
                     </div>
-                </div>
+                </a>
             </div>
-            <div class="col-sm-3 c aa animated" style="animation-delay: 2.5s;">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="ribbon col-md-6">
-                                <span class="ribbon2">M</span>
-                            </div>
-                            <div class="col-md-6 marker"><i class="fa fa-map-marker-alt" data-toggle="modal"
-                                    data-target="#locatoinmap"></i></div>
-                        </div>
-                        <a href="">project ID:2934</a>
-                        <h5 class="card-title mt-2">Development of Oil Jetty No. 10 under PPP mode</h5>
-                        <h6 class="card-subtitle mb-2 text-muted mt-3"><span>USD</span> <span
-                                class="ml-2">16.31</span><span class="ml-2" style="font-weight: 100;">mn</span></h6>
-
-                        <ul class="mt-4 li-items row">
-                            <li class="first_li ml-3">Department</li>
-                            <li>| FBR</li>
-                        </ul>
-                        <ul class=" li-items row" style="margin-top: -18px;">
-                            <li class="first_li ml-3">Sector</li>
-                            <li>| Ports</li>
-                        </ul>
-                        <ul class=" li-items row" style="margin-top: -18px;">
-                            <li class="first_li ml-3">Location</li>
-                            <li>| Peshawar</li>
-                        </ul>
-                        <div class="row buttonsrow pl-4 pt-3">
-                            <button type="button" class="btn btn-outline-warning mt-5"
-                                onclick=" detail()">Detail</button>
-                            <button type="button" class="btn btn-outline-warning mt-5" data-toggle="modal"
-                                data-target=".bd-example-modal-xl">Interested</button>
-                        </div>
+            <div class="col-md-3 opportunity_logo">
+                <a href="#">
+                    <div class="col-md-12 opportunity_logo1">
+                        <img src="./images/road.png" alt="">
+                        <p class="ml-3 mt-3">Road </p>
                     </div>
-                </div>
+                </a>
             </div>
+            <div class="col-md-3 opportunity_logo">
+                <a href="#">
+                    <div class="col-md-12 opportunity_logo1">
+                        <img src="./images/barrel.png" alt="">
+                        <p class="mt-3">Oil & Gas</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 opportunity_logo">
+                <a href="#">
+                    <div class="col-md-12 opportunity_logo1">
+                        <img src="./images/factory.png" alt="">
+                        <p class="ml-3 mt-3">Industrial Sector </p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 opportunity_logo">
+                <a href="#">
+                    <div class="col-md-12 opportunity_logo1">
+                        <img src="./images/car.png" alt="">
+                        <p class="ml-3 mt-3">Transport</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 opportunity_logo">
+                <a href="#">
+                    <div class="col-md-12 opportunity_logo1">
+                        <img src="./images/agriculture.png" alt="">
+                        <p class="ml-3 mt-3">Agriculture & Livestock</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 opportunity_logo">
+                <a href="#">
+                    <div class="col-md-12 opportunity_logo1">
+                        <img src="./images/house.png">
+                        <p class="mt-3">Housing</p>
+                    </div>
+                </a>
+            </div>
+
         </div>
-
         <div class="col-md-12 col-sm-12 col-xs-12 d-flex justify-content-center mt-5  opportunity_button">
             <button class="btn btn-outline-warning">View More Opportunities</button>
+        </div>
+        <!-- Important Services -->
+        <div class="row mt-5 pt-5">
+            <div class="col-md-2">
+                <div class="left_1"></div>
+            </div>
+            <div class="col-md-8 col-sm-8 text">
+                <h2 class="text-center">Important Services</h2>
+            </div>
+            <div class="col-md-2">
+                <div class="right_1"></div>
+            </div>
+        </div>
+        <div class="row mt-5 pl-5">
+            <div class="col-md-2 imp_service mt-2 ml-2">
+                <a href="">
+                    <div class="col-md-12">
+                        <p>Service 1</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2 imp_service ml-2 mt-2">
+                <a href="">
+                    <div class="col-md-12">
+                        <p>Service 2</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2 imp_service ml-2 mt-2">
+                <a href="">
+                    <div class="col-md-12">
+                        <p>Service 3</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2 imp_service ml-2 mt-2">
+                <a href="">
+                    <div class="col-md-12">
+                        <p>Service 4</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2 imp_service ml-2 mt-2">
+                <a href="">
+                    <div class="col-md-12">
+                        <p>Service 5</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2 imp_service ml-2 mt-2">
+                <a href="">
+                    <div class="col-md-12">
+                        <p>Service 6</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2 imp_service ml-2 mt-2">
+                <a href="">
+                    <div class="col-md-12">
+                        <p>Service 7</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2 imp_service ml-2 mt-2">
+                <a href="">
+                    <div class="col-md-12">
+                        <p>Service 8</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2 imp_service ml-2 mt-2">
+                <a href="">
+                    <div class="col-md-12">
+                        <p>Service 9</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2 imp_service ml-2 mt-2">
+                <a href="">
+                    <div class="col-md-12">
+                        <p>Service 10</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2 imp_service ml-2 mt-2">
+                <a href="">
+                    <div class="col-md-12">
+                        <p>Service 11</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2 imp_service ml-2 mt-2">
+                <a href="">
+                    <div class="col-md-12">
+                        <p>Service 12</p>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12 d-flex justify-content-center mt-5  opportunity_button">
+            <button class="btn btn-outline-warning">View All Services</button>
         </div>
         <!-- gateway -->
         <div class="container-fluid portal gateway p-5 mt-5">
@@ -601,7 +710,7 @@
                     <div class="left_1"></div>
                 </div>
                 <div class="col-md-8 col-sm-8 text">
-                    <h2 class="text-center"> Testimonies</h2>
+                    <h2 class="text-center"> Testimonials</h2>
                 </div>
                 <div class="col-md-2">
                     <div class="right_1"></div>
@@ -1124,7 +1233,7 @@
                 <div class="col-md-3">
                     <p class="ml-2"><i class="fa fa-phone "></i> 92-91-9225413</p>
                     <p class="ml-2"><i class="fa fa-envelope"></i> <a href="">Hello@KPIFC.com</a></p>
-                    <button class="btn btn-outline-primary ml-2" id="sendquery">Send Query</button>
+                    <button class="btn btn-outline-primary ml-2" id="sendquery" onclick="redirect()">Send Query</button>
                 </div>
             </div>
         </div>
@@ -1202,9 +1311,9 @@
         function detail() {
             window.location.href = "detail.html";
         }
-        document.getElementById('sendquery').addEventListener('click', () => {
+        let redirect = () => {
             window.location.href = "query.html"
-        });
+        }
         $(document).ready(function () {
 
             $('#loginid').click(function () {
@@ -1216,11 +1325,11 @@
                 $('.register').show();
             })
 
-            $('#needhelp').mouseover(()=>{
+            $('#needhelp').mouseover(() => {
                 $('#needhelp').removeClass('blinking');
                 $('#needhelp').addClass('blinking_h');
             })
-            $('#needhelp').mouseout(()=>{
+            $('#needhelp').mouseout(() => {
                 $('#needhelp').addClass('blinking');
             })
         });

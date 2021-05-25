@@ -498,25 +498,26 @@
                                             target="_blank" rel="noopener noreferrer">SMEDA KP</a></a></li>
                                 <li><a href="servicedetail.html"><a href="http://www.sccip.com.pk/" class="border_right"
                                             target="_blank" rel="noopener noreferrer">SCCIP</a></a></li>
-                                            <li>
-                                                <div class="dropdown show">
-                                                    <a class=" dropdown-toggle other" href="#" role="button" id="dropdownMenuLink"
-                                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                                                        style="color: white;text-decoration: none; border: none;">
-                                                        Important Links
-                                                    </a>
-            
-                                                    <div class="dropdown-menu sub_header_drop" aria-labelledby="dropdownMenuLink"
-                                                        id="other">
-                                                        <a class="dropdown-item" target="_blank" rel="noopener noreferrer"
-                                                            href="https://smeda.org/">KP-BOIT</a>
-                                                        <a class="dropdown-item" target="_blank" rel="noopener noreferrer"
-                                                            href="http://kpboit.kp.gov.pk/">KP-Industries</a>
-                                                        <a class="dropdown-item" target="_blank" rel="noopener noreferrer"
-                                                            href="http://kp.gov.pk/">KP-Gov</a>
-                                                    </div>
-                                                </div>
-                                            </li>
+                                <li><a href="servicedetail.html">
+                                        <div class="dropdown show">
+                                            <a class=" dropdown-toggle other" href="#" role="button"
+                                                id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false"
+                                                style="color: white;text-decoration: none; border: none;">
+                                                Important Links
+                                            </a>
+
+                                            <div class="dropdown-menu sub_header_drop"
+                                                aria-labelledby="dropdownMenuLink" id="other">
+                                                <a class="dropdown-item" target="_blank" rel="noopener noreferrer"
+                                                    href="https://smeda.org/">KP-BOIT</a>
+                                                <a class="dropdown-item" target="_blank" rel="noopener noreferrer"
+                                                    href="http://kpboit.kp.gov.pk/">KP-Industries</a>
+                                                <a class="dropdown-item" target="_blank" rel="noopener noreferrer"
+                                                    href="http://kp.gov.pk/">KP-Gov</a>
+                                            </div>
+                                        </div>
+                                    </a></li>
                             </ul>
                         </div>
                     </div>
@@ -640,7 +641,7 @@
             <div class="mt-5">
                 <div class="container-fluid ">
                     <div class="row">
-                        <div class="col-md-3 service_card p-4 mt-3">
+                        <div class="col-md-3 service_card p-4 ">
                             <p>FBR</p>
                             <a href="">Explore Department</a>
                             <ul class="ml-3 mt-1">
@@ -657,7 +658,7 @@
                                         (ADC), ATM, Online Banking</a></li>
                             </ul>
                         </div>
-                        <div class="col-md-3 service_card p-4 mt-3">
+                        <div class="col-md-3 service_card p-4 ">
                             <p>SNGPL</p>
                             <a href="">Explore Department</a>
                             <ul class="ml-3 mt-1">
@@ -670,7 +671,7 @@
                                 <li><a href="servicedetail.html">Bill calculator</a></li>
                             </ul>
                         </div>
-                        <div class="col-md-3 service_card p-4 mt-3">
+                        <div class="col-md-3 service_card p-4">
                             <p>SMEDA</p>
                             <a href="">Explore Department</a>
                             <ul class="ml-3 mt-1">
@@ -680,7 +681,7 @@
                                 <li><a href="servicedetail.html">Sme business helpline</a></li>
                             </ul>
                         </div>
-                        <div class="col-md-3 service_card p-4 mt-3">
+                        <div class="col-md-3 service_card p-4">
                             <p>TDAP</p>
                             <a href="">Explore Department</a>
                             <ul class="ml-3 mt-1">

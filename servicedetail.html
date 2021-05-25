@@ -25,6 +25,116 @@
 </head>
 
 <body style="background-color: #F2F3F7;">
+    <!-- Modal -->
+
+    <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="./images//bulb.jpg" width="100%" height="617" alt="">
+                    </div>
+                    <div class="col-md-6 p-4" style="height: 680;">
+                        <div class="col-md-12 focalperson">
+                            <form>
+                                <div class="row pl-3 login_signup">
+                                    <div class="col-md-10">
+                                        <div class="row">
+                                            <p id="loginid">Login |</p>
+                                            <p class="ml-1" id="registerid"> Register</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="register">
+                                        <label for="">Username</label>
+                                        <div class="input-group mb-3 input-group-sm">
+
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-user"></i></span>
+                                            </div>
+                                            <input type="text" class="form-control">
+                                        </div>
+
+                                        <label for="">Password</label>
+                                        <div class="input-group mb-3 input-group-sm">
+
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-key"></i></span>
+                                            </div>
+                                            <input type="password" class="form-control">
+                                        </div>
+                                        <label for="">Name</label>
+                                        <div class="input-group mb-3 input-group-sm">
+
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-user"></i></span>
+                                            </div>
+                                            <input type="text" class="form-control">
+                                        </div>
+
+                                        <label for="">Desgination</label>
+                                        <div class="input-group mb-3 input-group-sm">
+
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-briefcase"></i></span>
+                                            </div>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <label for="">Email Address</label>
+                                        <div class="input-group mb-3 input-group-sm">
+
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                                            </div>
+                                            <input type="email" class="form-control">
+                                        </div>
+                                        <label for="">Phone</label>
+                                        <div class="input-group mb-3 input-group-sm">
+
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-phone"></i></span>
+                                            </div>
+                                            <input type="number" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="login" style="display: none;">
+                                        <label for="">Username</label>
+                                        <div class="input-group mb-3 input-group-sm">
+
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-user"></i></span>
+                                            </div>
+                                            <input type="text" class="form-control">
+                                        </div>
+
+                                        <label for="">Password</label>
+                                        <div class="input-group mb-3 input-group-sm">
+
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-key"></i></span>
+                                            </div>
+                                            <input type="password" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group mybutton"><button class="btn btn-block" type="button"
+                                        id="register_btn">Register</button></div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- FAQs modal -->
     <div class="modal fade" id="FAQs" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-lg" role="document">
@@ -623,125 +733,333 @@
         </div>
 
     </div>
-    <!-- About -->
+    <!-- service details -->
     <div class="container-fluid" style="margin-top: 150px;">
         <div class="container">
-            <!-- Introduction -->
-            <div class="col-md-12">
-                <div class="form-group has-search">
-                    <span class="fa fa-search form-control-feedback"></span>
-                    <input type="text" class="form-control" placeholder="Search" id="searchservice"
-                        onkeyup="searchFilter()">
-                    <ul class="list-group" id="search_wrapper">
+            <div class="col-md-12 service_card_detail p-3">
+                <p>Service Name: <span>NTN Registration</span></p>
+                <p>Service Detail: <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quae aperiam
+                        numquam, eaque obcaecati at animi iusto maxime et, laboriosam unde corporis? Numquam minus
+                        voluptate aperiam, quod odit maxime omnis!</span></p>
+            </div>
+            <div class="col-md-12 opportunity_detail_card p-3 mt-5">
+                <div class="col-md-12 text-center"><b>Guide Me</b></div>
+                <div class="row mt-5">
+                    <div class="col-md-1"><i class="fa fa-check-circle text-success ml-5"></i></div>
+                    <div class="col-md-11">
+                        <p>Step 1</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eligend perf</p>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-1"><i class="fa fa-check-circle text-success ml-5"></i></div>
+                    <div class="col-md-11">
+                        <p>Step 2</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eligend perf</p>
+                    </div>
+                </div>
 
-                    </ul>
+            </div>
+            <div class="col-md-12 required_doc_card mt-5">
+                <div class="container p-3">
+                    <div class="col-md-12 text-center"><b class="text-center">Required Documents</b></div>
+                    <hr>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Document</th>
+                                <th>Detail</th>
+                                <th>Downloads</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>CNIC</td>
+                                <td>Detail of CNIC</td>
+                                <td><button class="btn btn-outline-secondary"><i class="fa fa-arrow-down"></i> Click To
+                                        Download</button></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>NTN</td>
+                                <td>Company NTN</td>
+                                <td><button class="btn btn-outline-secondary"><i class="fa fa-arrow-down"></i> Click To
+                                        Download</button></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>XYZ</td>
+                                <td>Detail</td>
+                                <td><button class="btn btn-outline-secondary"><i class="fa fa-arrow-down"></i> Click To
+                                        Download</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
                 </div>
             </div>
-            <div class="mt-5">
-                <div class="container-fluid ">
-                    <div class="row">
-                        <div class="col-md-3 service_card p-4 mt-3">
-                            <p>FBR</p>
-                            <a href="">Explore Department</a>
-                            <ul class="ml-3 mt-1">
-                                <li><a href="servicedetail.html">NTN</a></li>
-                                <li><a href="servicedetail.html">Saletax</a></li>
-                                <li><a href="servicedetail.html">Tax return</a></li>
-                                <li><a href="servicedetail.html">online verification</a></li>
-                                <li><a href="servicedetail.html">ATL(income Tax)</a></li>
-                                <li><a href="servicedetail.html">Customs</a></li>
-                                <li><a href="servicedetail.html">e-Payment</a></li>
-                                <li><a href="servicedetail.html">Knowledge Base</a></li>
-                                <li><a href="servicedetail.html">Computerized Payment Receipt - CPR</a></li>
-                                <li><a href="servicedetail.html">Payment of Taxes through Alternate Delivery Channels
-                                        (ADC), ATM, Online Banking</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-3 service_card p-4 mt-3">
-                            <p>SNGPL</p>
-                            <a href="">Explore Department</a>
-                            <ul class="ml-3 mt-1">
-                                <li><a href="servicedetail.html">Transfer of gas connection</a></li>
-                                <li><a href="servicedetail.html">Application for domestic connection</a></li>
-                                <li><a href="servicedetail.html">Register sms alert</a></li>
-                                <li><a href="servicedetail.html">Complaint registration</a></li>
-                                <li><a href="servicedetail.html">Compliant history</a></li>
-                                <li><a href="servicedetail.html">Update cnic/phone</a></li>
-                                <li><a href="servicedetail.html">Bill calculator</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-3 service_card p-4 mt-3">
-                            <p>SMEDA</p>
-                            <a href="">Explore Department</a>
-                            <ul class="ml-3 mt-1">
-                                <li><a href="servicedetail.html">Online training</a></li>
-                                <li><a href="servicedetail.html">Expert advice</a></li>
-                                <li><a href="servicedetail.html">Virtual helpdesk</a></li>
-                                <li><a href="servicedetail.html">Sme business helpline</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-3 service_card p-4 mt-3">
-                            <p>TDAP</p>
-                            <a href="">Explore Department</a>
-                            <ul class="ml-3 mt-1">
-                                <li><a href="servicedetail.html">How to do business in pakistan</a></li>
-                                <li><a href="servicedetail.html">Step by step guide for new exporter</a></li>
-                                <li><a href="servicedetail.html">Manual for export facilitation</a></li>
-                                <li><a href="servicedetail.html">An easy guide for exporters</a></li>
-                                <li><a href="servicedetail.html">Guide to avail export finance</a></li>
-                                <li><a href="servicedetail.html">National Exporters training program</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-3 service_card p-4 mt-3">
-                            <p>Customs</p>
-                            <a href="">Explore Department</a>
-                            <ul class="ml-3 mt-1">
-                                <li><a href="servicedetail.html">Customs Bascis</a></li>
-                                <li><a href="servicedetail.html">Register for customs</a></li>
-                                <li><a href="servicedetail.html">Import/Exports</a></li>
-                                <li><a href="servicedetail.html">Travel guide</a></li>
-                                <li><a href="servicedetail.html">Vehicals</a></li>
-                                <li><a href="servicedetail.html">Customs tariff</a></li>
-                                <li><a href="servicedetail.html">Pay customs duty</a></li>
-                                <li><a href="servicedetail.html">Mobile device regularization</a></li>
-                                <li><a href="servicedetail.html">Export facilitation scheme</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-3 service_card p-4 mt-3">
-                            <p>SECP</p>
-                            <a href="">Explore Department</a>
-                            <ul class="ml-3 mt-1">
-                                <li><a href="servicedetail.html">Stepwise procedure for online company incorporation</a>
-                                </li>
-                                <li><a href="servicedetail.html">New user registration flyer</a></li>
-                                <li><a href="servicedetail.html">ADC payment guide</a></li>
-                                <li><a href="servicedetail.html">Online payment guide</a></li>
-                                <li><a href="servicedetail.html">Online fund transfer</a></li>
-                                <li><a href="servicedetail.html">helpline</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-3 service_card p-4 mt-3">
-                            <p>BOI</p>
-                            <a href="">Explore Department</a>
-                            <ul class="ml-3 mt-1">
-                                <li><a href="servicedetail.html">Special economic zones management </a></li>
-                                <li><a href="servicedetail.html">Branch liaison/office </a></li>
-                                <li><a href="servicedetail.html">Work visa </a></li>
-                                <li><a href="servicedetail.html">Petroleum companies clearance </a></li>
-                                <li><a href="servicedetail.html">Airport entrypass </a></li>
-                                <li><a href="servicedetail.html">Housing and construction portal </a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-3 service_card p-4 mt-3">
-                            <p>KPRA</p>
-                            <a href="">Explore Department</a>
-                            <ul class="ml-3 mt-1">
-                                <li><a href="servicedetail.html">e Registration having NTN </a></li>
-                                <li><a href="servicedetail.html">Check status of registration application </a></li>
-                                <li><a href="servicedetail.html">Compliants/Feedback </a></li>
-                            </ul>
+            <div class="col-md-12 faqs mt-5">
+                <div class="container  p-4">
+                    <div class="col-md-12 text-center">
+                        <h6 class="font-weight-bold">Frequently Asked Questions</h6>
+                    </div>
+                    <div class="accordion-box mt-5">
+                        <div id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="card  services m-b-20 service_card_q mt-4">
+                                <div class="card-block accordion-block">
+                                    <div class="accordion-panel">
+                                        <div class="accordion-heading" role="tab" id="headingOne">
+                                            <h3 class="card-title accordion-title faq_title">
+                                                <a class="accordion-msg" style="border: none; padding: 20px;"
+                                                    data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                                                    aria-expanded="true" aria-controls="collapseOne">
+                                                    What if I do not
+                                                    find answer to my
+                                                    question here?
+                                                </a>
+                                            </h3>
+                                        </div>
+                                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
+                                            aria-labelledby="headingOne">
+                                            <div class="accordion-content accordion-desc pl-4">
+                                                <p>
+                                                    Please consult Print
+                                                    or Audio/Video User
+                                                    Guide available
+                                                    under the login
+                                                    Dialog at Help at
+                                                    URL:
+                                                </p><a
+                                                    href="https://iris.fbr.gov.pk/infosys/public/txplogin.xhtml">https://iris.fbr.gov.pk/infosys/public/txplogin.xhtml</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card  services m-b-20 service_card_q mt-4">
+                                <div class="card-block accordion-block">
+                                    <div class="accordion-panel">
+                                        <div class="accordion-heading" role="tab" id="headingTwo">
+                                            <h3 class="card-title accordion-title faq_title">
+                                                <a class="accordion-msg" style="border: none; padding: 20px;"
+                                                    data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"
+                                                    aria-expanded="false" aria-controls="collapseTwo">
+                                                    What is Iris?
+                                                </a>
+                                            </h3>
+                                        </div>
+                                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
+                                            aria-labelledby="headingTwo">
+                                            <div class="accordion-content accordion-desc pl-4">
+                                                <p>
+                                                    Iris is an
+                                                    integrated,
+                                                    end-to-end, highly
+                                                    configurable and
+                                                    customizable ERP,
+                                                    covering all
+                                                    business processes
+                                                    of Income Tax and
+                                                    Sales Tax.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card  services m-b-20 service_card_q mt-4">
+                                <div class="card-block accordion-block">
+                                    <div class="accordion-panel">
+                                        <div class="accordion-heading" role="tab" id="headingThree">
+                                            <h3 class="card-title accordion-title faq_title">
+                                                <a class="accordion-msg" style="border: none; padding: 20px;"
+                                                    data-toggle="collapse" data-parent="#accordion"
+                                                    href="#collapseThree" aria-expanded="false"
+                                                    aria-controls="collapseTreee">
+                                                    What does Iris stand
+                                                    for?
+                                                </a>
+                                            </h3>
+                                        </div>
+                                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
+                                            aria-labelledby="headingThree">
+                                            <div class="accordion-content accordion-desc pl-4">
+                                                <p>
+                                                    Iris is a word not
+                                                    an acronym. It is
+                                                    name of a flower
+                                                    which is a symbol of
+                                                    wisdom.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card  services m-b-20 service_card_q mt-4">
+                                <div class="card-block accordion-block">
+                                    <div class="accordion-panel">
+                                        <div class="accordion-heading" role="tab" id="headingFour">
+                                            <h3 class="card-title accordion-title faq_title">
+                                                <a class="accordion-msg" style="border: none; padding: 20px;"
+                                                    data-toggle="collapse" data-parent="#accordion" href="#collapseFour"
+                                                    aria-expanded="false" aria-controls="collapseTreee">
+                                                    How can I access
+                                                    Iris?
+                                                </a>
+                                            </h3>
+                                        </div>
+                                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel"
+                                            aria-labelledby="headingFour">
+                                            <div class="accordion-content accordion-desc pl-4">
+                                                <p>
+                                                    You can access Iris
+                                                    at the following
+                                                    URL:
+                                                </p>
+                                                <a
+                                                    href="https://iris.fbr.gov.pk/infosys/public/txplogin.xhtml">https://iris.fbr.gov.pk/infosys/public/txplogin.xhtml</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card  services m-b-20 service_card_q mt-4">
+                                <div class="card-block accordion-block">
+                                    <div class="accordion-panel">
+                                        <div class="accordion-heading" role="tab" id="headingfive">
+                                            <h3 class="card-title accordion-title faq_title">
+                                                <a class="accordion-msg" style="border: none; padding: 20px;"
+                                                    data-toggle="collapse" data-parent="#accordion" href="#collapsefive"
+                                                    aria-expanded="false" aria-controls="collapsefive">
+                                                    What is Iris?
+                                                </a>
+                                            </h3>
+                                        </div>
+                                        <div id="collapsefive" class="panel-collapse collapse" role="tabpanel"
+                                            aria-labelledby="headingfive">
+                                            <div class="accordion-content accordion-desc pl-4">
+                                                <p>
+                                                    Iris is an
+                                                    integrated,
+                                                    end-to-end, highly
+                                                    configurable and
+                                                    customizable ERP,
+                                                    covering all
+                                                    business processes
+                                                    of Income Tax and
+                                                    Sales Tax.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card  services m-b-20 service_card_q mt-4">
+                                <div class="card-block accordion-block">
+                                    <div class="accordion-panel">
+                                        <div class="accordion-heading" role="tab" id="headingseven">
+                                            <h3 class="card-title accordion-title faq_title">
+                                                <a class="accordion-msg" style="border: none; padding: 20px;"
+                                                    data-toggle="collapse" data-parent="#accordion"
+                                                    href="#collapseseven" aria-expanded="false"
+                                                    aria-controls="collapseseven">
+                                                    What does Iris stand
+                                                    for?
+                                                </a>
+                                            </h3>
+                                        </div>
+                                        <div id="collapseseven" class="panel-collapse collapse" role="tabpanel"
+                                            aria-labelledby="headingseven">
+                                            <div class="accordion-content accordion-desc pl-4">
+                                                <p>
+                                                    Iris is a word not
+                                                    an acronym. It is
+                                                    name of a flower
+                                                    which is a symbol of
+                                                    wisdom.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card  services m-b-20 service_card_q mt-4">
+                                <div class="card-block accordion-block">
+                                    <div class="accordion-panel">
+                                        <div class="accordion-heading" role="tab" id="headingsix">
+                                            <h3 class="card-title accordion-title faq_title">
+                                                <a class="accordion-msg" style="border: none; padding: 20px;"
+                                                    data-toggle="collapse" data-parent="#accordion" href="#collapsesix"
+                                                    aria-expanded="false" aria-controls="collapsesix">
+                                                    How can I access
+                                                    Iris?
+                                                </a>
+                                            </h3>
+                                        </div>
+                                        <div id="collapsesix" class="panel-collapse collapse" role="tabpanel"
+                                            aria-labelledby="headingsix">
+                                            <div class="accordion-content accordion-desc pl-4">
+                                                <p>
+                                                    You can access Iris
+                                                    at the following
+                                                    URL:
+                                                </p>
+                                                <a
+                                                    href="https://iris.fbr.gov.pk/infosys/public/txplogin.xhtml">https://iris.fbr.gov.pk/infosys/public/txplogin.xhtml</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="col-md-12 investor_dashboard mt-5 p-3" style="border: none !important;">
+                <div class="col-md-12 size">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <b>Relevant Department</b>
+                        </div>
+                        <hr>
+                        <div class="row elems">
+                            <i class="fa fa-location-arrow"></i>
+                            <p id="location">Department Address</p>
+                        </div>
+                        <hr>
+                        <div class="row elems">
+                            <i class="fa fa-clock"></i>
+                            <p id="time">Department hours</p>
+                        </div>
+                        <hr>
+                        <div class="row elems">
+                            <i class="fa fa-phone-alt"></i>
+                            <p id="num">Phone Number</p>
+                        </div>
+                        <hr>
+                        <div class="row elems">
+                            <i class="fa fa-envelope"></i>
+                            <p id="mail">Eamil Address</p>
+                        </div>
+                        <hr>
+                        <div class="row elems">
+                            <i class="fa fa-map-marker-alt"></i>
+                            <p id="address" data-toggle="modal" data-target="#locatoinmap" style="cursor: pointer;">
+                                Pin Point Location</p>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row mt-3 foot_card_contact p-2">
+                    <p style="text-transform:uppercase;letter-spacing:0.1cm;font-size: 14px;" class="ml-5 mt-1">Need
+                        more
+                        help </p>
+
+                    <button class="btn btn-outline-success ml-auto" data-toggle="modal"
+                        data-target=".bd-example-modal-xl"><i class="fa fa-file"></i> Submit Query</button>
                 </div>
             </div>
         </div>
@@ -826,640 +1144,19 @@
     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
     <script type="text/javascript" src="../assets/pages/google-maps/gmaps.js"></script>
     <script>
-        function contextchange() {
-            let deptElem = document.getElementById('dept').value;
-            let serviceElem = document.getElementById('service');
-            let locationElem = document.getElementById('location');
-            let timeElem = document.getElementById('time');
-            let phoneNum = document.getElementById('num');
-            let mailElem = document.getElementById('mail');
-            let addressElem = document.getElementById('address');
-            if (deptElem == 'FBR') {
-                locationElem.innerText = 'Peshawar';
-                timeElem.innerText = '09:00am to 05:00pm';
-                phoneNum.innerText = '0301-8847551';
-                mailElem.innerText = ' emailsupport@fbr.gov.pk';
-                addressElem.innerText = 'University Rd, University Town, Peshawar, Khyber Pakhtunkhwa';
-                serviceElem.innerHTML = "<option>Select Service</option>"
-                serviceElem.innerHTML += "<option value='NTN'>NTN</option>" +
-                    "<option value='Saletax'>Saletax</option>" +
-                    "<option value='Tax return'>Tax return</option>" +
-                    "<option value='online verification'>online verification</option>" +
-                    "<option value='ATL(income Tax)'>ATL(income Tax)</option>";
-                $('#service_section').css('display', 'block')
-
-
-            }
-            if (deptElem == 'SNGPL') {
-                locationElem.innerText = 'Peshawar';
-                timeElem.innerText = '09:00am to 05:00pm';
-                phoneNum.innerText = '0336-4008090';
-                mailElem.innerText = 'info@sngpl.com.pk';
-                addressElem.innerText =
-                    'Plot 33, Sector B-II, Hayatabad Town، Phase 5 Hayatabad, Peshawar, Khyber Pakhtunkhwa 25000';
-                serviceElem.innerHTML = "<option>Select Service</option>"
-                serviceElem.innerHTML += "<option value='TransGas'>Transfer of gas connection</option>" +
-                    "<option value='AppConnect'>Application for domestic connection</option>" +
-                    "<option value='RSMS'>Register sms alert</option>" +
-                    "<option value='CompReg'>Complaint registration</option>" +
-                    "<option value='CompHis'>Compliant history</option>";
-                $('#service_section').css('display', 'block')
-
-            }
-            if (deptElem === 'TDAP') {
-                locationElem.innerText = 'Peshawar';
-                timeElem.innerText = '09:00am to 05:00pm';
-                phoneNum.innerText = '0300-5825267';
-                mailElem.innerText = ' tdap@tdap.gov.pk';
-                addressElem.innerText =
-                    'Plot No. 24, Phase 5 Hayatabad, Peshawar، Phase 5 Hayatabad, Peshawar, Khyber Pakhtunkhwa';
-                serviceElem.innerHTML = "<option>Select Service</option>"
-                serviceElem.innerHTML += "<option value='BPakistan'>How to do business in Pakistan</option>" +
-                    "<option value='SSGuide'>Step by step guide for new exporter</option>" +
-                    "<option value='ManualFacility'>Manual for export facilitation</option>" +
-                    "<option value='EasyGuid'>An easy guide for exporters</option>" +
-                    "<option value='Guid'>Guide to avail export finance</option>";
-                $('#service_section').css('display', 'block')
-
-            }
-            if (deptElem === 'Customs') {
-                locationElem.innerText = 'Peshawar';
-                timeElem.innerText = '09:00am to 05:00pm';
-                phoneNum.innerText = '0322-4337676';
-                mailElem.innerText = '  support.weboc@pral.com.pk';
-                addressElem.innerText = 'University Rd, University Town, Peshawar, Khyber Pakhtunkhwa';
-                serviceElem.innerHTML = "<option>Select Service</option>"
-                serviceElem.innerHTML += "<option value='custmB'>Customs Bascis</option>" +
-                    "<option value='regst'>Register for customs</option>" +
-                    "<option value='import'>Import/Exports</option>" +
-                    "<option value='travel'>Travel Guide</option>" +
-                    "<option value='vehicals'>Vehicals</option>";
-                $('#service_section').css('display', 'block')
-
-            }
-            if (deptElem === 'SMEDA') {
-                locationElem.innerText = 'Peshawar';
-                timeElem.innerText = '09:00am to 05:00pm';
-                phoneNum.innerText = '0333-9117278';
-                mailElem.innerText = ' helpdesk.KhyberPakhtunkhwa@smeda.org.pk';
-                addressElem.innerText =
-                    'Khyber Pakhtoonkhwa, State Life Building, Saddar Rd, Peshawar Cantonment, Peshawar, Khyber Pakhtunkhwa 25000';
-                serviceElem.innerHTML = "<option>Select Service</option>"
-                serviceElem.innerHTML += "<option value='online'>Online training</option>" +
-                    "<option value='eadvice'>Expert advice</option>" +
-                    "<option value='vhelp'>Virtual helpdesk</option>" +
-                    "<option value='shelp'>Sme business helpline</option>";
-                $('#service_section').css('display', 'block')
-
-            }
-
-        }
-
         $(document).ready(function () {
-
             $('#loginid').click(function () {
-                $('.register').hide();
                 $('.login').show();
+                $('.register').hide();
+                $('#register_btn').text('Login');
             });
-            $('#registerid').click(() => {
-                $('.login').hide();
+            $('#registerid').click(function () {
                 $('.register').show();
-            })
+                $('.login').hide();
+                $('#register_btn').text('Register');
 
-            $('#needhelp').mouseover(() => {
-                $('#needhelp').removeClass('blinking');
-                $('#needhelp').addClass('blinking_h');
-            })
-            $('#needhelp').mouseout(() => {
-                $('#needhelp').addClass('blinking');
-            })
+            });
         });
-
-        let arr = ['NTN',
-            'Saletax',
-            'Tax return',
-            'online verification',
-            'ATL(income Tax)',
-            'Customs',
-            'e-Payment',
-            'Knowledge Base',
-            'Computerized Payment Receipt - CPR',
-            'Payment of Taxes through Alternate Delivery Channels (ADC), ATM, Online Banking',
-            'Iris-adx application',
-            'Doing business reform',
-            'Aeoi portal',
-            'Npos central registry',
-            'Integrity management Cell',
-            'Customs-weboc',
-            'DNFBP resgistration',
-            'Export efilling',
-            'Import e filling',
-            'Consignor igm', /* FBR */
-            'Transfer of gas connection',
-            'Application for domestic connection',
-            'Register sms alert',
-            'Complaint registration',
-            'Compliant history',
-            'Update cnic/phone',
-            'Bill calculator', /* SNGPL */
-            'How to do business in pakistan',
-            'Step by step guide for new exporter',
-            'Manual for export facilitation',
-            'An easy guide for exporters',
-            'Guide to avail export finance',
-            'National Exporters training program', /* TDAP */
-            'Customs Bascis',
-            'Register for customs',
-            'Import/Exports',
-            'Travel guide',
-            'Vehicals',
-            'Customs tariff',
-            'Pay customs duty',
-            'Mobile device regularization',
-            'Export facilitation scheme', /* Customs */
-            'Online training',
-            'Expert advice',
-            'Virtual helpdesk',
-            'Sme business helpline', /* SMEDA */
-            'Stepwise procedure for online company incorporation',
-            'New user registration flyer',
-            'ADC payment guide',
-            'Online payment guide',
-            'Online fund transfer',
-            'helpline', /* SECP */
-            'Special economic zones management',
-            'Branch liaison/office',
-            'Work visa',
-            'Petroleum companies clearance',
-            'Airport entrypass',
-            'Housing and construction portal', /* BOI */
-            'online ticket', /* RAILWAYS */ ,
-            'Online Complaints Cell', /* MO Communication*/
-            'Complaint Cell', /* MO Science & Technology*/
-            'e Registration having NTN',
-            'Check status of registration application',
-            'Compliants/Feedback', /* KPRA*/
-            'Contact Us', /*KP_BOIT*/
-            'online plot form', /* KPEZDMC*/
-            'e-bidding system', /* PDA */ ,
-            'Property Tax Info',
-            'Online Vehicle information',
-            'Vehicle Registration Tax Calculator', /* Excise */
-            'Online Apply for New Connection',
-            'SMS Billing', /* Pesco */
-            'Digital Banking',
-            'Online Transactions', /*BOK*/
-            'E-Booking', /* Tourism*/
-            'IT-Park',
-            'KPITB Campus Ambassador Program',
-            'Company Registration', /* KPITB*/
-            'E-Building Plan Approval',
-            'E-Bidding NOCs',
-            'E-Auctions',
-            'E-RTI (Right To Information Commission)',
-            'Registration of Birth, Death, Marraige and Divorce', /* Local Govenment / Towns*/
-            'Online Lab Reports',
-            'Online Pension System',
-            'Rest House Reservation System',
-            'Webmail Services', /* WAPDA */
-            'E-Licencing',
-            'E-Recruitment',
-            'E-Complaints',
-            'E-RTI (Right To Information)', /* Law */
-            'E-Registration of Contrators / Firms',
-            'E-Bidding / Managment Information System',
-            'E-Tender',
-            'List of Enlisted Contractors', /*private school regulator*/
-            'List of Blacklisted Contractors',
-            'Online Duplicate Bills',
-            'Online Water Connections', /* WSSP */
-            'E-Registration of Contrators / Firms',
-            'E-Bidding / Managment Information System',
-            'E-Tender',
-            'List of Enlisted Contractors',
-            'List of Blacklisted Contractors' /* c&w */
-        ];
-
-        let searchElem = document.getElementById('searchservice');
-        let searchList = document.getElementById('search_wrapper');
-
-
-        function searchFilter() {
-
-            /* fbr */
-            if (searchElem.value == 'fbr' || searchElem.value == 'FBR') {
-                searchList.innerHTML = " ";
-                searchList.style.height = '220px';
-                searchList.style.display = 'block';
-                for (i = 0; i < 20; i++) {
-                    searchList.innerHTML +=
-                        `<li class="list-group-item" id='a${i}' onclick="getText(this)">${arr[i]}</a></li>`;
-                }
-            }
-            if (searchElem.value == "") {
-                searchList.innerHTML = " ";
-                searchList.style.height = "0px";
-                searchList.style.border = "none";
-
-            }
-            if (searchElem.value == 'sngpl' || searchElem.value == 'SNGPL') {
-                searchList.style.display = 'block';
-                searchList.innerHTML = " ";
-                searchList.style.height = '220px';
-                for (i = 20; i < 27; i++) {
-                    searchList.innerHTML +=
-                        `<li class="list-group-item" id='a${i}' onclick="getText(this)">${arr[i]}</a></li>`;
-
-                }
-            }
-            if (searchElem.value == "") {
-                searchList.innerHTML = " ";
-                searchList.style.height = "0px";
-                searchList.style.border = "none";
-
-            }
-            if (searchElem.value == 'tdap' || searchElem.value == 'TDAP') {
-                searchList.innerHTML = " ";
-                searchList.style.display = 'block';
-                searchList.style.height = '220px';
-                for (i = 27; i < 33; i++) {
-                    searchList.innerHTML +=
-                        `<li class="list-group-item" id='a${i}' onclick="getText(this)">${arr[i]}</a></li>`;
-
-                }
-            }
-            if (searchElem.value == "") {
-                searchList.innerHTML = " ";
-                searchList.style.height = "0px";
-                searchList.style.border = "none";
-
-            }
-            if (searchElem.value == 'customs' || searchElem.value == 'CUSTOMS') {
-                searchList.style.display = 'block';
-                searchList.innerHTML = " ";
-                searchList.style.height = '220px';
-                for (i = 33; i < 42; i++) {
-                    searchList.innerHTML +=
-                        `<li class="list-group-item" id='a${i}' onclick="getText(this)">${arr[i]}</a></li>`;
-
-                }
-            }
-            if (searchElem.value == "") {
-                searchList.innerHTML = " ";
-                searchList.style.height = "0px";
-                searchList.style.border = "none";
-
-            }
-            if (searchElem.value == 'smeda' || searchElem.value == 'SMEDA') {
-                searchList.style.display = 'block';
-                searchList.innerHTML = " ";
-                searchList.style.height = '220px';
-                for (i = 42; i < 46; i++) {
-                    searchList.innerHTML +=
-                        `<li class="list-group-item" id='a${i}' onclick="getText(this)">${arr[i]}</a></li>`;
-
-                }
-            }
-            if (searchElem.value == "") {
-                searchList.innerHTML = " ";
-                searchList.style.height = "0px";
-                searchList.style.border = "none";
-
-            }
-            if (searchElem.value == 'secp' || searchElem.value == 'SECP') {
-                searchList.style.display = 'block';
-                searchList.innerHTML = " ";
-                searchList.style.height = '220px';
-                for (i = 46; i < 52; i++) {
-                    searchList.innerHTML +=
-                        `<li class="list-group-item" id='a${i}' onclick="getText(this)">${arr[i]}</a></li>`;
-
-                }
-            }
-            if (searchElem.value == "") {
-                searchList.innerHTML = " ";
-                searchList.style.height = "0px";
-                searchList.style.border = "none";
-
-            }
-            if (searchElem.value == 'boi' || searchElem.value == 'BOI') {
-                searchList.style.display = 'block';
-                searchList.innerHTML = " ";
-                searchList.style.height = '220px';
-                for (i = 52; i < 53; i++) {
-                    searchList.innerHTML +=
-                        `<li class="list-group-item" id='a${i}' onclick="getText(this)">${arr[i]}</a></li>`;
-
-                }
-            }
-            if (searchElem.value == "") {
-                searchList.innerHTML = " ";
-                searchList.style.height = "0px";
-                searchList.style.border = "none";
-
-            }
-            if (searchElem.value == 'railways' || searchElem.value == 'Railways') {
-                searchList.style.display = 'block';
-                searchList.innerHTML = " ";
-                searchList.style.height = '220px';
-                for (i = 53; i < 54; i++) {
-                    searchList.innerHTML +=
-                        `<li class="list-group-item" id='a${i}' onclick="getText(this)">${arr[i]}</a></li>`;
-
-                }
-            }
-            if (searchElem.value == "") {
-                searchList.innerHTML = " ";
-                searchList.style.height = "0px";
-                searchList.style.border = "none";
-
-            }
-            if (searchElem.value == 'mo communication' || searchElem.value == 'MO Communication') {
-                searchList.style.display = 'block';
-                searchList.innerHTML = " ";
-                searchList.style.height = '220px';
-                for (i = 54; i < 55; i++) {
-                    searchList.innerHTML +=
-                        `<li class="list-group-item" id='a${i}' onclick="getText(this)">${arr[i]}</a></li>`;
-
-                }
-            }
-            if (searchElem.value == "") {
-                searchList.innerHTML = " ";
-                searchList.style.height = "0px";
-                searchList.style.border = "none";
-
-            }
-            if (searchElem.value == 'moscience & technology' || searchElem.value == ' MO Science & Technology') {
-                searchList.style.display = 'block';
-                searchList.innerHTML = " ";
-                searchList.style.height = '220px';
-                for (i = 55; i < 56; i++) {
-                    searchList.innerHTML +=
-                        `<li class="list-group-item" id='a${i}' onclick="getText(this)">${arr[i]}</a></li>`;
-
-                }
-            }
-            if (searchElem.value == "") {
-                searchList.innerHTML = " ";
-                searchList.style.height = "0px";
-                searchList.style.border = "none";
-
-            }
-            if (searchElem.value == 'kpra' || searchElem.value == 'KPRA') {
-                searchList.style.display = 'block';
-                searchList.innerHTML = " ";
-                searchList.style.height = '220px';
-                for (i = 56; i < 59; i++) {
-                    searchList.innerHTML +=
-                        `<li class="list-group-item" id='a${i}' onclick="getText(this)">${arr[i]}</a></li>`;
-
-                }
-            }
-            if (searchElem.value == "") {
-                searchList.innerHTML = " ";
-                searchList.style.height = "0px";
-                searchList.style.border = "none";
-
-            }
-            if (searchElem.value == 'kpboit' || searchElem.value == 'KP_BOIT' || searchElem.value == 'boit') {
-                searchList.style.display = 'block';
-                searchList.innerHTML = " ";
-                searchList.style.height = '220px';
-                for (i = 59; i < 60; i++) {
-                    searchList.innerHTML +=
-                        `<li class="list-group-item" id='a${i}' onclick="getText(this)">${arr[i]}</a></li>`;
-
-                }
-            }
-            if (searchElem.value == "") {
-                searchList.innerHTML = " ";
-                searchList.style.height = "0px";
-                searchList.style.border = "none";
-
-            }
-            if (searchElem.value == 'kpezdmc' || searchElem.value == 'KPEZDMC') {
-                searchList.style.display = 'block';
-                searchList.innerHTML = " ";
-                searchList.style.height = '220px';
-                for (i = 60; i < 61; i++) {
-                    searchList.innerHTML +=
-                        `<li class="list-group-item" id='a${i}' onclick="getText(this)">${arr[i]}</a></li>`;
-
-                }
-            }
-            if (searchElem.value == "") {
-                searchList.innerHTML = " ";
-                searchList.style.height = "0px";
-                searchList.style.border = "none";
-
-            }
-            if (searchElem.value == 'pda' || searchElem.value == 'PDA') {
-                searchList.style.display = 'block';
-                searchList.innerHTML = " ";
-                searchList.style.height = '220px';
-                for (i = 61; i < 62; i++) {
-                    searchList.innerHTML +=
-                        `<li class="list-group-item" id='a${i}' onclick="getText(this)">${arr[i]}</a></li>`;
-
-                }
-            }
-            if (searchElem.value == "") {
-                searchList.innerHTML = " ";
-                searchList.style.height = "0px";
-                searchList.style.border = "none";
-
-            }
-            if (searchElem.value == 'excise' || searchElem.value == 'Excise') {
-                searchList.style.display = 'block';
-                searchList.innerHTML = " ";
-                searchList.style.height = '220px';
-                for (i = 62; i < 65; i++) {
-                    searchList.innerHTML +=
-                        `<li class="list-group-item" id='a${i}' onclick="getText(this)">${arr[i]}</a></li>`;
-
-                }
-            }
-            if (searchElem.value == "") {
-                searchList.innerHTML = " ";
-                searchList.style.height = "0px";
-                searchList.style.border = "none";
-
-            }
-            if (searchElem.value == 'pesco' || searchElem.value == 'PESCO') {
-                searchList.style.display = 'block';
-                searchList.innerHTML = " ";
-                searchList.style.height = '220px';
-                for (i = 65; i < 67; i++) {
-                    searchList.innerHTML +=
-                        `<li class="list-group-item" id='a${i}' onclick="getText(this)">${arr[i]}</a></li>`;
-
-                }
-            }
-            if (searchElem.value == "") {
-                searchList.innerHTML = " ";
-                searchList.style.height = "0px";
-                searchList.style.border = "none";
-
-            }
-            if (searchElem.value == 'bok' || searchElem.value == 'BOK') {
-                searchList.style.display = 'block';
-                searchList.innerHTML = " ";
-                searchList.style.height = '220px';
-                for (i = 67; i < 69; i++) {
-                    searchList.innerHTML +=
-                        `<li class="list-group-item" id='a${i}' onclick="getText(this)">${arr[i]}</a></li>`;
-
-                }
-            }
-            if (searchElem.value == "") {
-                searchList.innerHTML = " ";
-                searchList.style.height = "0px";
-                searchList.style.border = "none";
-
-            }
-            if (searchElem.value == 'tourism' || searchElem.value == 'Tourism') {
-                searchList.style.display = 'block';
-                searchList.innerHTML = " ";
-                searchList.style.height = '220px';
-                for (i = 69; i < 70; i++) {
-                    searchList.innerHTML +=
-                        `<li class="list-group-item" id='a${i}' onclick="getText(this)">${arr[i]}</a></li>`;
-
-                }
-            }
-            if (searchElem.value == "") {
-                searchList.innerHTML = " ";
-                searchList.style.height = "0px";
-                searchList.style.border = "none";
-
-            }
-            if (searchElem.value == 'kpitb' || searchElem.value == 'KPITB') {
-                searchList.style.display = 'block';
-                searchList.innerHTML = " ";
-                searchList.style.height = '220px';
-                for (i = 70; i < 73; i++) {
-                    searchList.innerHTML +=
-                        `<li class="list-group-item" id='a${i}' onclick="getText(this)">${arr[i]}</a></li>`;
-
-                }
-            }
-            if (searchElem.value == "") {
-                searchList.innerHTML = " ";
-                searchList.style.height = "0px";
-                searchList.style.border = "none";
-
-            }
-            if (searchElem.value == 'local govenment' || searchElem.value == 'local towns' || searchElem.value ==
-                'Local Governments/Towns') {
-                searchList.style.display = 'block';
-                searchList.innerHTML = " ";
-                searchList.style.height = '220px';
-                for (i = 73; i < 78; i++) {
-                    searchList.innerHTML +=
-                        `<li class="list-group-item" id='a${i}' onclick="getText(this)">${arr[i]}</a></li>`;
-
-                }
-            }
-            if (searchElem.value == "") {
-                searchList.innerHTML = " ";
-                searchList.style.height = "0px";
-                searchList.style.border = "none";
-
-            }
-            if (searchElem.value == 'wapda' || searchElem.value == 'WAPDA') {
-                searchList.style.display = 'block';
-                searchList.innerHTML = " ";
-                searchList.style.height = '220px';
-                for (i = 78; i < 82; i++) {
-                    searchList.innerHTML +=
-                        `<li class="list-group-item" id='a${i}' onclick="getText(this)">${arr[i]}</a></li>`;
-
-                }
-            }
-            if (searchElem.value == "") {
-                searchList.innerHTML = " ";
-                searchList.style.height = "0px";
-                searchList.style.border = "none";
-
-            }
-            if (searchElem.value == 'law' || searchElem.value == 'Law') {
-                searchList.style.display = 'block';
-                searchList.innerHTML = " ";
-                searchList.style.height = '220px';
-                for (i = 82; i < 86; i++) {
-                    searchList.innerHTML +=
-                        `<li class="list-group-item" id='a${i}' onclick="getText(this)">${arr[i]}</a></li>`;
-
-                }
-            }
-            if (searchElem.value == "") {
-                searchList.innerHTML = " ";
-                searchList.style.height = "0px";
-                searchList.style.border = "none";
-
-            }
-            if (searchElem.value == 'private school regulator' || searchElem.value == 'Private School Regulator') {
-                searchList.style.display = 'block';
-                searchList.innerHTML = " ";
-                searchList.style.height = '220px';
-                for (i = 86; i < 90; i++) {
-                    searchList.innerHTML +=
-                        `<li class="list-group-item" id='a${i}' onclick="getText(this)">${arr[i]}</a></li>`;
-
-                }
-            }
-            if (searchElem.value == "") {
-                searchList.innerHTML = " ";
-                searchList.style.height = "0px";
-                searchList.style.border = "none";
-
-            }
-            if (searchElem.value == 'wssp' || searchElem.value == 'WSSP') {
-                searchList.style.display = 'block';
-                searchList.innerHTML = " ";
-                searchList.style.height = '220px';
-                for (i = 90; i < 93; i++) {
-                    searchList.innerHTML +=
-                        `<li class="list-group-item" id='a${i}' onclick="getText(this)">${arr[i]}</a></li>`;
-
-                }
-            }
-            if (searchElem.value == "") {
-                searchList.innerHTML = " ";
-                searchList.style.height = "0px";
-                searchList.style.border = "none";
-
-            }
-            if (searchElem.value == ' c&w' || searchElem.value == 'C & W' || searchElem.value == 'cw') {
-                searchList.style.display = 'block';
-                searchList.innerHTML = " ";
-                searchList.style.height = '220px';
-                for (i = 93; i < 98; i++) {
-                    searchList.innerHTML +=
-                        `<li class="list-group-item" id='a${i}' onclick="getText(this)">${arr[i]}</a></li>`;
-
-                }
-            }
-            if (searchElem.value == "") {
-                searchList.innerHTML = " ";
-                searchList.style.height = "0px";
-                searchList.style.border = "none";
-
-            }
-
-        }
-
-        function getText(elem) {
-            searchElem.value = elem.innerHTML;
-            searchList.style.display = 'none';
-            document.getElementById('service_section').style.display = 'block';
-            document.getElementById('service').innerHTML =
-                `<option value='${elem.innerText}'>${elem.innerText}</option>`
-        }
-        let redirect = () => {
-            window.location.href = "query.html"
-        }
     </script>
 
 </body>

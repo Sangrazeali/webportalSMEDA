@@ -75,62 +75,83 @@
     <div class="container-fluid header_main" id="main_header" style="background-color: white;">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="index.html"><img src="./images//KPIFC.png"
-                        alt="brand logo" style="margin-top: -10px;"></a>
+                <a class="navbar-brand" href="index.html"><img src="./images//KPIFC.png" alt="brand logo"
+                        style="margin-top: -10px;"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
+                    <ul class="navbar-nav mr-auto ">
                         <li class="nav-item active">
-                            <a class="nav-link nav_elem1" href="index.html"
-                              >Home <span
-                                    class="sr-only">(current)</span></a>
+                            <a class="nav-link nav_elem1" href="index.html">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link nav_elem1" href="opportunities.html">opportunities</a>
+                        </li>
+                        <li class="nav-item ml-3 mt-2" style="text-transform: uppercase;font-size: 13px">
+                            <div class="dropdown show">
+                                <a class=" dropdown-toggle other nav_elem1" href="#" role="button" id="dropdownMenuLink"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                    style="color: white;text-decoration: none; border: none;">
+                                    Investment Sectors
+                                </a>
+
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="other">
+                                    <a class="dropdown-item" href="investmentsectors.html">Tourism</a>
+                                    <a class="dropdown-item" href="investmentsectors.html">Mines & Minerals</a>
+                                    <a class="dropdown-item" href="investmentsectors.html">Energy & Power</a>
+                                    <a class="dropdown-item" href="investmentsectors.html">Oil & Gas</a>
+                                    <a class="dropdown-item" href="investmentsectors.html">Industrial Sector</a>
+                                    <a class="dropdown-item" href="investmentsectors.html">Transport</a>
+                                    <a class="dropdown-item" href="investmentsectors.html">Agriculture & Livestock</a>
+                                    <a class="dropdown-item" href="investmentsectors.html">Housing</a>
+
+                                </div>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link nav_elem1" href="guideme.html">Services For SME's</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav_elem1" href="#">Analytics</a>
+                            <a class="nav-link nav_elem1" href="about.html"
+                                style="border-bottom: 3px solid #ffffff;">about-kp</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link nav_elem1" href="about.html"   style="border-bottom: 3px solid #ffffff;">about-kp</a>
-                        </li>
-                  
-                        <div>
-                            <li class="nav-item ml-3 mt-2" style="text-transform: uppercase;font-size: 13px">
-                                <div class="dropdown show">
-                                    <a class=" dropdown-toggle other nav_elem1" href="#" role="button"
-                                        id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="false" style="color: white;text-decoration: none; border: none;">
-                                        Other
-                                    </a>
+                        <li class="nav-item ml-3 mt-2" style="text-transform: uppercase;font-size: 13px">
+                            <div class="dropdown show">
+                                <a class=" dropdown-toggle other" href="#" role="button" id="dropdownMenuLink"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                    style="color:  rgb(70, 70, 70);text-decoration: none; border: none; ">
+                                    Other
+                                </a>
 
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="other">
-                                        <a class="dropdown-item" href="submenu_about.html">About us</a>
-                                        <a class="dropdown-item" href="blog.html">blogs</a>
-                                        <a class="dropdown-item" href="#">Rules & Regulations</a>
-                                        <a class="dropdown-item" href="#">Attached departments</a>
-                                        <a class="dropdown-item" href="#">access to dashboard</a>
-                                        <a class="dropdown-item" href="#">feedback</a>
-                                        <a class="dropdown-item" href="#">notification</a>
-                                        <a class="dropdown-item" href="#">public holidays colendar</a>
-                                        <a class="dropdown-item" href="#">disclaimer</a>
-                                        <a class="dropdown-item" href="#">terms & conditions</a>
-                                        <a class="dropdown-item" href="#">privacy</a>
-                                    </div>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="other">
+                                    <a class="dropdown-item" href="submenu_about.html">About us</a>
+                                    <a class="dropdown-item" href="blog.html">blogs</a>
+                                    <a class="dropdown-item" href="#">Rules & Regulations</a>
+                                    <a class="dropdown-item" href="#">Attached departments</a>
+                                    <a class="dropdown-item" href="#">access to dashboard</a>
+                                    <a class="dropdown-item" href="#">feedback</a>
+                                    <a class="dropdown-item" href="#">notification</a>
+                                    <a class="dropdown-item" href="#">public holidays colendar</a>
+                                    <a class="dropdown-item" href="#">disclaimer</a>
+                                    <a class="dropdown-item" href="#">terms & conditions</a>
+                                    <a class="dropdown-item" href="#">privacy</a>
                                 </div>
-                            </li>
+                            </div>
+                        </li>
+
+
                     </ul>
-                    <ul class="row loginul mt-3">
-                        <li><a class="login-register" href="https://smeda.10data.ai/login.html"
-                                style="border-right: 1px solid grey; color: grey;">Login</a></li>
-                        <li><a class="login-register" style="color: grey;" href="https://smeda.10data.ai/login.html">Register</a></li>
+                    <ul class="row loginul mt-2 nav_btn_port">
+                        <li class="mt-1"><a class="login-register" href="https://smeda.10data.ai/login.html"
+                                style="border-right: 1px solid rgb(253, 248, 248);color:rgb(70, 70, 70);">Login</a></li>
+                        <li class="mt-1"><a class="login-register" href="https://smeda.10data.ai/login.html"
+                                style="color:rgb(70, 70, 70)">Register</a></li>
+                        <button class="btn btn-outline-success ml-3 mt-1 sendquery" id="sendquery"
+                            onclick="redirect()">Send Query</button>
+
                     </ul>
                 </div>
             </nav>
@@ -160,15 +181,15 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro corporis incidunt reiciendis
                         ducimus impedit, illum libero, odit id eos, velit non. Nisi placeat fugit suscipit aut quisquam
                         repudiandae quia neque.</p>
-                        <div class="row mt-5">
-                            <div class="block_sec mt-2"></div>
-                            <div class="ml-1 mt-1">
-                                <h4>Recent Posts</h4>
-                            </div>
-                            <div class="side_line mt-3 ml-2"></div>
-                        </div>
                     <div class="row mt-5">
-                        
+                        <div class="block_sec mt-2"></div>
+                        <div class="ml-1 mt-1">
+                            <h4>Recent Posts</h4>
+                        </div>
+                        <div class="side_line mt-3 ml-2"></div>
+                    </div>
+                    <div class="row mt-5">
+
                         <div class="col-md-5">
                             <div class="card_back_img"></div>
                         </div>
@@ -179,9 +200,10 @@
                             <div class="card_text_cont">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet reiciendis officia, et,
                                     quos nemo quas ipsam mollitia quibusdam illo repellat numquam corporis quidem ex
-                                    quod deleniti adipisci sunt voluptatem qui quod deleniti adipisci sunt voluptatem qui quibusdam illo repellat numquam corporis quidem ex
+                                    quod deleniti adipisci sunt voluptatem qui quod deleniti adipisci sunt voluptatem
+                                    qui quibusdam illo repellat numquam corporis quidem ex
                                     quod deleniti adipisci sunt voluptatem.</p>
-                                  
+
                             </div>
                         </div>
                     </div>
@@ -197,9 +219,10 @@
                             <div class="card_text_cont">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet reiciendis officia, et,
                                     quos nemo quas ipsam mollitia quibusdam illo repellat numquam corporis quidem ex
-                                    quod deleniti adipisci sunt voluptatem qui quod deleniti adipisci sunt voluptatem qui quibusdam illo repellat numquam corporis quidem ex
+                                    quod deleniti adipisci sunt voluptatem qui quod deleniti adipisci sunt voluptatem
+                                    qui quibusdam illo repellat numquam corporis quidem ex
                                     quod deleniti adipisci sunt voluptatem.</p>
-                                  
+
                             </div>
                         </div>
                     </div>
@@ -215,9 +238,10 @@
                             <div class="card_text_cont">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet reiciendis officia, et,
                                     quos nemo quas ipsam mollitia quibusdam illo repellat numquam corporis quidem ex
-                                    quod deleniti adipisci sunt voluptatem qui quod deleniti adipisci sunt voluptatem qui quibusdam illo repellat numquam corporis quidem ex
+                                    quod deleniti adipisci sunt voluptatem qui quod deleniti adipisci sunt voluptatem
+                                    qui quibusdam illo repellat numquam corporis quidem ex
                                     quod deleniti adipisci sunt voluptatem.</p>
-                                  
+
                             </div>
                         </div>
                     </div>
@@ -233,9 +257,10 @@
                             <div class="card_text_cont">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet reiciendis officia, et,
                                     quos nemo quas ipsam mollitia quibusdam illo repellat numquam corporis quidem ex
-                                    quod deleniti adipisci sunt voluptatem qui quod deleniti adipisci sunt voluptatem qui quibusdam illo repellat numquam corporis quidem ex
+                                    quod deleniti adipisci sunt voluptatem qui quod deleniti adipisci sunt voluptatem
+                                    qui quibusdam illo repellat numquam corporis quidem ex
                                     quod deleniti adipisci sunt voluptatem.</p>
-                                  
+
                             </div>
                         </div>
                     </div>
@@ -251,9 +276,10 @@
                             <div class="card_text_cont">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet reiciendis officia, et,
                                     quos nemo quas ipsam mollitia quibusdam illo repellat numquam corporis quidem ex
-                                    quod deleniti adipisci sunt voluptatem qui quod deleniti adipisci sunt voluptatem qui quibusdam illo repellat numquam corporis quidem ex
+                                    quod deleniti adipisci sunt voluptatem qui quod deleniti adipisci sunt voluptatem
+                                    qui quibusdam illo repellat numquam corporis quidem ex
                                     quod deleniti adipisci sunt voluptatem.</p>
-                                  
+
                             </div>
                         </div>
                     </div>
@@ -269,13 +295,14 @@
                             <div class="card_text_cont">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet reiciendis officia, et,
                                     quos nemo quas ipsam mollitia quibusdam illo repellat numquam corporis quidem ex
-                                    quod deleniti adipisci sunt voluptatem qui quod deleniti adipisci sunt voluptatem qui quibusdam illo repellat numquam corporis quidem ex
+                                    quod deleniti adipisci sunt voluptatem qui quod deleniti adipisci sunt voluptatem
+                                    qui quibusdam illo repellat numquam corporis quidem ex
                                     quod deleniti adipisci sunt voluptatem.</p>
-                                  
+
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
                 <div class="col-md-4">
                     <div class="row">
@@ -419,7 +446,7 @@
                             <p><a href="">Smeda web-portal content Lorem ipsum dolor sit amet, consectetur </a></p>
                         </div>
                     </div>
-                    
+
                 </div>
 
             </div>
@@ -453,7 +480,7 @@
                             <li><a href="http://www.wccip.org.pk/">Women Chamber Of Commerce & Industries</a></li>
                         </ul>
                     </div>
-               
+
                     <div class="col-md-2">
                         <p>External Site Links</p>
                         <ul>
@@ -491,6 +518,9 @@
     <script src="./js/webportal.js"></script>
     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
     <script>
+        let redirect = () => {
+            window.location.href = "query.html"
+        }
         $(document).ready(function () {
 
             $('#loginid').click(function () {
