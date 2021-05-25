@@ -1423,7 +1423,7 @@ button:active {
     box-shadow: 1px 9px 19px -5px rgb(0 0 0 / 30%);
     transition: all ease 1s;
     transform: translateY(-2px);
-    background-image: linear-gradient(to left,  #059e8e, #4db885);
+    background-image: linear-gradient(to left, #059e8e, #4db885);
     border: none;
     color: white;
 }
@@ -1465,10 +1465,9 @@ button:active {
 .imp_service {
     text-align: center;
     padding-top: 15px;
-}
-
-.imp_service a {
-    text-decoration: underline;
+    background-color: white;
+    border-radius: 9px;
+    border: 1px solid #d8d2d2;
 }
 
 .imp_service a:hover {
@@ -1482,6 +1481,8 @@ button:active {
 .imp_service:hover {
     transition: 0.3s;
     font-weight: bold;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+
 }
 
 #indicates {
@@ -1492,27 +1493,28 @@ button:active {
     width: 70px;
     height: 70px;
 }
-
-
-
 .service_card p {
     font-weight: bold;
     margin-left: 10px;
 }
-.service_card p a{
+
+.service_card p a {
     text-decoration: underline;
 }
 
-.service_card p a:hover{
+.service_card p a:hover {
     text-decoration: none;
 }
+
 .service_card ul li a {
     color: rgb(32, 32, 32);
     text-decoration: underline;
 }
-.service_card ul li a:hover{
+
+.service_card ul li a:hover {
     text-decoration: none;
 }
+
 .service_card_detail {
     background-color: white;
 }
@@ -1526,12 +1528,18 @@ button:active {
     font-weight: 100;
     font-size: 15px;
 }
-.faqs{
+
+.faqs {
     background-color: white;
 }
-.sub_service{
+
+.sub_service {
     width: 100%;
     border: 1px solid #d8d2d2;
     height: 100%;
     padding: 15px;
+    background-color: white;
+    border-radius: 9px;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+
 }
