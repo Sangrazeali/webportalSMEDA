@@ -515,7 +515,7 @@
 
         </div>
         <div class="col-md-12 col-sm-12 col-xs-12 d-flex justify-content-center mt-5  opportunity_button">
-            <button class="btn btn-outline-warning">View More Opportunities</button>
+            <button class="btn btn-outline-warning" onclick="gotToOpportunities()">View More Opportunities</button>
         </div>
         <!-- Important Services -->
         <div class="row mt-5 pt-5">
@@ -617,7 +617,7 @@
 
         </div>
         <div class="col-md-12 col-sm-12 col-xs-12 d-flex justify-content-center mt-5  opportunity_button">
-            <button class="btn btn-outline-warning">View All Services</button>
+            <button class="btn btn-outline-warning" onclick="gotToGuideMe()">View All Services</button>
         </div>
         <!-- about portal -->
         <div class="row mt-5 pt-5">
@@ -1350,6 +1350,12 @@
             });
 
         });
+        function gotToGuideMe(){
+            window.location.href="guideme.html"
+        }
+        function gotToOpportunities(){
+            window.location.href="opportunities.html"
+        }
     </script>
 </body>
 
