@@ -280,7 +280,11 @@
                             <a class="nav-link nav_elem1" href="guideme.html">Services For SME's</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav_elem1" href="about.html" ">about-kp</a>
+                            <a class="nav-link nav_elem1" href="tenders.html"
+                                >Tenders</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav_elem1" href="about.html">about-kp</a>
                         </li>
                         <li class=" nav-item ml-3 mt-2" style="text-transform: uppercase;font-size: 13px">
                                 <div class="dropdown show">
@@ -436,6 +440,7 @@
         <div class="col-md-12 required_doc_card mt-5">
             <div class="container p-2">
                 <p style="text-transform:uppercase;letter-spacing:0.1cm;">required documents</p>
+    
                 <hr>
                 <table class="table table-bordered">
                     <thead>
@@ -523,7 +528,7 @@
                 <p style="text-transform:uppercase;letter-spacing:0.1cm;font-size: 14px;" class="ml-5 mt-1">Need more
                     help </p>
 
-                <button class="btn btn-outline-success ml-auto" data-target="#queryModal" data-toggle="modal"><i
+                <button class="btn btn-outline-success ml-auto" onclick="loginreditect()"><i
                         class="fa fa-file"></i> Submit Query</button>
             </div>
         </div>
@@ -615,6 +620,9 @@
                 $('#needhelp').addClass('blinking');
             })
         });
+        function loginreditect(){
+            window.location.href="https://smeda.10data.ai/login.html";
+        }
     </script>
 </body>
 
