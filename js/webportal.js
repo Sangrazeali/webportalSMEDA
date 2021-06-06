@@ -13,6 +13,21 @@ $(window).on("scroll", function () {
 
   }
 });
+$(window).on("scroll", function () {
+  if ($(window).scrollTop() > 50) {
+    $("#main_header1").addClass("active1");
+    $(".nav-link").addClass('active2');
+    $(".other").addClass('active2');
+    $(".login-register").addClass('active2');
+  } else {
+    //remove the background property so it comes transparent again (defined in your css)
+    $("#main_header1").removeClass("active1");
+    $(".nav-link").removeClass('active2');
+    $(".login-register").removeClass('active2');
+    $(".other").removeClass('active2');
+
+  }
+});
 
 $(window).on("scroll", function () {
   if ($(window).scrollTop() > 450) {
@@ -23,6 +38,7 @@ $(window).on("scroll", function () {
     $(".aa").addClass("fadeInRight");
   }
 });
+
 // optional
 $('#blogCarousel').carousel({
   interval: 5000
@@ -33,6 +49,7 @@ google.charts.load('current', {
   'packages': ['line', 'corechart']
 });
 google.charts.setOnLoadCallback(drawChart);
+
 function drawChart() {
 
   var data = new google.visualization.DataTable();
@@ -41,20 +58,20 @@ function drawChart() {
   data.addColumn('number', 'Queries Entered');
 
   data.addRows([
-    [1,  37.8, 80.8],
-    [2,  30.9, 69.5],
-    [3,  25.4,   57],
-    [4,  11.7, 18.8],
-    [5,  11.9, 17.6],
-    [6,   8.8, 13.6],
-    [7,   7.6, 12.3],
-    [8,  12.3, 29.2],
-    [9,  16.9, 42.9],
+    [1, 37.8, 80.8],
+    [2, 30.9, 69.5],
+    [3, 25.4, 57],
+    [4, 11.7, 18.8],
+    [5, 11.9, 17.6],
+    [6, 8.8, 13.6],
+    [7, 7.6, 12.3],
+    [8, 12.3, 29.2],
+    [9, 16.9, 42.9],
     [10, 12.8, 30.9],
-    [11,  5.3,  7.9],
-    [12,  6.6,  8.4],
-    [13,  4.8,  6.3],
-    [14,  4.2,  6.2]
+    [11, 5.3, 7.9],
+    [12, 6.6, 8.4],
+    [13, 4.8, 6.3],
+    [14, 4.2, 6.2]
   ]);
 
   var options = {
@@ -62,7 +79,9 @@ function drawChart() {
     height: 400,
     axes: {
       x: {
-        0: {side: 'top'}
+        0: {
+          side: 'top'
+        }
       }
     }
   };
@@ -82,10 +101,9 @@ function drawChart() {
 
   var options = {
 
-    vAxis: {
-    },
+    vAxis: {},
     hAxis: {
- 
+
     },
     seriesType: 'bars',
     series: {
@@ -99,5 +117,4 @@ function drawChart() {
   chart.draw(data, options);
 
 }
- /* login register function */
 
