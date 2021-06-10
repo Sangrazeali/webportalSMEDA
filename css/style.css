@@ -62,6 +62,7 @@
     color: white;
 }
 
+
 .nav_elem {
     margin-left: 10px;
     text-transform: uppercase;
@@ -75,6 +76,7 @@
     color: rgb(70, 70, 70) !important;
     font-size: 12px;
 }
+
 .other {
     font-size: 12px;
 }
@@ -114,7 +116,8 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
-.header_top_ul ul{
+
+.header_top_ul ul {
     vertical-align: middle !important;
 }
 
@@ -251,10 +254,11 @@
     text-transform: none;
     text-align: left;
 }
+
 .portal-back-img {
     border-left: 7px solid #25A891;
     background-image: url('../images/portalimg.jpg');
-  
+
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -601,7 +605,7 @@
 }
 
 .contact {
- /*    background-image: linear-gradient(to right, #0D9E98, #4DB885); */
+    /*    background-image: linear-gradient(to right, #0D9E98, #4DB885); */
     margin-top: 30px;
 }
 
@@ -1584,27 +1588,32 @@ button:active {
     box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
 
 }
-@media screen and(max-width:984px){
+
+@media screen and(max-width:984px) {
     .nav-link {
-        border-bottom:none !important;
+        border-bottom: none !important;
     }
+
     .nav-item a:hover {
-        border-bottom:none !important;
+        border-bottom: none !important;
         z-index: 1;
         color: #00B784 !important;
     }
 }
-.foot_brands img{
+
+.foot_brands img {
     width: 100px;
     height: 100px;
     margin-left: 20px;
 }
-.quote_text{
+
+.quote_text {
     background-color: White;
     box-shadow: 0 3px 6px #d9e2eb;
 
 }
-.quote_text ::before{
+
+.quote_text ::before {
     content: "\201c";
     color: #d9e2eb;
     font-size: 40px;
