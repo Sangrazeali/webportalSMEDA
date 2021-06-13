@@ -1623,6 +1623,7 @@ button:active {
   width: 15%;
   height: 1px;
   top: 15px;
+  
   left: 250px;
 }
 .opper_heading::after {
