@@ -1916,6 +1916,16 @@ button:active {
     transform: translateX(2px);
     transition:1s;
   }
+  .nav_elem{
+    border: none !important;
+  }
+  .nav-elem:hover{
+    transform: translateX(2px);
+    transition:1s;
+  }
+  #needhelp{
+    font-size: 13px;
+  }
 }
 @media screen and (max-width: 765px) {
   .carousel-elems h1 {
