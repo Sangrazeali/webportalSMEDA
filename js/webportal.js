@@ -76,9 +76,8 @@ function drawChart() {
     [13, 4.8, 6.3],
     [14, 4.2, 6.2]
   ]);
-  let a;
   var options = {
-    width: a,
+    width: 800,
     height: 400,
     axes: {
       x: {
@@ -115,13 +114,6 @@ function drawChart() {
       }
     }
   };
-  if (screen.width <= 1015) {
-    a = 200;
-  }
-  else
-  {
-    a=800
-  }
   var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
   chart.draw(data, options);
 

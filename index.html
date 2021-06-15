@@ -30,12 +30,17 @@
 </head>
 
 <body>
-    <!-- socail link bar -->
+    <div class="icon-bar">
+        <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202."
+            class="whatsapp">
+
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
     <!-- The social media icon bar -->
-    <a href="https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202."
-        class="float" target="_blank">
-        <i class="fab fa-whatsapp my-float"></i>
-    </a>
+
     <!-- map modal -->
     <div class="modal fade" id="locatoinmap" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-lg" role="document">
@@ -238,8 +243,10 @@
         <div class="container-fluid header_main" id="main_header">
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light">
-                    <a class="navbar-brand nav1" href="index.html" id="logoid"><img src="./images//logo3.png" alt="brand logo"
+                    <a class="navbar-brand " href="index.html" id=""><img src="./images/SCCI.png" alt="brand logo"
                             style="margin-top: -10px;"></a>
+                    <a class="navbar-brand nav1" href="index.html" id="logoid"><img src="./images//logo3.png"
+                            alt="brand logo" style="margin-top: -10px;"></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -253,9 +260,12 @@
                                         class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-link nav_elem" href="about.html">about</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link nav_elem" href="opportunities.html">opportunities</a>
                             </li>
-                            <li class="nav-item ml-3 mt-2" style="text-transform: uppercase;font-size: 13px">
+                            <li class="nav-item mt-2" style="text-transform: uppercase;font-size: 13px">
                                 <div class="dropdown show">
                                     <a class=" dropdown-toggle other" href="#" role="button" id="dropdownMenuLink"
                                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
@@ -283,10 +293,8 @@
                             <li class="nav-item">
                                 <a class="nav-link nav_elem" href="tenders.html">Tenders</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link nav_elem" href="about.html">about-kp</a>
-                            </li>
-                            <li class="nav-item ml-3 mt-2" style="text-transform: uppercase;font-size: 13px">
+
+                            <li class="nav-item mt-2" style="text-transform: uppercase;font-size: 13px">
                                 <div class="dropdown show">
                                     <a class=" dropdown-toggle other" href="#" role="button" id="dropdownMenuLink"
                                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
@@ -297,13 +305,6 @@
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="other">
                                         <a class="dropdown-item" href="submenu_about.html">About us</a>
                                         <a class="dropdown-item" href="blog.html">blogs</a>
-                                        <a class="dropdown-item" href="#">Rules & Regulations</a>
-                                        <a class="dropdown-item" href="#">Attached departments</a>
-                                        <a class="dropdown-item" href="#">access to dashboard</a>
-                                        <a class="dropdown-item" href="#">feedback</a>
-                                        <a class="dropdown-item" href="#">notification</a>
-                                        <a class="dropdown-item" href="#">public holidays colendar</a>
-                                        <a class="dropdown-item" href="#">disclaimer</a>
                                         <a class="dropdown-item" href="#">terms & conditions</a>
                                         <a class="dropdown-item" href="#">privacy</a>
                                     </div>
@@ -588,14 +589,45 @@
         </a>
 
     </div>
-    <!-- marquee -->
+    <!-- first section -->
+    <div class="container-fluid" style="background-color: #F2F3F7;">
+        <div class="row p-5">
+            <div class="col-md-2 main_block offset-md-3 mt-3">
+                <a href="guideme.html">
+                    <div class="col-md-12 blocks_sec p-3">
+                        <img src="./images//instructions.png" class="ml-5" alt="">
+                        <p class="text-center">SMEs Guide to avail services 
 
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2 main_block mt-3">
+                <a href="smedafinancing.html">
+                    <div class="col-md-12 blocks_sec p-3">
+                        <img src="./images/report.png" class="ml-5" alt="">
+                        <p class="text-center">SME Equity Financing 
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2 main_block mt-3">
+                <a href="query.html">
+                    <div class="col-md-12 blocks_sec p-3">
+                        <img src="./images/help.png" class="ml-5" alt="">
+                        <p class="text-center">Need help We are just one click away 
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
 
     <div class="container-fluid portal" style="padding: 80px;">
 
-
+        <h2 class="text-center opper_heading">Opportunities</h2>
         <!-- opportunities -->
-        <div class="row mt-5 pt-5">
+        <!--         <div class="row mt-5 pt-5">
             <div class="col-md-2">
                 <div class="left_1"></div>
             </div>
@@ -605,7 +637,7 @@
             <div class="col-md-2">
                 <div class="right_1"></div>
             </div>
-        </div>
+        </div> -->
 
         <div class="row mt-5 pl-1">
             <div class="col-md-3 opportunity_logo">
@@ -677,8 +709,9 @@
         <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 d-flex justify-content-center mt-5  opportunity_button">
             <button class="btn btn-outline-warning" onclick="gotToOpportunities()">View More Opportunities</button>
         </div>
+        <h2 class="text-center impor_heading ">Important Services</h2>
         <!-- Important Services -->
-        <div class="row mt-5 pt-5">
+        <!-- <div class="row mt-5 pt-5">
             <div class="col-md-2">
                 <div class="left_1"></div>
             </div>
@@ -688,7 +721,7 @@
             <div class="col-md-2">
                 <div class="right_1"></div>
             </div>
-        </div>
+        </div> -->
         <div class="row mt-5 pl-5">
             <div class="col-md-2 imp_service mt-2 ml-2">
                 <a href="servicedetail.html">
@@ -780,18 +813,19 @@
             <button class="btn btn-outline-warning" onclick="gotToGuideMe()">View All Services</button>
         </div>
         <!-- about portal -->
-        <div class="row mt-5 pt-5">
-            <div class="col-md-2">
-                <div class="left"></div>
+        <!-- <div class="row "> -->
+        <h2 class=" about_heading1 container">Explore Opportunities with us to invest TODAY</h2>
+        <!-- <div class="col-md-2">
+                <div class="left" style="margin-left: 20px;"></div>
             </div>
             <div class="col-md-8 text">
-                <h2 class="text-center">Explore Opportunities with us to invest TODAY
+                <h2 class="text-center">
                 </h2>
             </div>
             <div class="col-md-2">
-                <div class="right"></div>
+                <div class="right" style="margin-left: -50px;"></div>
             </div>
-        </div>
+        </div> -->
 
         <div class="row portal-content mt-5">
             <div class="col-md-6 col-sm-6 col-xs-6 portal-p p-4 text-justify">
@@ -829,18 +863,19 @@
         <!-- gateway -->
         <div class="container-fluid portal gateway p-5 mt-5">
             <div class="container mt-2">
-                <div class="row">
+                <h2 class="text-center about_heading">Gateway to Investment in KP
+                </h2>
+                <!--        <div class="row">
                     <div class="col-md-2">
                         <div class="left"></div>
                     </div>
                     <div class="col-md-8 text">
-                        <h2 class="text-center">Gateway to Investment in KP
-                        </h2>
+                        
                     </div>
                     <div class="col-md-2">
                         <div class="right"></div>
                     </div>
-                </div>
+                </div> -->
                 <p class="text-center mt-4 text-justify">Khyber Pakhtunkhwa (KP) is a province known for its plethora of
                     Natural Resources and Tourism. Small and Medium Enterprises Development Authority - SMEDA and Sarhad
                     Chamber of Commerce and Industries (SSCI) Peshawar are performing a pivotal role for attracting and
@@ -857,17 +892,18 @@
         </div>
         <!-- Testimonies -->
         <div class="pt-3">
-            <div class="row pt-5">
+            <h2 class="text-center about_heading"> Testimonials</h2>
+            <!--      <div class="row pt-5">
                 <div class="col-md-2 ">
                     <div class="left_1"></div>
                 </div>
                 <div class="col-md-8 col-sm-8 text">
-                    <h2 class="text-center"> Testimonials</h2>
+   
                 </div>
                 <div class="col-md-2">
                     <div class="right_1"></div>
                 </div>
-            </div>
+            </div> -->
             <!-- owl Carousel -->
             <div class="row blog mt-2 pt-4">
 
@@ -885,27 +921,14 @@
                                     <div class="success_card p-3">
                                         <div class="success_body">
                                             <div class="success_card_title">
-                                                <h4>Sohail Ahmed</h4>
+                                                <h4>Dr Naveed</h4>
                                             </div>
                                             <div class="success_card_body">
-                                                <h6>Sohail Ahmed</h6>
+                                                <h6>CEO NGC</h6>
                                             </div>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing
-                                                elit. Qui veritatis, libero, consectetur neque animi provident,
-                                                asperiores corrupti saepe omnis vel ducimus? Sapiente repellat
-                                                aspernatur ad nisi maiores culpa, quam <fugit class="br">Lorem ipsum
-                                                    dolor sit amet, consectetur adipisicing elit. Illum, corrupti
-                                                    suscipit obcaecati laudantium est vel a excepturi libero magni
-                                                    earum dolorum aperiam minima. Iusto exercitationem odio omnis
-                                                    velit veniam magni.
-                                                    <br>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                    Odio, officia nesciunt, error amet beatae voluptatibus vitae
-                                                    aperiam cum porro quod consectetur unde sit quibusdam qui.
-                                                    Adipisci iure accusamus fuga aspernatur.
-                                                    <br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad
-                                                    quasi voluptatum cum similique aut sint accusantium asperiores,
-                                                    consequuntur fugiat deserunt minima distinctio dolore quae et,
-                                                    quos eos illum, sunt odio.</p>
+                                            <p>Very good approach all information available on portal
+                                                I appreciate the efforts, I will tell everyone I know to use the portal
+                                                for avail services and explore opportunities</p>
                                         </div>
                                     </div>
                                 </div>
@@ -913,27 +936,14 @@
                                     <div class="success_card p-3">
                                         <div class="success_body">
                                             <div class="success_card_title">
-                                                <h4>Sohail Ahmed</h4>
+                                                <h4>Sangraze Ali</h4>
                                             </div>
                                             <div class="success_card_body">
-                                                <h6>Sohail Ahmed</h6>
+                                                <h6>Web developer</h6>
                                             </div>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing
-                                                elit. Qui veritatis, libero, consectetur neque animi provident,
-                                                asperiores corrupti saepe omnis vel ducimus? Sapiente repellat
-                                                aspernatur ad nisi maiores culpa, quam <fugit class="br">Lorem ipsum
-                                                    dolor sit amet, consectetur adipisicing elit. Illum, corrupti
-                                                    suscipit obcaecati laudantium est vel a excepturi libero magni
-                                                    earum dolorum aperiam minima. Iusto exercitationem odio omnis
-                                                    velit veniam magni.
-                                                    <br>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                    Odio, officia nesciunt, error amet beatae voluptatibus vitae
-                                                    aperiam cum porro quod consectetur unde sit quibusdam qui.
-                                                    Adipisci iure accusamus fuga aspernatur.
-                                                    <br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad
-                                                    quasi voluptatum cum similique aut sint accusantium asperiores,
-                                                    consequuntur fugiat deserunt minima distinctio dolore quae et,
-                                                    quos eos illum, sunt odio.</p>
+                                            <p>I used the portal to explore investment opportunity
+                                                Very easy and useful specially the guide me section
+                                                Highly recommended </p>
                                         </div>
                                     </div>
                                 </div>
@@ -941,27 +951,14 @@
                                     <div class="success_card p-3">
                                         <div class="success_body">
                                             <div class="success_card_title">
-                                                <h4>Sohail Ahmed</h4>
+                                                <h4>Majid mohmmand</h4>
                                             </div>
                                             <div class="success_card_body">
-                                                <h6>Sohail Ahmed</h6>
+                                                <h6>Contractor</h6>
                                             </div>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing
-                                                elit. Qui veritatis, libero, consectetur neque animi provident,
-                                                asperiores corrupti saepe omnis vel ducimus? Sapiente repellat
-                                                aspernatur ad nisi maiores culpa, quam <fugit class="br">Lorem ipsum
-                                                    dolor sit amet, consectetur adipisicing elit. Illum, corrupti
-                                                    suscipit obcaecati laudantium est vel a excepturi libero magni
-                                                    earum dolorum aperiam minima. Iusto exercitationem odio omnis
-                                                    velit veniam magni.
-                                                    <br>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                    Odio, officia nesciunt, error amet beatae voluptatibus vitae
-                                                    aperiam cum porro quod consectetur unde sit quibusdam qui.
-                                                    Adipisci iure accusamus fuga aspernatur.
-                                                    <br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad
-                                                    quasi voluptatum cum similique aut sint accusantium asperiores,
-                                                    consequuntur fugiat deserunt minima distinctio dolore quae et,
-                                                    quos eos illum, sunt odio.</p>
+                                            <p>Thanks to KPIFC, we are able to visit real time tenders, opportunities
+                                                And services, this portal made things so easy , we are now connected to
+                                                every department </p>
                                         </div>
                                     </div>
                                 </div>
@@ -969,27 +966,14 @@
                                     <div class="success_card p-3">
                                         <div class="success_body">
                                             <div class="success_card_title">
-                                                <h4>Sohail Ahmed</h4>
+                                                <h4>Khalid jan </h4>
                                             </div>
                                             <div class="success_card_body">
-                                                <h6>Sohail Ahmed</h6>
+                                                <h6> business man </h6>
                                             </div>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing
-                                                elit. Qui veritatis, libero, consectetur neque animi provident,
-                                                asperiores corrupti saepe omnis vel ducimus? Sapiente repellat
-                                                aspernatur ad nisi maiores culpa, quam <fugit class="br">Lorem ipsum
-                                                    dolor sit amet, consectetur adipisicing elit. Illum, corrupti
-                                                    suscipit obcaecati laudantium est vel a excepturi libero magni
-                                                    earum dolorum aperiam minima. Iusto exercitationem odio omnis
-                                                    velit veniam magni.
-                                                    <br>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                    Odio, officia nesciunt, error amet beatae voluptatibus vitae
-                                                    aperiam cum porro quod consectetur unde sit quibusdam qui.
-                                                    Adipisci iure accusamus fuga aspernatur.
-                                                    <br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad
-                                                    quasi voluptatum cum similique aut sint accusantium asperiores,
-                                                    consequuntur fugiat deserunt minima distinctio dolore quae et,
-                                                    quos eos illum, sunt odio.</p>
+                                            <p>Very good approach all information available on portal
+                                                I appreciate the efforts, I will tell everyone I know to use the portal
+                                                for avail services and explore opportunities</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1001,121 +985,68 @@
 
                         <div class="carousel-item">
                             <div class="row">
-                                <div class="col-sm-3 animated fadeInRight" style="animation-delay: 0.5s;">
+                                <div class="col-md-3 animated fadeInRight" style="animation-delay: 0.5s;">
                                     <div class="success_card p-3">
                                         <div class="success_body">
                                             <div class="success_card_title">
-                                                <h4>Sohail Ahmed</h4>
+                                                <h4>Dr Naveed</h4>
                                             </div>
                                             <div class="success_card_body">
-                                                <h6>Sohail Ahmed</h6>
+                                                <h6>CEO NGC</h6>
                                             </div>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing
-                                                elit. Qui veritatis, libero, consectetur neque animi provident,
-                                                asperiores corrupti saepe omnis vel ducimus? Sapiente repellat
-                                                aspernatur ad nisi maiores culpa, quam <fugit class="br">Lorem ipsum
-                                                    dolor sit amet, consectetur adipisicing elit. Illum, corrupti
-                                                    suscipit obcaecati laudantium est vel a excepturi libero magni
-                                                    earum dolorum aperiam minima. Iusto exercitationem odio omnis
-                                                    velit veniam magni.
-                                                    <br>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                    Odio, officia nesciunt, error amet beatae voluptatibus vitae
-                                                    aperiam cum porro quod consectetur unde sit quibusdam qui.
-                                                    Adipisci iure accusamus fuga aspernatur.
-                                                    <br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad
-                                                    quasi voluptatum cum similique aut sint accusantium asperiores,
-                                                    consequuntur fugiat deserunt minima distinctio dolore quae et,
-                                                    quos eos illum, sunt odio.</p>
+                                            <p>Very good approach all information available on portal
+                                                I appreciate the efforts, I will tell everyone I know to use the portal
+                                                for avail services and explore opportunities</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-3 animated fadeIn" style="animation-delay: 1s;">
+                                <div class="col-md-3 animated fadeIn" style="animation-delay: 1s;">
                                     <div class="success_card p-3">
                                         <div class="success_body">
                                             <div class="success_card_title">
-                                                <h4>Sohail Ahmed</h4>
+                                                <h4>Sangraze Ali</h4>
                                             </div>
                                             <div class="success_card_body">
-                                                <h6>Sohail Ahmed</h6>
+                                                <h6>Web developer</h6>
                                             </div>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing
-                                                elit. Qui veritatis, libero, consectetur neque animi provident,
-                                                asperiores corrupti saepe omnis vel ducimus? Sapiente repellat
-                                                aspernatur ad nisi maiores culpa, quam <fugit class="br">Lorem ipsum
-                                                    dolor sit amet, consectetur adipisicing elit. Illum, corrupti
-                                                    suscipit obcaecati laudantium est vel a excepturi libero magni
-                                                    earum dolorum aperiam minima. Iusto exercitationem odio omnis
-                                                    velit veniam magni.
-                                                    <br>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                    Odio, officia nesciunt, error amet beatae voluptatibus vitae
-                                                    aperiam cum porro quod consectetur unde sit quibusdam qui.
-                                                    Adipisci iure accusamus fuga aspernatur.
-                                                    <br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad
-                                                    quasi voluptatum cum similique aut sint accusantium asperiores,
-                                                    consequuntur fugiat deserunt minima distinctio dolore quae et,
-                                                    quos eos illum, sunt odio.</p>
+                                            <p>I used the portal to explore investment opportunity
+                                                Very easy and useful specially the guide me section
+                                                Highly recommended </p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-3 animated fadeInLeft" style="animation-delay: 1.5s;">
+                                <div class="col-md-3 animated fadeInLeft" style="animation-delay: 1.5s;">
                                     <div class="success_card p-3">
                                         <div class="success_body">
                                             <div class="success_card_title">
-                                                <h4>Sohail Ahmed</h4>
+                                                <h4>Majid mohmmand</h4>
                                             </div>
                                             <div class="success_card_body">
-                                                <h6>Sohail Ahmed</h6>
+                                                <h6>Contractor</h6>
                                             </div>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing
-                                                elit. Qui veritatis, libero, consectetur neque animi provident,
-                                                asperiores corrupti saepe omnis vel ducimus? Sapiente repellat
-                                                aspernatur ad nisi maiores culpa, quam <fugit class="br">Lorem ipsum
-                                                    dolor sit amet, consectetur adipisicing elit. Illum, corrupti
-                                                    suscipit obcaecati laudantium est vel a excepturi libero magni
-                                                    earum dolorum aperiam minima. Iusto exercitationem odio omnis
-                                                    velit veniam magni.
-                                                    <br>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                    Odio, officia nesciunt, error amet beatae voluptatibus vitae
-                                                    aperiam cum porro quod consectetur unde sit quibusdam qui.
-                                                    Adipisci iure accusamus fuga aspernatur.
-                                                    <br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad
-                                                    quasi voluptatum cum similique aut sint accusantium asperiores,
-                                                    consequuntur fugiat deserunt minima distinctio dolore quae et,
-                                                    quos eos illum, sunt odio.</p>
+                                            <p>Thanks to KPIFC, we are able to visit real time tenders, opportunities
+                                                And services, this portal made things so easy , we are now connected to
+                                                every department </p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-3 animated fadeInLeft" style="animation-delay: 2s;">
+                                <div class="col-md-3 animated fadeInLeft" style="animation-delay: 2s;">
                                     <div class="success_card p-3">
                                         <div class="success_body">
                                             <div class="success_card_title">
-                                                <h4>Sohail Ahmed</h4>
+                                                <h4>Khalid jan </h4>
                                             </div>
                                             <div class="success_card_body">
-                                                <h6>Sohail Ahmed</h6>
+                                                <h6> business man </h6>
                                             </div>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing
-                                                elit. Qui veritatis, libero, consectetur neque animi provident,
-                                                asperiores corrupti saepe omnis vel ducimus? Sapiente repellat
-                                                aspernatur ad nisi maiores culpa, quam <fugit class="br">Lorem ipsum
-                                                    dolor sit amet, consectetur adipisicing elit. Illum, corrupti
-                                                    suscipit obcaecati laudantium est vel a excepturi libero magni
-                                                    earum dolorum aperiam minima. Iusto exercitationem odio omnis
-                                                    velit veniam magni.
-                                                    <br>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                    Odio, officia nesciunt, error amet beatae voluptatibus vitae
-                                                    aperiam cum porro quod consectetur unde sit quibusdam qui.
-                                                    Adipisci iure accusamus fuga aspernatur.
-                                                    <br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad
-                                                    quasi voluptatum cum similique aut sint accusantium asperiores,
-                                                    consequuntur fugiat deserunt minima distinctio dolore quae et,
-                                                    quos eos illum, sunt odio.</p>
+                                            <p>Very good approach all information available on portal
+                                                I appreciate the efforts, I will tell everyone I know to use the portal
+                                                for avail services and explore opportunities</p>
                                         </div>
                                     </div>
                                 </div>
 
                             </div>
-
                         </div>
                         <!--.item-->
 
@@ -1234,12 +1165,12 @@
 
             <!-- supporters logo -->
             <div class="partners mt-4">
-                <div class="col-md-8 col-sm-3 col-xs-3">
-                    <div class="supporter_logo col-md-12 col-lg-12">
+                <div class="col-md-8 col-sm-3 col-xs-3 overflow" style="overflow: auto; margin-bottom: 20px;">
+                    <div class="supporter_logo">
                         <div id="line_top_x"></div>
                     </div>
                 </div>
-                <div class="col-md-4 ml-4 col-sm-12 col-xs-12">
+                <div class="col-md-4 ml-4 col-sm-3 col-xs-3">
                     <div class="supporter_logo twitterFeed">
                         <div class="tweet_head">
                             <p class="pl-3"><i class="fab fa-twitter fa-2x mt-2"></i> <span
@@ -1337,7 +1268,7 @@
                 </div>
             </div>
             <div class="partners mt-5">
-                <div class="col-md-8 col-sm-3 col-xs-3">
+                <div class="col-md-8 col-sm-3 col-xs-3 overflow_">
                     <div class="supporter_logo">
                         <div id="chart_div" style="width: 900px; height: 400px; margin-left: -90px;"></div>
                     </div>
@@ -1377,10 +1308,11 @@
     <!-- contact -->
     <div class="container-fluid contact p-4 bacla">
         <div class="row">
-            <div class="col-md-6">
-                <div class="d-flex foot_brands">
+            <div class="col-md-5">
+                <div class="row foot_brands">
                     <div> <img src="./images/slider/KP BOIT.jpg" alt=""></div>
                     <div> <img src="./images/slider/SMEDA.jpg" alt=""></div>
+                    <div> <img src="./images/slider/scci.jpg" alt=""></div>
                     <div><img src="./images/undp.jpg" alt=""></div>
                     <div><img src="./images/usaid.png" alt=""></div>
                 </div>

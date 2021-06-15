@@ -24,7 +24,142 @@
     <title>Web-Portal</title>
 </head>
 
-<body style="background-color: #F2F3F7;">
+<body>
+    <!-- map model -->
+    <div class="modal fade" id="locatoinmap" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center" style="display: block; border:none">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h6 class="m-b-20 p-b-5 f-w-600">
+                        Location
+                    </h6>
+                </div>
+                <div class="modal-body">
+                    <div class="card-block text-center">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3062.589769382232!2d71.5323005508607!3d33.9981905022338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5ac4315821f7397f!2sSMEDA-Regional%20Office-KP!5e0!3m2!1sen!2s!4v1619595106204!5m2!1sen!2s"
+                            width="700" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+
+    <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="./images//bulb.jpg" width="100%" height="617" alt="">
+                    </div>
+                    <div class="col-md-6 p-4" style="height: 680;">
+                        <div class="col-md-12 focalperson">
+                            <form>
+                                <div class="row pl-3 login_signup">
+                                    <div class="col-md-10">
+                                        <div class="row">
+                                            <p id="loginid">Login |</p>
+                                            <p class="ml-1" id="registerid"> Register</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="register">
+                                        <label for="">Username</label>
+                                        <div class="input-group mb-3 input-group-sm">
+
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-user"></i></span>
+                                            </div>
+                                            <input type="text" class="form-control">
+                                        </div>
+
+                                        <label for="">Password</label>
+                                        <div class="input-group mb-3 input-group-sm">
+
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-key"></i></span>
+                                            </div>
+                                            <input type="password" class="form-control">
+                                        </div>
+                                        <label for="">Name</label>
+                                        <div class="input-group mb-3 input-group-sm">
+
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-user"></i></span>
+                                            </div>
+                                            <input type="text" class="form-control">
+                                        </div>
+
+                                        <label for="">Desgination</label>
+                                        <div class="input-group mb-3 input-group-sm">
+
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-briefcase"></i></span>
+                                            </div>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <label for="">Email Address</label>
+                                        <div class="input-group mb-3 input-group-sm">
+
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                                            </div>
+                                            <input type="email" class="form-control">
+                                        </div>
+                                        <label for="">Phone</label>
+                                        <div class="input-group mb-3 input-group-sm">
+
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-phone"></i></span>
+                                            </div>
+                                            <input type="number" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="login" style="display: none;">
+                                        <label for="">Username</label>
+                                        <div class="input-group mb-3 input-group-sm">
+
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-user"></i></span>
+                                            </div>
+                                            <input type="text" class="form-control">
+                                        </div>
+
+                                        <label for="">Password</label>
+                                        <div class="input-group mb-3 input-group-sm">
+
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-key"></i></span>
+                                            </div>
+                                            <input type="password" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group mybutton"><button class="btn btn-block" type="button"
+                                        id="register_btn">Register</button></div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="englishid">
         <!-- Head -->
@@ -88,11 +223,12 @@
             </div>
         </div>
         <!-- menu -->
-        <div class="container-fluid header_main" id="main_header" style="background-color: white;">
+        <div class="container-fluid header_main" id="main_header"
+            style="background-color: white;box-shadow: 0px 15px 10px -15px #d8d2d2;">
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light">
-                    <a class="navbar-brand " href="index.html" id=""><img src="./images/SCCI.png"
-                        alt="brand logo" style="margin-top: -10px;"></a>
+                    <a class="navbar-brand " href="index.html" id=""><img src="./images/SCCI.png" alt="brand logo"
+                            style="margin-top: -10px;"></a>
                     <a class="navbar-brand" href="index.html"><img src="./images//KPIFC.png" alt="brand logo"
                             style="margin-top: -10px;"></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -103,14 +239,15 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto ">
                             <li class="nav-item active">
-                                <a class="nav-link nav_elem1" href="index.html">Home <span
+                                <a class="nav-link nav_elem1" href="index.html"
+                                    style="border-bottom: 3px solid #4db885;">Home <span
                                         class="sr-only">(current)</span></a>
                             </li>
-                            <a class="nav-link nav_elem1" href="about.html">about</a>
+                            <li class="nav-item">
+                                <a class="nav-link nav_elem1" href="about.html">about</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link nav_elem1" href="opportunities.html"
-                                    style="border-bottom: 3px solid #4db885;">opportunities</a>
+                                <a class="nav-link nav_elem1" href="opportunities.html">opportunities</a>
                             </li>
                             <li class="nav-item mt-2" style="text-transform: uppercase;font-size: 13px">
                                 <div class="dropdown show">
@@ -140,7 +277,6 @@
                             <li class="nav-item">
                                 <a class="nav-link nav_elem1" href="tenders.html">Tenders</a>
                             </li>
-                            <li class="nav-item">
 
                             <li class="nav-item mt-2" style="text-transform: uppercase;font-size: 13px">
                                 <div class="dropdown show">
@@ -174,12 +310,14 @@
                     </div>
                 </nav>
             </div>
+
         </div>
     </div>
+    <!-- urdu -->
     <div class="urduid">
         <div id="urduid" style="display: none;">
             <!--Urdu Head -->
-            <div class="container-fluid header_top">
+            <div class="container-fluid header_top" style="box-shadow: 0px 15px 10px -15px #d8d2d2;">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 col-sm-4 header_second header_urdu">
@@ -290,7 +428,8 @@
                                     <a class="nav-link nav_elem1" href="about.html"> کے بارے میں KP</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link nav_elem1" href="tenders.html">ٹینڈرز</a>
+                                    <a class="nav-link nav_elem1" href="tenders.html"
+                                        style="border-bottom: 3px solid #4db885;">ٹینڈرز</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link nav_elem1" href="guideme.html">ایس ایم ای کے لئے خدمات</a>
@@ -318,8 +457,7 @@
                                     </div>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link nav_elem1" href="opportunities.html"
-                                        style="border-bottom: 3px solid #4db885;">مواقع</a>
+                                    <a class="nav-link nav_elem1" href="opportunities.html">مواقع</a>
                                 </li>
                                 <li class="nav-item active">
                                     <a class="nav-link nav_elem1" href="index.html">ہوم <span
@@ -336,8 +474,8 @@
 
                         <a class="navbar-brand" href="index.html"><img src="./images//KPIFC.png" alt="brand logo"
                                 style="margin-top: -10px;"></a>
-                                <a class="navbar-brand " href="index.html" id=""><img src="./images/SCCI.png"
-                                    alt="brand logo" style="margin-top: -10px;"></a>
+                        <a class="navbar-brand " href="index.html" id=""><img src="./images/SCCI.png" alt="brand logo"
+                                style="margin-top: -10px;"></a>
 
                     </nav>
                 </div>
@@ -345,92 +483,69 @@
             </div>
         </div>
     </div>
+    <!-- sme financing -->
 
-    <!-- searchbar/dropdown menu -->
+    <div class="container-fluid p-5" style="margin-top: 150px;">
 
-    <div class="container-fluid p-5" style="margin-top: 120px;">
+        <div class="col-md-12">
+            <img src="./images/smebanner.png" width="100%" alt="">
+        </div>
+        <div class="smecontent text-justify mt-5">
+            <h2>SME Equity Financing (PSX GEM Board)</h2>
+            <p>Small and Medium Enterprises Development Authority and Pakistan Stock Exchange are in collaboration
+                through a Memorandum of Understanding to facilitate SMEs through capacity building and awareness
+                creation to explore equity financing as a means to finance their businesses.
 
-        <div class="col-md-12 opportunity_detail_card p-3 mt-5 p-4">
-            <div class="col-md-12" style="color: grey;">
-                <p class="" style="font-weight: bold;">About Department</p>
-                <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
-                    born and I will give you a complete account of the system, and expound the actual teachings of the
-                    great explorer of the truth, the master-builder of human happiness.</p>
+                Access to affordable long-term finance is one of the biggest barriers to development of Small and Medium
+                Enterprises (SMEs). In addition to the most common used methods of acquiring finance such as borrowing
+                from friends and family, informal sources from the market and formal sources through financing
+                institutions, SMEs can also raise capital through enlistment on the Pakistan Stock Exchange (PSX).
 
+                Pakistan Stock Exchange has initiated a ‘Growth Enterprise Market’ (GEM) Board for the purpose of
+                facilitating SMEs to enlist and raise capital for financing their business expansion and growth
+                initiatives. GEM Board is a listing platform aimed at facilitating growth-oriented businesses whether
+                small, medium or greenfield businesses to raise capital to fund their growth and expansion plans.
 
-
+                For information, please follow the links below:</p>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-3">
+                <a href="">
+                    <img src="./images/sme1.jpg" alt="" width="100%">
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="">
+                    <img src="./images/sme2.jpg" alt="" width="100%">
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="">
+                    <img src="./images/sme3.jpg" alt="" width="100%">
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="">
+                    <img src="./images/sme4.jpg" alt="" width="100%">
+                </a>
             </div>
         </div>
-        <div class="col-md-12 required_doc_card mt-5">
-            <div class="col-md-12 p-4">
-                <p style="font-weight: bold; color: grey;">Department Service</p>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>Service</th>
-                            <th>Detail</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>NTN</td>
-
-                            <td><button class="btn btn-outline-primary"><i class="fa fa-eye"></i> Click To
-                                    View</button></td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Tax Return</td>
-
-                            <td><button class="btn btn-outline-primary"><i class="fa fa-eye"></i> Click To
-                                    View</button></td>
-                        </tr>
-
-
-                    </tbody>
-                </table>
-
-            </div>
-        </div>
-
-        <div class="col-md-12 investor_dashboard mt-5" style="border: none !important;">
-            <div class="col-md-12 size p-4">
-                <div class="row">
-                    <div class="col-md-12">
-                        <p style="font-weight: bold; color: grey;">Department Info</p>
-                    </div>
-                    <hr>
-                    <div class="row elems">
-                        <i class="fa fa-location-arrow"></i>
-                        <p id="location">
-                            Peshawar</p>
-                    </div>
-                    <hr>
-                    <div class="row elems">
-                        <i class="fa fa-clock"></i>
-                        <p id="time">
-                            09:00am to 05:00pm</p>
-                    </div>
-                    <hr>
-                    <div class="row elems">
-                        <i class="fa fa-phone-alt"></i>
-                        <p id="num">0301-8847551</p>
-                    </div>
-                    <hr>
-                    <div class="row elems">
-                        <i class="fa fa-envelope"></i>
-                        <p id="mail">emailsupport@fbr.gov.pk</p>
-                    </div>
-                    <hr>
-                </div>
-            </div>
+        <div class="col-md-12 mt-5">
+            <p>Some useful links for more information:</p>
+            <ul class="mt-4">
+                <li><a href="">Basic Information of GEM</a></li>
+                <li><a href="">Presentation</a></li>
+                <li><a href="">GEM Board FAQs</a></li>
+                <li><a href="">Brokers and Banks Interested in GEM Listing</a></li>
+                <li><a href="">Rule Book</a></li>
+                <li><a href="">Forms and Documents</a></li>
+            </ul>
         </div>
     </div>
 
-    </div>
-    <footer class="mt-5">
+
+
+    <footer class="">
         <div class="container-fluid footer">
             <div class="p-5">
                 <div class="row items">
@@ -489,23 +604,11 @@
 
         </div>
     </footer>
-    </div>
     <script src="./js/webportal.js"></script>
     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    <script type="text/javascript" src="../assets/pages/google-maps/gmaps.js"></script>
     <script>
-        let redirect = () => {
-            window.location.href = "query.html"
-        }
-        $(document).ready(function () {
-            $('#needhelp').mouseover(() => {
-                $('#needhelp').removeClass('blinking');
-                $('#needhelp').addClass('blinking_h');
-            })
-            $('#needhelp').mouseout(() => {
-                $('#needhelp').addClass('blinking');
-            })
-        });
-
         /* language function */
         $(function () {
             $('#english').click(() => {
@@ -533,6 +636,7 @@
             })
         })
     </script>
+
 </body>
 
 </html>

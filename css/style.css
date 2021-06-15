@@ -59,14 +59,12 @@
 }
 
 .nav_elem {
-  margin-left: 10px;
   text-transform: uppercase;
   color: white !important;
   font-size: 13px;
 }
 
 .nav_elem1 {
-  margin-left: 10px;
   text-transform: uppercase;
   color: rgb(70, 70, 70) !important;
   font-size: 12px;
@@ -243,7 +241,7 @@
 
 .portal-back-img {
   border-left: 7px solid #25a891;
-  background-image: url("../images/Slider2.jpg");
+  background-image: url("../images/portalimg.jpg");
   height: 400px;
   width: 100%;
   background-repeat: no-repeat;
@@ -431,8 +429,8 @@
   border: 2px solid #219ff6;
   color: #219ff6;
   border-radius: 40px;
-  /* position: absolute;
-  top: 0px;
+ position: absolute;
+  /*  top: 0px;
   left: 43%; */
 }
 
@@ -588,7 +586,7 @@
 }
 
 .contact {
-  background-image: linear-gradient(to right, #0d9e98, #4db885);
+  /* background-image: linear-gradient(to right, #0d9e98, #4db885); */
   margin-top: 30px;
 }
 
@@ -675,26 +673,49 @@
   cursor: pointer;
 }
 
-.float {
+
+.icon-bar {
   position: fixed;
-  width: 50px;
-  height: 50px;
-  bottom: 40px;
-  right: 10px;
-  background-color: #25d366;
-  color: #fff;
-  border-radius: 50px;
-  text-align: center;
-  font-size: 30px;
-  box-shadow: 2px 2px 3px #999;
-  z-index: 100;
+  top: 60%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index:99;
+  right: 0;
 }
-.float:hover {
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
   color: white;
 }
 
-.my-float {
-  margin-top: 10px;
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.whatsapp {
+  background: #4db885;
+  color: white;
+}
+
+
+.content {
+  margin-left: 75px;
+  font-size: 30px;
 }
 
 .content {
@@ -1251,7 +1272,6 @@ button:active {
 .left_contact_card {
   background-color: white;
   box-shadow: 0px 3px 6px #00000029;
-  margin-left: 95px;
 }
 
 .left_contact_card p {
@@ -1527,8 +1547,8 @@ button:active {
 }
 
 .navbar-brand img {
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
 }
 
 .service_card p {
@@ -1543,6 +1563,7 @@ button:active {
 .service_card p a:hover {
   text-decoration: none;
 }
+
 
 .service_card ul li a {
   color: rgb(32, 32, 32);
@@ -1679,6 +1700,28 @@ button:active {
   top: 15px;
   right: 100px;
 }
+.about_heading1 {
+  position: relative;
+  margin-top: 6rem !important;
+}
+.about_heading1::before {
+  content: "";
+  position: absolute;
+  background-color: #25a891;
+  width: 15%;
+  height: 1px;
+  top: 15px;
+  left: 0px;
+}
+.about_heading1::after {
+  content: "";
+  position: absolute;
+  background-color: #25a891;
+  width: 15%;
+  height: 1px;
+  top: 15px;
+  right: 0px;
+}
 .gateway_heading {
   position: relative;
 }
@@ -1757,6 +1800,17 @@ button:active {
   .dept .row .col-md-7 .form-control {
     margin-top: 1rem;
   }
+  .opp_inputs .col-md-2 .for-control{
+    width: 90%;
+    margin-top: 10px;
+  }
+  .opp_inputs .col-md-2 .dept{
+    margin-top: 10px;
+  }
+  .filter_s {
+    margin-left: 0px !important;
+  }
+
   .tenders {
     padding: 1rem !important;
   }
@@ -1788,6 +1842,12 @@ button:active {
     display: none;
   }
   .about_heading::after {
+    display: none;
+  }
+  .about_heading1::before {
+    display: none;
+  }
+  .about_heading1::after {
     display: none;
   }
   .gateway_heading::before {
@@ -1845,16 +1905,27 @@ button:active {
   .portal h2 {
     font-size: 20px;
   }
+  .foot_brands img{
+    width: 60px;
+    height: 60px;
+  }
+  .nav_elem1{
+    border: none !important;
+  }
+  .nav-elem1:hover{
+    transform: translateX(2px);
+    transition:1s;
+  }
 }
 @media screen and (max-width: 765px) {
   .carousel-elems h1 {
     color: #fff8f8;
     position: absolute;
-    top: 150px;
+    top: 120px;
     left: 80px;
     /* text-shadow: 0 0 black; */
     text-shadow: 2px 2px #404040;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -1864,8 +1935,48 @@ button:active {
   .carousel-elems p {
     margin-bottom: 0rem;
     line-height: 30px;
-    font-size: 18px;
-    top: 250px;
+    font-size: 14px;
+    top: 210px;
     left: 80px;
   }
+  
+}
+
+.foot_brands img{
+  width: 90px;
+  height: 90px;
+  margin-left: 15px;
+}
+.quote_text {
+  background-color: White;
+  box-shadow: 0 3px 6px #d9e2eb;
+
+}
+
+.quote_text ::before {
+  content: "\201c";
+  color: #d9e2eb;
+  font-size: 40px;
+}
+.blocks_sec img{
+  width: 70px;
+  height: 70px;
+}
+.blocks_sec p{
+  color: #404040;
+  font-size: 16px;
+  margin-top: 9px;
+}
+.blocks_sec{
+  background-color: #E6E6ED;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+.main_block a:hover{
+  text-decoration: none;
+}
+.blocks_sec:hover{
+  transform: scale(1.1);
+  transition: 0.6s;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
