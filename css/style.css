@@ -113,15 +113,14 @@
 .carousel-elems h1 {
   color: #fff8f8;
   position: absolute;
-  top: 200px;
+  top: 190px;
   left: 105px;
   /* text-shadow: 0 0 black; */
-  text-shadow: 2px 2px #404040;
-  font-size: 39px;
-  font-weight: 900;
+  max-width: 850px;
+  font-size: 30px;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 3px;
-  line-height: 50px;
+  letter-spacing: 2px;
 }
 .tenders table button {
   border-radius: 30px;
@@ -130,14 +129,13 @@
 .carousel-elems p {
   color: #fff8f8;
   position: absolute;
-  top: 270px;
+  top: 250px;
+  max-width: 850px;
   left: 105px;
   /* text-shadow: 0 0 black; */
-  text-shadow: 2px 2px #404040;
-  font-size: 24px;
+  font-size: 20px;
   text-transform: uppercase;
-  letter-spacing: 3px;
-  line-height: 50px;
+  /* line-height: 50px; */
 }
 
 .lastp {
@@ -429,7 +427,7 @@
   border: 2px solid #219ff6;
   color: #219ff6;
   border-radius: 40px;
- position: absolute;
+  position: absolute;
   /*  top: 0px;
   left: 43%; */
 }
@@ -523,7 +521,7 @@
   width: 293px;
   height: 390px;
   background-color: white;
-  border-radius: 30px;
+  border-radius: 15px;
   border: 1px solid #f3eeee;
 }
 
@@ -673,14 +671,13 @@
   cursor: pointer;
 }
 
-
 .icon-bar {
   position: fixed;
   top: 60%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  z-index:99;
+  z-index: 99;
   right: 0;
 }
 
@@ -698,12 +695,12 @@
 }
 
 .facebook {
-  background: #3B5998;
+  background: #3b5998;
   color: white;
 }
 
 .twitter {
-  background: #55ACEE;
+  background: #55acee;
   color: white;
 }
 
@@ -711,7 +708,6 @@
   background: #4db885;
   color: white;
 }
-
 
 .content {
   margin-left: 75px;
@@ -1498,7 +1494,7 @@ button:active {
 
 .opportunity_logo p {
   color: rgb(56, 55, 55);
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .opportunity_logo a:hover {
@@ -1563,7 +1559,6 @@ button:active {
 .service_card p a:hover {
   text-decoration: none;
 }
-
 
 .service_card ul li a {
   color: rgb(32, 32, 32);
@@ -1644,7 +1639,7 @@ button:active {
   width: 15%;
   height: 1px;
   top: 15px;
-  
+
   left: 250px;
 }
 .opper_heading::after {
@@ -1680,7 +1675,6 @@ button:active {
 }
 .about_heading {
   position: relative;
-  margin-top: 6rem !important;
 }
 .about_heading::before {
   content: "";
@@ -1703,6 +1697,7 @@ button:active {
 .about_heading1 {
   position: relative;
   margin-top: 6rem !important;
+  font-size: 28px;
 }
 .about_heading1::before {
   content: "";
@@ -1800,11 +1795,11 @@ button:active {
   .dept .row .col-md-7 .form-control {
     margin-top: 1rem;
   }
-  .opp_inputs .col-md-2 .for-control{
+  .opp_inputs .col-md-2 .for-control {
     width: 90%;
     margin-top: 10px;
   }
-  .opp_inputs .col-md-2 .dept{
+  .opp_inputs .col-md-2 .dept {
     margin-top: 10px;
   }
   .filter_s {
@@ -1905,25 +1900,25 @@ button:active {
   .portal h2 {
     font-size: 20px;
   }
-  .foot_brands img{
+  .foot_brands img {
     width: 60px;
     height: 60px;
   }
-  .nav_elem1{
+  .nav_elem1 {
     border: none !important;
   }
-  .nav-elem1:hover{
+  .nav-elem1:hover {
     transform: translateX(2px);
-    transition:1s;
+    transition: 1s;
   }
-  .nav_elem{
+  .nav_elem {
     border: none !important;
   }
-  .nav-elem:hover{
+  .nav-elem:hover {
     transform: translateX(2px);
-    transition:1s;
+    transition: 1s;
   }
-  #needhelp{
+  #needhelp {
     font-size: 13px;
   }
 }
@@ -1931,28 +1926,29 @@ button:active {
   .carousel-elems h1 {
     color: #fff8f8;
     position: absolute;
-    top: 120px;
-    left: 80px;
+    top: 150px;
+    left: 50px;
+    max-width: 380px;
     /* text-shadow: 0 0 black; */
     text-shadow: 2px 2px #404040;
     font-size: 17px;
     font-weight: 900;
     text-transform: uppercase;
-    letter-spacing: 3px;
-    line-height: 50px;
+  }
+  .carousel-indicators li {
+    display: none;
   }
 
   .carousel-elems p {
     margin-bottom: 0rem;
-    line-height: 30px;
     font-size: 14px;
     top: 210px;
-    left: 80px;
+    left: 50px;
+    max-width: 380px;
   }
-  
 }
 
-.foot_brands img{
+.foot_brands img {
   width: 90px;
   height: 90px;
   margin-left: 15px;
@@ -1960,7 +1956,6 @@ button:active {
 .quote_text {
   background-color: White;
   box-shadow: 0 3px 6px #d9e2eb;
-
 }
 
 .quote_text ::before {
@@ -1968,25 +1963,76 @@ button:active {
   color: #d9e2eb;
   font-size: 40px;
 }
-.blocks_sec img{
+.blocks_sec img {
   width: 70px;
   height: 70px;
 }
-.blocks_sec p{
+.blocks_sec p {
   color: #404040;
   font-size: 16px;
   margin-top: 9px;
 }
-.blocks_sec{
-  background-color: #E6E6ED;
+.blocks_sec {
+  background-color: #e6e6ed;
   border-top-right-radius: 50px;
   border-bottom-left-radius: 50px;
 }
-.main_block a:hover{
+.main_block a:hover {
   text-decoration: none;
 }
-.blocks_sec:hover{
+.blocks_sec:hover {
   transform: scale(1.1);
   transition: 0.6s;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.blocks_sec p {
+  margin-bottom: 0rem;
+}
+.images_smes {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.row .imp-services {
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #d8d2d2;
+}
+.row .imp-services a {
+  color: #23527c;
+  text-decoration: none;
+  font-size: 15px;
+}
+.opportunity_logo1 p {
+  margin-bottom: 0rem;
+}
+.new_urdu li a {
+  font-size: 16px;
+}
+.container .responsive_urdu {
+  display: none;
+}
+.web_drop_urdu .dropdown-item {
+  display: flex;
+  justify-content: flex-end;
+}
+@media screen and (max-width: 990px) {
+  .container .web_urdu {
+    display: none;
+  }
+  .icon-bar {
+    top: 80%;
+  }
+  .container .responsive_urdu {
+    display: flex;
+  }
+  .responsive_right li a {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .responsive_right_send {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
